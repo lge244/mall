@@ -1,7 +1,32 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2019/4/11 0011
- * Time: 10:12
- */
+if (!defined('IN_IA')) {
+    exit('Access Denied');
+}
+
+class Index_EweiShopV2Page extends WebPage
+{
+    public function main()
+    {
+        include $this->template();
+    }
+
+    public function job()
+    {
+        include $this->template();
+
+    }
+
+    public function add()
+    {
+        $this->post();
+    }
+
+    public function post()
+    {
+        include($this->template());
+    }
+
+
+}
+
+?>

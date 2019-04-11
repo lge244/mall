@@ -601,13 +601,20 @@ class System_EweiShopV2Model {
             ) ,
             "admins"=>array(
                 "title"=>"管理",
-                "subtitle"=>"管理员列表",
+                "subtitle"=>"管理员管理",
                 "icon"=>"store",
                 "items"=>array(
                     array(
-                        "title"=>"管理员列表",
-                        "route"=>"adminslist",
+                        "title"=>"管理员",
+                        "extend"=>"admins.list",
+                        "perm"=>"amdins.main",
                         "desc"=>"管理员管理"
+                    ),
+                    array(
+                        "title"=>"权限",
+                        "route"=>"job",
+                        "perm"=>"amdins.main",
+                        "desc"=>"权限管理"
                     )
                 )
             ),

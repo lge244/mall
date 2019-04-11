@@ -1,4 +1,4 @@
-{template '_header'}
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
 <style>
     tbody tr td{
         position: relative;
@@ -78,9 +78,9 @@
         <div style="width: 100px;">价格</div>
         <div style="width: 80px;">库存</div>
         <div style="width: 80px;">销量</div>
-        {if $goodsfrom!='cycle'}
+        <?php  if($goodsfrom!='cycle') { ?>
         <div  style="width:80px;" >状态</div>
-        {/if}
+        <?php  } ?>
         <div class="flex1">属性</div>
         <div style="width: 120px;">操作</div>
     </div>
@@ -89,10 +89,10 @@
         <input type="hidden" name="a" value="entry" />
         <input type="hidden" name="m" value="ewei_shopv2" />
         <input type="hidden" name="do" value="web" />
-        <input type="hidden" name="r"  value="goods.{$goodsfrom}" />
+        <input type="hidden" name="r"  value="goods.<?php  echo $goodsfrom;?>" />
         <div class="page-toolbar">
             <span class="pull-left" style="margin-right:30px;">
-                <a class='btn btn-sm btn-primary' href="{php echo webUrl('admins/add')}"><i class='fa fa-plus'></i> 添加管理</a>
+                <a class='btn btn-sm btn-primary' href="<?php  echo webUrl('admins/add')?>"><i class='fa fa-plus'></i> 添加管理</a>
             </span>
         </div>
     </form>
@@ -130,14 +130,14 @@
                 <tfoot>
                 <tr>
                     <td><input type="checkbox"></td>
-                    <td    {if $goodsfrom!='cycle'}colspan="4"{else}colspan="3" {/if}>
+                    <td    <?php  if($goodsfrom!='cycle') { ?>colspan="4"<?php  } else { ?>colspan="3" <?php  } ?>>
                     <div class="btn-group">
-                        <button class="btn btn-default btn-sm  btn-operation" type="button" data-toggle='batch-remove' data-confirm="如果商品存在购买记录，会无法关联到商品, 确认要彻底删除吗?" data-href="{php echo webUrl('goods/delete1')}">
+                        <button class="btn btn-default btn-sm  btn-operation" type="button" data-toggle='batch-remove' data-confirm="如果商品存在购买记录，会无法关联到商品, 确认要彻底删除吗?" data-href="<?php  echo webUrl('goods/delete1')?>">
                             <i class='icow icow-shanchu1'></i> 彻底删除</button>
                     </div>
                     </td>
                     <td colspan="5" style="text-align: right">
-                        {$pager}
+                        <?php  echo $pager;?>
                     </td>
                 </tr>
                 </tfoot>
@@ -150,8 +150,8 @@
     </div>
 
 </div>
-{template 'goods/batchcates'}
-{template '_footer'}
+<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('goods/batchcates', TEMPLATE_INCLUDEPATH)) : (include template('goods/batchcates', TEMPLATE_INCLUDEPATH));?>
+<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>
 <script>
     //获得分类标签
     // var length = $('#catetag').children().length;
