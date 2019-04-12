@@ -128,7 +128,7 @@ class Plugin_EweiShopV2Model
 		}
 
 		unset($cv);
-		return $list;
+			return $list;
 	}
 
 	public function getName($identity = '')

@@ -310,7 +310,7 @@ build time: Jan 10 14:34
             /**
              * Prints debug info.
              * @param msg {String} the message to log.
-             * @param {String} [cat] the log category for the message. Default
+             * @param {String} [cat] the log job for the message. Default
              *        categories are "info", "warn", "error", "time" etc.
              * @param {String} [src] the source of the the message (opt)
              */

@@ -20,7 +20,7 @@ if ($do == 'display') {
 			unset($category[$index]);
 		}
 	}
-	template('site/category-display');
+	template('site/job-display');
 } elseif ($do == 'post') {
 	$parentid = intval($_GPC['parentid']);
 	$id = intval($_GPC['id']);
@@ -50,7 +50,7 @@ if ($do == 'display') {
 	if (!empty($parentid)) {
 		$parent = pdo_fetch("SELECT id, name FROM ".tablename('site_category')." WHERE id = '$parentid'");
 		if (empty($parent)) {
-			itoast('抱歉，上级分类不存在或是已经被删除！', url('site/category/display'), 'error');
+			itoast('抱歉，上级分类不存在或是已经被删除！', url('site/job/display'), 'error');
 		}
 	}
 	$category['style'] = $styles[$category['styleid']];
@@ -152,9 +152,9 @@ if ($do == 'display') {
 			$nav_url['url'] = "./index.php?c=site&a=site&cid={$id}&i={$_W['uniacid']}";
 			pdo_update('site_nav', $nav_url, array('id' => $data['nid'], 'uniacid' => $_W['uniacid']));
 		}
-		itoast('更新分类成功！', url('site/category'), 'success');
+		itoast('更新分类成功！', url('site/job'), 'success');
 	}
-	template('site/category-post');
+	template('site/job-post');
 } elseif ($do == 'delete') {
 	if (checksubmit('submit')) {
 		foreach ($_GPC['rid'] as $key => $id) {
@@ -179,7 +179,7 @@ if ($do == 'display') {
 		$status = $category_exist['enabled'] == 1 ? 0 : 1;
 		$result = pdo_update('site_category', array('enabled' => $status), array('id' => $id));
 		if ($result) {
-			iajax(0, '更改成功！', url('site/category'));
+			iajax(0, '更改成功！', url('site/job'));
 		} else {
 			iajax(1, '更改失败！', '');
 		}

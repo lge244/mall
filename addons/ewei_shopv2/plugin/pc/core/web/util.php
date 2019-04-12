@@ -6,7 +6,7 @@ class Util_EweiShopV2Page extends PluginWebPage
 		global $_W;
 		global $_GPC;
 		$full = intval($_GPC['full']);
-		$syscate = m('common')->getSysset('category');
+		$syscate = m('common')->getSysset('job');
 		if (0 < $syscate['level']) 
 		{
 			$categorys = pdo_fetchall('SELECT id,name,parentid FROM ' . tablename('ewei_shop_category') . ' WHERE enabled=:enabled and uniacid= :uniacid  ', array(':uniacid' => $_W['uniacid'], ':enabled' => '1'));

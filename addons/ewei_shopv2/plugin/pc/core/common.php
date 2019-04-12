@@ -115,7 +115,7 @@ function check_login()
 function index_cate() 
 {
 	global $_W;
-	$category_set = $_W['shopset']['category'];
+	$category_set = $_W['shopset']['job'];
 	if ($category_set['level'] == -1) 
 	{
 		return array();

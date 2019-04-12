@@ -2,15 +2,21 @@
 if (!defined("IN_IA")) {
     exit("Access Denied");
 }
-class System_EweiShopV2Model {
+
+class System_EweiShopV2Model
+{
     private $merch = false;
-    public function __construct() {
+
+    public function __construct()
+    {
         global $_W;
         if ($_W["plugin"] == "merch" && $_W["merch_user"]) {
             $this->merch = true;
         }
     }
-    public function getMenu($full = false) {
+
+    public function getMenu($full = false)
+    {
         global $_W;
         global $_GPC;
         $return_menu = array();
@@ -56,7 +62,7 @@ class System_EweiShopV2Model {
                 }
                 if ($this->cv($key)) {
                     $menu_item = array(
-                        "route" => (empty($val["route"]) ? $key : $val["route"]) ,
+                        "route" => (empty($val["route"]) ? $key : $val["route"]),
                         "text" => $val["title"]
                     );
                     if ($routes[0] == "system") {
@@ -101,7 +107,7 @@ class System_EweiShopV2Model {
                     if ($submenu["main"]) {
                         $return_submenu["route"] = $top;
                         if (is_string($submenu["main"])) {
-                            $return_submenu["route"].= "." . $submenu["main"];
+                            $return_submenu["route"] .= "." . $submenu["main"];
                         }
                     }
                     if (!empty($submenu["index"])) {
@@ -138,9 +144,9 @@ class System_EweiShopV2Model {
                             $route_second = $top;
                             if (!empty($child["route"])) {
                                 if (!empty($top)) {
-                                    $route_second.= ".";
+                                    $route_second .= ".";
                                 }
-                                $route_second.= $child["route"];
+                                $route_second .= $child["route"];
                             }
                             $return_menu_child = array(
                                 "title" => $child["title"],
@@ -317,12 +323,14 @@ class System_EweiShopV2Model {
             "shopmenu" => $this->getShopMenu()
         );
     }
-    public function getSubMenus($full = false, $plugin = false) {
+
+    public function getSubMenus($full = false, $plugin = false)
+    {
         global $_W;
         $return_submenu = array();
         if (!$this->merch) {
             $systemMenu = $this->systemMenu();
-            $allmenus = array_merge($this->shopMenu() , $systemMenu);
+            $allmenus = array_merge($this->shopMenu(), $systemMenu);
             if ($plugin) {
                 $allmenus = array_merge($allmenus, $this->allPluginMenu());
             }
@@ -423,7 +431,9 @@ class System_EweiShopV2Model {
         }
         return $return_submenu;
     }
-    public function getShopMenu() {
+
+    public function getShopMenu()
+    {
         $return_menu = array();
         if (!$this->merch) {
             $menus = $this->shopMenu();
@@ -513,159 +523,163 @@ class System_EweiShopV2Model {
         }
         return $return_menu;
     }
-    protected function shopMenu() {
-        $shopmenu = array(
-            "shop" => array(
-                "title" => "店铺",
-                "subtitle" => "店铺首页",
-                "icon" => "store",
-                "items" => array(
-                    array(
-                        "title" => "首页",
-                        "route" => "",
-                        "items" => array(
-                            array(
-                                "title" => "幻灯片 ",
-                                "route" => "adv",
-                                "desc" => "店铺首页幻灯片管理"
-                            ) ,
-                            array(
-                                "title" => "导航图标",
-                                "route" => "nav",
-                                "desc" => "店铺首页导航图标管理"
-                            ) ,
-                            array(
-                                "title" => "广告",
-                                "route" => "banner",
-                                "desc" => "店铺首页广告管理"
-                            ) ,
-                            array(
-                                "title" => "魔方推荐",
-                                "route" => "cube",
-                                "desc" => "店铺首页魔方推荐管理"
-                            ) ,
-                            array(
-                                "title" => "商品推荐",
-                                "route" => "recommand",
-                                "desc" => "店铺首页商品推荐管理"
-                            ) ,
-                            array(
-                                "title" => "排版设置",
-                                "route" => "sort",
-                                "desc" => "店铺首页排版设置"
+
+    protected function shopMenu()
+    {
+        global $_W;
+        // 管理员
+        if ($_W['user']['jobid'] == 1 || $_W['user']['jobid'] == 0 ) {
+            $shopmenu = array(
+                "shop" => array(
+                    "title" => "店铺",
+                    "subtitle" => "店铺首页",
+                    "icon" => "store",
+                    "items" => array(
+                        array(
+                            "title" => "首页",
+                            "route" => "",
+                            "items" => array(
+                                array(
+                                    "title" => "幻灯片 ",
+                                    "route" => "adv",
+                                    "desc" => "店铺首页幻灯片管理"
+                                ),
+                                array(
+                                    "title" => "导航图标",
+                                    "route" => "nav",
+                                    "desc" => "店铺首页导航图标管理"
+                                ),
+                                array(
+                                    "title" => "广告",
+                                    "route" => "banner",
+                                    "desc" => "店铺首页广告管理"
+                                ),
+                                array(
+                                    "title" => "魔方推荐",
+                                    "route" => "cube",
+                                    "desc" => "店铺首页魔方推荐管理"
+                                ),
+                                array(
+                                    "title" => "商品推荐",
+                                    "route" => "recommand",
+                                    "desc" => "店铺首页商品推荐管理"
+                                ),
+                                array(
+                                    "title" => "排版设置",
+                                    "route" => "sort",
+                                    "desc" => "店铺首页排版设置"
+                                )
                             )
-                        )
-                    ) ,
-                    array(
-                        "title" => "商城",
-                        "items" => array(
-                            array(
-                                "title" => "公告管理",
-                                "route" => "notice",
-                                "desc" => "店铺公告管理"
-                            ) ,
-                            array(
-                                "title" => "评价管理",
-                                "route" => "comment",
-                                "desc" => "店铺商品评价管理"
-                            ) ,
-                            array(
-                                "title" => "退货地址",
-                                "route" => "refundaddress",
-                                "desc" => "店铺退货地址管理"
+                        ),
+                        array(
+                            "title" => "商城",
+                            "items" => array(
+                                array(
+                                    "title" => "公告管理",
+                                    "route" => "notice",
+                                    "desc" => "店铺公告管理"
+                                ),
+                                array(
+                                    "title" => "评价管理",
+                                    "route" => "comment",
+                                    "desc" => "店铺商品评价管理"
+                                ),
+                                array(
+                                    "title" => "退货地址",
+                                    "route" => "refundaddress",
+                                    "desc" => "店铺退货地址管理"
+                                )
                             )
-                        )
-                    ) ,
-                    array(
-                        "title" => "配送方式",
-                        "items" => array(
-                            array(
-                                "title" => "普通快递",
-                                "route" => "dispatch",
-                                "desc" => "店铺普通快递管理"
-                            ) ,
-                            array(
-                                "title" => "同城配送",
-                                "route" => "cityexpress",
-                                "desc" => "店铺同城配送管理"
+                        ),
+                        array(
+                            "title" => "配送方式",
+                            "items" => array(
+                                array(
+                                    "title" => "普通快递",
+                                    "route" => "dispatch",
+                                    "desc" => "店铺普通快递管理"
+                                ),
+                                array(
+                                    "title" => "同城配送",
+                                    "route" => "cityexpress",
+                                    "desc" => "店铺同城配送管理"
+                                )
                             )
+                        ),
+                        array(
+                            "title" => m("plugin")->getName("diypage"),
+                            "isplugin" => "diypage",
+                            "route" => "diypage",
+                            "top" => true
                         )
-                    ) ,
-                    array(
-                        "title" => m("plugin")->getName("diypage") ,
-                        "isplugin" => "diypage",
-                        "route" => "diypage",
-                        "top" => true
                     )
-                )
-            ) ,
-            "admins"=>array(
-                "title"=>"管理",
-                "subtitle"=>"管理员管理",
-                "icon"=>"store",
-                "items"=>array(
-                    array(
-                        "title"=>"管理员",
-                        "extend"=>"admins.list",
-                        "perm"=>"amdins.main",
-                        "desc"=>"管理员管理"
-                    ),
-                    array(
-                        "title"=>"权限",
-                        "route"=>"job",
-                        "perm"=>"amdins.main",
-                        "desc"=>"权限管理"
+                ),
+                "admins" => array(
+                    "title" => "管理",
+                    "subtitle" => "管理员管理",
+                    "icon" => "store",
+                    "items" => array(
+                        array(
+                            "title" => "管理员",
+                            "extend" => "admins.list",
+                            "perm" => "amdins.main",
+                            "desc" => "管理员管理"
+                        ),
+                        array(
+                            "title" => "权限",
+                            "route" => "job",
+                            "desc" => "权限管理"
+                        )
                     )
-                )
-            ),
-            "goods" => array(
-                "title" => "商品",
-                "subtitle" => "商品管理",
-                "icon" => "goods",
-                "items" => array(
-                    array(
-                        "title" => "出售中",
-                        "desc" => "出售中商品管理",
-                        "extend" => "goods.sale",
-                        "perm" => "goods.main"
-                    ) ,
-                    array(
-                        "title" => "已售罄",
-                        "route" => "out",
-                        "desc" => "已售罄/无库存商品管理",
-                        "perm" => "goods.main"
-                    ) ,
-                    array(
-                        "title" => "仓库中",
-                        "route" => "stock",
-                        "desc" => "仓库中商品管理",
-                        "perm" => "goods.main"
-                    ) ,
-                    array(
-                        "title" => "回收站",
-                        "route" => "cycle",
-                        "desc" => "回收站/已删除商品管理",
-                        "perm" => "goods.main"
-                    ) ,
-                    array(
-                        "title" => "待审核",
-                        "route" => "verify",
-                        "desc" => "多商户待审核商品管理",
-                        "perm" => "goods.main"
-                    ) ,
-                    array(
-                        "title" => "商品分类",
-                        "route" => "category"
-                    ) ,
-                    array(
-                        "title" => "商品组",
-                        "route" => "group"
-                    ) ,
-                    array(
-                        "title" => "标签管理",
-                        "route" => "label",
-                        "extend" => "goods.label.style"
-                    )
+                ),
+                "goods" => array(
+                    "title" => "商品",
+                    "subtitle" => "商品管理",
+                    "icon" => "goods",
+                    "items" => array(
+                        array(
+                            "title" => "出售中",
+                            "desc" => "出售中商品管理",
+                            "extend" => "goods.sale",
+                            "perm" => "goods.main"
+                        ),
+                        array(
+                            "title" => "已售罄",
+                            "route" => "out",
+                            "desc" => "已售罄/无库存商品管理",
+                            "perm" => "goods.main"
+                        ),
+                        array(
+                            "title" => "仓库中",
+                            "route" => "stock",
+                            "desc" => "仓库中商品管理",
+                            "perm" => "goods.main"
+                        ),
+                        array(
+                            "title" => "回收站",
+                            "route" => "cycle",
+                            "desc" => "回收站/已删除商品管理",
+                            "perm" => "goods.main"
+                        ),
+                        array(
+                            "title" => "待审核",
+                            "route" => "verify",
+                            "desc" => "多商户待审核商品管理",
+                            "perm" => "goods.main"
+                        ),
+                        array(
+                            "title" => "商品分类",
+                            "route" => "category"
+                        ),
+                        array(
+                            "title" => "商品组",
+                            "route" => "group"
+                        ),
+                        array(
+                            "title" => "标签管理",
+                            "route" => "label",
+                            "extend" => "goods.label.style"
+                        )
 //                    array(
 //                        "title" => "虚拟卡密",
 //                        "route" => "virtual",
@@ -678,7 +692,7 @@ class System_EweiShopV2Model {
 //                            ) ,
 //                            array(
 //                                "title" => "卡密分类",
-//                                "route" => "category"
+//                                "route" => "job"
 //                            ) ,
 //                            array(
 //                                "title" => "设置",
@@ -686,26 +700,26 @@ class System_EweiShopV2Model {
 //                            )
 //                        )
 //                    )
-                )
-            ) ,
-            "member" => array(
-                "title" => "会员",
-                "subtitle" => "会员管理",
-                "icon" => "member",
-                "items" => array(
-                    array(
-                        "title" => "会员列表",
-                        "route" => "list",
-                        "route_in" => true
-                    ) ,
-                    array(
-                        "title" => "会员等级",
-                        "route" => "level"
-                    ) ,
-                    array(
-                        "title" => "标签组",
-                        "route" => "group"
                     )
+                ),
+                "member" => array(
+                    "title" => "会员",
+                    "subtitle" => "会员管理",
+                    "icon" => "member",
+                    "items" => array(
+                        array(
+                            "title" => "会员列表",
+                            "route" => "list",
+                            "route_in" => true
+                        ),
+                        array(
+                            "title" => "会员等级",
+                            "route" => "level"
+                        ),
+                        array(
+                            "title" => "标签组",
+                            "route" => "group"
+                        )
 //                    array(
 //                        "title" => "排行榜设置",
 //                        "route" => "rank",
@@ -720,128 +734,128 @@ class System_EweiShopV2Model {
 //                            "member.card.activationset"
 //                        )
 //                    )
-                )
-            ) ,
-            "order" => array(
-                "title" => "订单",
-                "subtitle" => "订单管理",
-                "icon" => "order",
-                "items" => array(
-                    array(
-                        "title" => "待发货",
-                        "route" => "list.status1",
-                        "desc" => "待发货订单管理"
-                    ) ,
-                    array(
-                        "title" => "待收货",
-                        "route" => "list.status2",
-                        "desc" => "待收货订单管理"
-                    ) ,
-                    array(
-                        "title" => "待付款",
-                        "route" => "list.status0",
-                        "desc" => "待付款订单管理"
-                    ) ,
-                    array(
-                        "title" => "已完成",
-                        "route" => "list.status3",
-                        "desc" => "已完成订单管理"
-                    ) ,
-                    array(
-                        "title" => "已关闭",
-                        "route" => "list.status_1",
-                        "desc" => "已关闭订单管理"
-                    ) ,
-                    array(
-                        "title" => "全部订单",
-                        "route" => "list",
-                        "desc" => "全部订单列表",
-                        "permmust" => "order.list.main"
-                    ) ,
-                    array(
-                        "title" => "维权",
-                        "route" => "list",
-                        "items" => array(
-                            array(
-                                "title" => "维权申请",
-                                "route" => "status4",
-                                "desc" => "维权申请管理"
-                            ) ,
-                            array(
-                                "title" => "维权完成",
-                                "route" => "status5",
-                                "desc" => "维权完成管理"
+                    )
+                ),
+                "order" => array(
+                    "title" => "订单",
+                    "subtitle" => "订单管理",
+                    "icon" => "order",
+                    "items" => array(
+                        array(
+                            "title" => "待发货",
+                            "route" => "list.status1",
+                            "desc" => "待发货订单管理"
+                        ),
+                        array(
+                            "title" => "待收货",
+                            "route" => "list.status2",
+                            "desc" => "待收货订单管理"
+                        ),
+                        array(
+                            "title" => "待付款",
+                            "route" => "list.status0",
+                            "desc" => "待付款订单管理"
+                        ),
+                        array(
+                            "title" => "已完成",
+                            "route" => "list.status3",
+                            "desc" => "已完成订单管理"
+                        ),
+                        array(
+                            "title" => "已关闭",
+                            "route" => "list.status_1",
+                            "desc" => "已关闭订单管理"
+                        ),
+                        array(
+                            "title" => "全部订单",
+                            "route" => "list",
+                            "desc" => "全部订单列表",
+                            "permmust" => "order.list.main"
+                        ),
+                        array(
+                            "title" => "维权",
+                            "route" => "list",
+                            "items" => array(
+                                array(
+                                    "title" => "维权申请",
+                                    "route" => "status4",
+                                    "desc" => "维权申请管理"
+                                ),
+                                array(
+                                    "title" => "维权完成",
+                                    "route" => "status5",
+                                    "desc" => "维权完成管理"
+                                )
                             )
-                        )
-                    ) ,
-                    array(
-                        "title" => "工具",
-                        "items" => array(
-                            array(
-                                "title" => "自定义导出",
-                                "route" => "export",
-                                "desc" => "订单自定义导出"
-                            ) ,
-                            array(
-                                "title" => "批量发货",
-                                "route" => "batchsend",
-                                "desc" => "订单批量发货"
+                        ),
+                        array(
+                            "title" => "工具",
+                            "items" => array(
+                                array(
+                                    "title" => "自定义导出",
+                                    "route" => "export",
+                                    "desc" => "订单自定义导出"
+                                ),
+                                array(
+                                    "title" => "批量发货",
+                                    "route" => "batchsend",
+                                    "desc" => "订单批量发货"
+                                )
                             )
                         )
                     )
-                )
-            ) ,
-//            "store" => array(
-//                "title" => "门店",
-//                "subtitle" => "门店",
-//                "icon" => "mendianguanli",
-//                "items" => array(
-//                    array(
-//                        "title" => "门店管理",
-//                        "items" => array(
-//                            array(
-//                                "title" => "门店管理",
-//                                "route" => "",
-//                                "extends" => array(
-//                                    "store.diypage.settings",
-//                                    "store.diypage.page",
-//                                    "store.goods",
-//                                    "store.goods.goodsoption"
-//                                )
-//                            ) ,
-//                            array(
-//                                "title" => "店员管理",
-//                                "route" => "saler"
-//                            ) ,
-//                            array(
-//                                "title" => "关键词设置",
-//                                "route" => "set"
-//                            )
-//                        )
-//                    ) ,
-//                    array(
-//                        "title" => "门店商品管理",
-//                        "items" => array(
-//                            array(
-//                                "title" => "记次时商品管理",
-//                                "route" => "verifygoods",
-//                                "extends" => array(
-//                                    "store.verifygoods.detail",
-//                                    "store.verifygoods.verifygoodslog"
-//                                )
-//                            )
-//                        )
-//                    ) ,
-//                    array(
-//                        "title" => "记次时商品统计",
-//                        "route" => "verify.log"
-//                    ) ,
-//                    array(
-//                        "title" => "核销订单记录",
-//                        "route" => "verifyorder.log"
-//                    )
-//                )
-//            ) ,
+                ),
+                "store" => array(
+                    "title" => "门店",
+                    "subtitle" => "门店",
+                    "icon" => "mendianguanli",
+                    "items" => array(
+                        array(
+                            "title" => "门店管理",
+                            "items" => array(
+                                array(
+                                    "title" => "门店管理",
+                                    "route" => "",
+                                    "extends" => array(
+                                        "store.diypage.settings",
+                                        "store.diypage.page",
+                                        "store.goods",
+                                        "store.goods.goodsoption"
+                                    )
+                                ),
+                                array(
+                                    "title" => "店员管理",
+                                    "route" => "saler"
+                                ),
+                                array(
+                                    "title" => "关键词设置",
+                                    "route" => "set"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "门店商品管理",
+                            "items" => array(
+                                array(
+                                    "title" => "记次时商品管理",
+                                    "route" => "verifygoods",
+                                    "extends" => array(
+                                        "store.verifygoods.detail",
+                                        "store.verifygoods.verifygoodslog"
+                                    )
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "记次时商品统计",
+                            "route" => "verify.log"
+                        ),
+                        array(
+                            "title" => "核销订单记录",
+                            "route" => "verifyorder.log"
+                        )
+                    )
+                ),
 //            "sale" => array(
 //                "title" => "营销",
 //                "subtitle" => "营销设置",
@@ -936,7 +950,7 @@ class System_EweiShopV2Model {
 //                            ) ,
 //                            array(
 //                                "title" => "分类管理",
-//                                "route" => "category",
+//                                "route" => "job",
 //                                "desc" => "优惠券分类管理"
 //                            ) ,
 //                            array(
@@ -967,115 +981,115 @@ class System_EweiShopV2Model {
 //                    )
 //                )
 //            ) ,
-            "finance" => array(
-                "title" => "财务",
-                "subtitle" => "财务管理",
-                "icon" => "31",
-                "items" => array(
-                    array(
-                        "title" => "财务",
-                        "route" => "log",
-                        "items" => array(
-                            array(
-                                "title" => "充值记录",
-                                "route" => "recharge"
-                            ) ,
-                            array(
-                                "title" => "提现申请",
-                                "route" => "withdraw"
+                "finance" => array(
+                    "title" => "财务",
+                    "subtitle" => "财务管理",
+                    "icon" => "31",
+                    "items" => array(
+                        array(
+                            "title" => "财务",
+                            "route" => "log",
+                            "items" => array(
+                                array(
+                                    "title" => "充值记录",
+                                    "route" => "recharge"
+                                ),
+                                array(
+                                    "title" => "提现申请",
+                                    "route" => "withdraw"
+                                )
                             )
-                        )
-                    ) ,
-                    array(
-                        "title" => "明细",
-                        "route" => "credit",
-                        "items" => array(
-                            array(
-                                "title" => "积分明细",
-                                "route" => "credit1"
-                            ) ,
-                            array(
-                                "title" => "余额明细",
-                                "route" => "credit2"
+                        ),
+                        array(
+                            "title" => "明细",
+                            "route" => "credit",
+                            "items" => array(
+                                array(
+                                    "title" => "积分明细",
+                                    "route" => "credit1"
+                                ),
+                                array(
+                                    "title" => "余额明细",
+                                    "route" => "credit2"
+                                )
                             )
-                        )
-                    ) ,
-                    array(
-                        "title" => "对账单",
-                        "items" => array(
-                            array(
-                                "title" => "下载对账单",
-                                "route" => "downloadbill"
-                            )
-                        )
-                    )
-                )
-            ) ,
-            "statistics" => array(
-                "title" => "数据",
-                "subtitle" => "数据统计",
-                "icon" => "statistics",
-                "items" => array(
-                    array(
-                        "title" => "销售统计",
-                        "items" => array(
-                            array(
-                                "title" => "销售统计",
-                                "route" => "sale"
-                            ) ,
-                            array(
-                                "title" => "销售指标",
-                                "route" => "sale_analysis"
-                            ) ,
-                            array(
-                                "title" => "订单统计",
-                                "route" => "order"
-                            )
-                        )
-                    ) ,
-                    array(
-                        "title" => "商品统计",
-                        "items" => array(
-                            array(
-                                "title" => "销售明细",
-                                "route" => "goods"
-                            ) ,
-                            array(
-                                "title" => "销售排行",
-                                "route" => "goods_rank"
-                            ) ,
-                            array(
-                                "title" => "销售转化率",
-                                "route" => "goods_trans"
-                            )
-                        )
-                    ) ,
-                    array(
-                        "title" => "会员统计",
-                        "items" => array(
-                            array(
-                                "title" => "消费排行",
-                                "route" => "member_cost"
-                            ) ,
-                            array(
-                                "title" => "增长趋势",
-                                "route" => "member_increase"
+                        ),
+                        array(
+                            "title" => "对账单",
+                            "items" => array(
+                                array(
+                                    "title" => "下载对账单",
+                                    "route" => "downloadbill"
+                                )
                             )
                         )
                     )
-                )
-            ) ,
+                ),
+                "statistics" => array(
+                    "title" => "数据",
+                    "subtitle" => "数据统计",
+                    "icon" => "statistics",
+                    "items" => array(
+                        array(
+                            "title" => "销售统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售统计",
+                                    "route" => "sale"
+                                ),
+                                array(
+                                    "title" => "销售指标",
+                                    "route" => "sale_analysis"
+                                ),
+                                array(
+                                    "title" => "订单统计",
+                                    "route" => "order"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "商品统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售明细",
+                                    "route" => "goods"
+                                ),
+                                array(
+                                    "title" => "销售排行",
+                                    "route" => "goods_rank"
+                                ),
+                                array(
+                                    "title" => "销售转化率",
+                                    "route" => "goods_trans"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "会员统计",
+                            "items" => array(
+                                array(
+                                    "title" => "消费排行",
+                                    "route" => "member_cost"
+                                ),
+                                array(
+                                    "title" => "增长趋势",
+                                    "route" => "member_increase"
+                                )
+                            )
+                        )
+                    )
+                ),
 //            "app" => $this->pluginMenu("app") ,
-            "plugins" => array(
-                "title" => "应用",
-                "subtitle" => "应用管理",
-                "icon" => "plugins"
-            ) ,
-            "sysset" => array(
-                "title" => "设置",
-                "subtitle" => "商城设置",
-                "icon" => "sysset",
-                "items" => array(
+                "plugins" => array(
+                    "title" => "应用",
+                    "subtitle" => "应用管理",
+                    "icon" => "plugins"
+                ),
+                "sysset" => array(
+                    "title" => "设置",
+                    "subtitle" => "商城设置",
+                    "icon" => "sysset",
+                    "items" => array(
 //                    array(
 //                        "title" => "商城",
 //                        "items" => array(
@@ -1103,23 +1117,23 @@ class System_EweiShopV2Model {
 //                            )
 //                        )
 //                    ) ,
-                    array(
-                        "title" => "交易",
-                        "items" => array(
-                            array(
-                                "title" => "交易设置",
-                                "route" => "trade"
-                            ) ,
-                            array(
-                                "title" => "支付设置",
-                                "route" => "payset"
-                            ) ,
-                            array(
-                                "title" => "支付管理",
-                                "route" => "payment"
+                        array(
+                            "title" => "交易",
+                            "items" => array(
+                                array(
+                                    "title" => "交易设置",
+                                    "route" => "trade"
+                                ),
+                                array(
+                                    "title" => "支付设置",
+                                    "route" => "payset"
+                                ),
+                                array(
+                                    "title" => "支付管理",
+                                    "route" => "payment"
+                                )
                             )
-                        )
-                    ) ,
+                        ),
 //                    array(
 //                        "title" => "消息推送",
 //                        "items" => array(
@@ -1142,21 +1156,21 @@ class System_EweiShopV2Model {
 //                            )
 //                        )
 //                    ) ,
-                    array(
-                        "title" => "短信配置",
-                        "route" => "sms",
-                        "iscom" => "sms",
-                        "items" => array(
-                            array(
-                                "title" => "短信消息库",
-                                "route" => "temp"
-                            ) ,
-                            array(
-                                "title" => "短信接口设置",
-                                "route" => "set"
+                        array(
+                            "title" => "短信配置",
+                            "route" => "sms",
+                            "iscom" => "sms",
+                            "items" => array(
+                                array(
+                                    "title" => "短信消息库",
+                                    "route" => "temp"
+                                ),
+                                array(
+                                    "title" => "短信接口设置",
+                                    "route" => "set"
+                                )
                             )
-                        )
-                    ) ,
+                        ),
 //                    array(
 //                        "title" => "小票打印机",
 //                        "route" => "printer",
@@ -1187,7 +1201,7 @@ class System_EweiShopV2Model {
 //                            ) ,
 //                            array(
 //                                "title" => "分类层级",
-//                                "route" => "category"
+//                                "route" => "job"
 //                            ) ,
 //                            array(
 //                                "title" => "联系方式",
@@ -1229,39 +1243,856 @@ class System_EweiShopV2Model {
 //                            )
 //                        )
 //                    ) ,
-                    array(
-                        "title" => "入口",
-                        "route" => "cover",
-                        "items" => array(
-                            array(
-                                "title" => "商城入口",
-                                "route" => "shop"
-                            ) ,
-                            array(
-                                "title" => "会员中心入口",
-                                "route" => "member"
-                            ) ,
-                            array(
-                                "title" => "订单入口",
-                                "route" => "order"
-                            ) ,
-                            array(
-                                "title" => "收藏入口",
-                                "route" => "favorite"
-                            ) ,
-                            array(
-                                "title" => "购物车入口",
-                                "route" => "cart"
-                            ) ,
-                            array(
-                                "title" => "优惠券入口",
-                                "route" => "coupon"
+                        array(
+                            "title" => "入口",
+                            "route" => "cover",
+                            "items" => array(
+                                array(
+                                    "title" => "商城入口",
+                                    "route" => "shop"
+                                ),
+                                array(
+                                    "title" => "会员中心入口",
+                                    "route" => "member"
+                                ),
+                                array(
+                                    "title" => "订单入口",
+                                    "route" => "order"
+                                ),
+                                array(
+                                    "title" => "收藏入口",
+                                    "route" => "favorite"
+                                ),
+                                array(
+                                    "title" => "购物车入口",
+                                    "route" => "cart"
+                                ),
+                                array(
+                                    "title" => "优惠券入口",
+                                    "route" => "coupon"
+                                )
                             )
                         )
                     )
                 )
-            )
-        );
+            );
+        }
+
+        if ($_W['user']['jobid'] == 2){
+            $shopmenu = array(
+                "admins" => array(
+                    "title" => "管理",
+                    "subtitle" => "管理员管理",
+                    "icon" => "store",
+                    "items" => array(
+                        array(
+                            "title" => "管理员",
+                            "extend" => "admins.list",
+                            "perm" => "amdins.main",
+                            "desc" => "管理员管理"
+                        ),
+                        array(
+                            "title" => "权限",
+                            "route" => "job",
+                            "desc" => "权限管理"
+                        )
+                    )
+                ),
+
+                "member" => array(
+                    "title" => "会员",
+                    "subtitle" => "会员管理",
+                    "icon" => "member",
+                    "items" => array(
+                        array(
+                            "title" => "会员列表",
+                            "route" => "list",
+                            "route_in" => true
+                        ),
+                        array(
+                            "title" => "会员等级",
+                            "route" => "level"
+                        ),
+                        array(
+                            "title" => "标签组",
+                            "route" => "group"
+                        )
+                    )),
+                "order" => array(
+                    "title" => "订单",
+                    "subtitle" => "订单管理",
+                    "icon" => "order",
+                    "items" => array(
+                        array(
+                            "title" => "待发货",
+                            "route" => "list.status1",
+                            "desc" => "待发货订单管理"
+                        ),
+                        array(
+                            "title" => "待收货",
+                            "route" => "list.status2",
+                            "desc" => "待收货订单管理"
+                        ),
+                        array(
+                            "title" => "待付款",
+                            "route" => "list.status0",
+                            "desc" => "待付款订单管理"
+                        ),
+                        array(
+                            "title" => "已完成",
+                            "route" => "list.status3",
+                            "desc" => "已完成订单管理"
+                        ),
+                        array(
+                            "title" => "已关闭",
+                            "route" => "list.status_1",
+                            "desc" => "已关闭订单管理"
+                        ),
+                        array(
+                            "title" => "全部订单",
+                            "route" => "list",
+                            "desc" => "全部订单列表",
+                            "permmust" => "order.list.main"
+                        ),
+                        array(
+                            "title" => "维权",
+                            "route" => "list",
+                            "items" => array(
+                                array(
+                                    "title" => "维权申请",
+                                    "route" => "status4",
+                                    "desc" => "维权申请管理"
+                                ),
+                                array(
+                                    "title" => "维权完成",
+                                    "route" => "status5",
+                                    "desc" => "维权完成管理"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "工具",
+                            "items" => array(
+                                array(
+                                    "title" => "自定义导出",
+                                    "route" => "export",
+                                    "desc" => "订单自定义导出"
+                                ),
+                                array(
+                                    "title" => "批量发货",
+                                    "route" => "batchsend",
+                                    "desc" => "订单批量发货"
+                                )
+                            )
+                        )
+                    )
+                ),
+                "store" => array(
+                    "title" => "门店",
+                    "subtitle" => "门店",
+                    "icon" => "mendianguanli",
+                    "items" => array(
+                        array(
+                            "title" => "门店管理",
+                            "items" => array(
+                                array(
+                                    "title" => "门店管理",
+                                    "route" => "",
+                                    "extends" => array(
+                                        "store.diypage.settings",
+                                        "store.diypage.page",
+                                        "store.goods",
+                                        "store.goods.goodsoption"
+                                    )
+                                ),
+                                array(
+                                    "title" => "店员管理",
+                                    "route" => "saler"
+                                ),
+                                array(
+                                    "title" => "关键词设置",
+                                    "route" => "set"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "门店商品管理",
+                            "items" => array(
+                                array(
+                                    "title" => "记次时商品管理",
+                                    "route" => "verifygoods",
+                                    "extends" => array(
+                                        "store.verifygoods.detail",
+                                        "store.verifygoods.verifygoodslog"
+                                    )
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "记次时商品统计",
+                            "route" => "verify.log"
+                        ),
+                        array(
+                            "title" => "核销订单记录",
+                            "route" => "verifyorder.log"
+                        )
+                    )
+                ),
+                "statistics" => array(
+                    "title" => "数据",
+                    "subtitle" => "数据统计",
+                    "icon" => "statistics",
+                    "items" => array(
+                        array(
+                            "title" => "销售统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售统计",
+                                    "route" => "sale"
+                                ),
+                                array(
+                                    "title" => "销售指标",
+                                    "route" => "sale_analysis"
+                                ),
+                                array(
+                                    "title" => "订单统计",
+                                    "route" => "order"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "商品统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售明细",
+                                    "route" => "goods"
+                                ),
+                                array(
+                                    "title" => "销售排行",
+                                    "route" => "goods_rank"
+                                ),
+                                array(
+                                    "title" => "销售转化率",
+                                    "route" => "goods_trans"
+                                )
+                            )
+                        ),
+                    )
+                )
+            );
+        }
+
+        if ($_W['user']['jobid'] == 3){
+            $shopmenu = array(
+                "admins" => array(
+                    "title" => "管理",
+                    "subtitle" => "管理员管理",
+                    "icon" => "store",
+                    "items" => array(
+                        array(
+                            "title" => "管理员",
+                            "extend" => "admins.list",
+                            "perm" => "amdins.main",
+                            "desc" => "管理员管理"
+                        ),
+                        array(
+                            "title" => "权限",
+                            "route" => "job",
+                            "desc" => "权限管理"
+                        )
+                    )
+                ),
+
+                "member" => array(
+                    "title" => "会员",
+                    "subtitle" => "会员管理",
+                    "icon" => "member",
+                    "items" => array(
+                        array(
+                            "title" => "会员列表",
+                            "route" => "list",
+                            "route_in" => true
+                        ),
+                        array(
+                            "title" => "会员等级",
+                            "route" => "level"
+                        ),
+                        array(
+                            "title" => "标签组",
+                            "route" => "group"
+                        )
+                    )),
+                "order" => array(
+                    "title" => "订单",
+                    "subtitle" => "订单管理",
+                    "icon" => "order",
+                    "items" => array(
+                        array(
+                            "title" => "待发货",
+                            "route" => "list.status1",
+                            "desc" => "待发货订单管理"
+                        ),
+                        array(
+                            "title" => "待收货",
+                            "route" => "list.status2",
+                            "desc" => "待收货订单管理"
+                        ),
+                        array(
+                            "title" => "待付款",
+                            "route" => "list.status0",
+                            "desc" => "待付款订单管理"
+                        ),
+                        array(
+                            "title" => "已完成",
+                            "route" => "list.status3",
+                            "desc" => "已完成订单管理"
+                        ),
+                        array(
+                            "title" => "已关闭",
+                            "route" => "list.status_1",
+                            "desc" => "已关闭订单管理"
+                        ),
+                        array(
+                            "title" => "全部订单",
+                            "route" => "list",
+                            "desc" => "全部订单列表",
+                            "permmust" => "order.list.main"
+                        ),
+                        array(
+                            "title" => "维权",
+                            "route" => "list",
+                            "items" => array(
+                                array(
+                                    "title" => "维权申请",
+                                    "route" => "status4",
+                                    "desc" => "维权申请管理"
+                                ),
+                                array(
+                                    "title" => "维权完成",
+                                    "route" => "status5",
+                                    "desc" => "维权完成管理"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "工具",
+                            "items" => array(
+                                array(
+                                    "title" => "自定义导出",
+                                    "route" => "export",
+                                    "desc" => "订单自定义导出"
+                                ),
+                                array(
+                                    "title" => "批量发货",
+                                    "route" => "batchsend",
+                                    "desc" => "订单批量发货"
+                                )
+                            )
+                        )
+                    )
+                ),
+                "store" => array(
+                    "title" => "门店",
+                    "subtitle" => "门店",
+                    "icon" => "mendianguanli",
+                    "items" => array(
+                        array(
+                            "title" => "门店管理",
+                            "items" => array(
+                                array(
+                                    "title" => "门店管理",
+                                    "route" => "",
+                                    "extends" => array(
+                                        "store.diypage.settings",
+                                        "store.diypage.page",
+                                        "store.goods",
+                                        "store.goods.goodsoption"
+                                    )
+                                ),
+                                array(
+                                    "title" => "店员管理",
+                                    "route" => "saler"
+                                ),
+                                array(
+                                    "title" => "关键词设置",
+                                    "route" => "set"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "门店商品管理",
+                            "items" => array(
+                                array(
+                                    "title" => "记次时商品管理",
+                                    "route" => "verifygoods",
+                                    "extends" => array(
+                                        "store.verifygoods.detail",
+                                        "store.verifygoods.verifygoodslog"
+                                    )
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "记次时商品统计",
+                            "route" => "verify.log"
+                        ),
+                        array(
+                            "title" => "核销订单记录",
+                            "route" => "verifyorder.log"
+                        )
+                    )
+                ),
+                "statistics" => array(
+                    "title" => "数据",
+                    "subtitle" => "数据统计",
+                    "icon" => "statistics",
+                    "items" => array(
+                        array(
+                            "title" => "销售统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售统计",
+                                    "route" => "sale"
+                                ),
+                                array(
+                                    "title" => "销售指标",
+                                    "route" => "sale_analysis"
+                                ),
+                                array(
+                                    "title" => "订单统计",
+                                    "route" => "order"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "商品统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售明细",
+                                    "route" => "goods"
+                                ),
+                                array(
+                                    "title" => "销售排行",
+                                    "route" => "goods_rank"
+                                ),
+                                array(
+                                    "title" => "销售转化率",
+                                    "route" => "goods_trans"
+                                )
+                            )
+                        ),
+                    )
+                )
+            );
+        }
+        if ($_W['user']['jobid'] == 4){
+            $shopmenu = array(
+                "admins" => array(
+                    "title" => "管理",
+                    "subtitle" => "管理员管理",
+                    "icon" => "store",
+                    "items" => array(
+                        array(
+                            "title" => "管理员",
+                            "extend" => "admins.list",
+                            "perm" => "amdins.main",
+                            "desc" => "管理员管理"
+                        ),
+                        array(
+                            "title" => "权限",
+                            "route" => "job",
+                            "desc" => "权限管理"
+                        )
+                    )
+                ),
+
+                "member" => array(
+                    "title" => "会员",
+                    "subtitle" => "会员管理",
+                    "icon" => "member",
+                    "items" => array(
+                        array(
+                            "title" => "会员列表",
+                            "route" => "list",
+                            "route_in" => true
+                        ),
+                        array(
+                            "title" => "会员等级",
+                            "route" => "level"
+                        ),
+                        array(
+                            "title" => "标签组",
+                            "route" => "group"
+                        )
+                    )),
+                "order" => array(
+                    "title" => "订单",
+                    "subtitle" => "订单管理",
+                    "icon" => "order",
+                    "items" => array(
+                        array(
+                            "title" => "待发货",
+                            "route" => "list.status1",
+                            "desc" => "待发货订单管理"
+                        ),
+                        array(
+                            "title" => "待收货",
+                            "route" => "list.status2",
+                            "desc" => "待收货订单管理"
+                        ),
+                        array(
+                            "title" => "待付款",
+                            "route" => "list.status0",
+                            "desc" => "待付款订单管理"
+                        ),
+                        array(
+                            "title" => "已完成",
+                            "route" => "list.status3",
+                            "desc" => "已完成订单管理"
+                        ),
+                        array(
+                            "title" => "已关闭",
+                            "route" => "list.status_1",
+                            "desc" => "已关闭订单管理"
+                        ),
+                        array(
+                            "title" => "全部订单",
+                            "route" => "list",
+                            "desc" => "全部订单列表",
+                            "permmust" => "order.list.main"
+                        ),
+                        array(
+                            "title" => "维权",
+                            "route" => "list",
+                            "items" => array(
+                                array(
+                                    "title" => "维权申请",
+                                    "route" => "status4",
+                                    "desc" => "维权申请管理"
+                                ),
+                                array(
+                                    "title" => "维权完成",
+                                    "route" => "status5",
+                                    "desc" => "维权完成管理"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "工具",
+                            "items" => array(
+                                array(
+                                    "title" => "自定义导出",
+                                    "route" => "export",
+                                    "desc" => "订单自定义导出"
+                                ),
+                                array(
+                                    "title" => "批量发货",
+                                    "route" => "batchsend",
+                                    "desc" => "订单批量发货"
+                                )
+                            )
+                        )
+                    )
+                ),
+                "store" => array(
+                    "title" => "门店",
+                    "subtitle" => "门店",
+                    "icon" => "mendianguanli",
+                    "items" => array(
+                        array(
+                            "title" => "门店管理",
+                            "items" => array(
+                                array(
+                                    "title" => "门店管理",
+                                    "route" => "",
+                                    "extends" => array(
+                                        "store.diypage.settings",
+                                        "store.diypage.page",
+                                        "store.goods",
+                                        "store.goods.goodsoption"
+                                    )
+                                ),
+                                array(
+                                    "title" => "店员管理",
+                                    "route" => "saler"
+                                ),
+                                array(
+                                    "title" => "关键词设置",
+                                    "route" => "set"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "门店商品管理",
+                            "items" => array(
+                                array(
+                                    "title" => "记次时商品管理",
+                                    "route" => "verifygoods",
+                                    "extends" => array(
+                                        "store.verifygoods.detail",
+                                        "store.verifygoods.verifygoodslog"
+                                    )
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "记次时商品统计",
+                            "route" => "verify.log"
+                        ),
+                        array(
+                            "title" => "核销订单记录",
+                            "route" => "verifyorder.log"
+                        )
+                    )
+                ),
+                "statistics" => array(
+                    "title" => "数据",
+                    "subtitle" => "数据统计",
+                    "icon" => "statistics",
+                    "items" => array(
+                        array(
+                            "title" => "销售统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售统计",
+                                    "route" => "sale"
+                                ),
+                                array(
+                                    "title" => "销售指标",
+                                    "route" => "sale_analysis"
+                                ),
+                                array(
+                                    "title" => "订单统计",
+                                    "route" => "order"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "商品统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售明细",
+                                    "route" => "goods"
+                                ),
+                                array(
+                                    "title" => "销售排行",
+                                    "route" => "goods_rank"
+                                ),
+                                array(
+                                    "title" => "销售转化率",
+                                    "route" => "goods_trans"
+                                )
+                            )
+                        ),
+                    )
+                )
+            );
+        }
+
+        if ($_W['user']['jobid'] == 5){
+            $shopmenu = array(
+                "admins" => array(
+                    "title" => "管理",
+                    "subtitle" => "管理员管理",
+                    "icon" => "store",
+                    "items" => array(
+                        array(
+                            "title" => "管理员",
+                            "extend" => "admins.list",
+                            "perm" => "amdins.main",
+                            "desc" => "管理员管理"
+                        ),
+                        array(
+                            "title" => "权限",
+                            "route" => "job",
+                            "desc" => "权限管理"
+                        )
+                    )
+                ),
+
+                "member" => array(
+                    "title" => "会员",
+                    "subtitle" => "会员管理",
+                    "icon" => "member",
+                    "items" => array(
+                        array(
+                            "title" => "会员列表",
+                            "route" => "list",
+                            "route_in" => true
+                        ),
+                        array(
+                            "title" => "会员等级",
+                            "route" => "level"
+                        ),
+                        array(
+                            "title" => "标签组",
+                            "route" => "group"
+                        )
+                    )),
+                "order" => array(
+                    "title" => "订单",
+                    "subtitle" => "订单管理",
+                    "icon" => "order",
+                    "items" => array(
+                        array(
+                            "title" => "待发货",
+                            "route" => "list.status1",
+                            "desc" => "待发货订单管理"
+                        ),
+                        array(
+                            "title" => "待收货",
+                            "route" => "list.status2",
+                            "desc" => "待收货订单管理"
+                        ),
+                        array(
+                            "title" => "待付款",
+                            "route" => "list.status0",
+                            "desc" => "待付款订单管理"
+                        ),
+                        array(
+                            "title" => "已完成",
+                            "route" => "list.status3",
+                            "desc" => "已完成订单管理"
+                        ),
+                        array(
+                            "title" => "已关闭",
+                            "route" => "list.status_1",
+                            "desc" => "已关闭订单管理"
+                        ),
+                        array(
+                            "title" => "全部订单",
+                            "route" => "list",
+                            "desc" => "全部订单列表",
+                            "permmust" => "order.list.main"
+                        ),
+                        array(
+                            "title" => "维权",
+                            "route" => "list",
+                            "items" => array(
+                                array(
+                                    "title" => "维权申请",
+                                    "route" => "status4",
+                                    "desc" => "维权申请管理"
+                                ),
+                                array(
+                                    "title" => "维权完成",
+                                    "route" => "status5",
+                                    "desc" => "维权完成管理"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "工具",
+                            "items" => array(
+                                array(
+                                    "title" => "自定义导出",
+                                    "route" => "export",
+                                    "desc" => "订单自定义导出"
+                                ),
+                                array(
+                                    "title" => "批量发货",
+                                    "route" => "batchsend",
+                                    "desc" => "订单批量发货"
+                                )
+                            )
+                        )
+                    )
+                ),
+                "store" => array(
+                    "title" => "门店",
+                    "subtitle" => "门店",
+                    "icon" => "mendianguanli",
+                    "items" => array(
+                        array(
+                            "title" => "门店管理",
+                            "items" => array(
+                                array(
+                                    "title" => "门店管理",
+                                    "route" => "",
+                                    "extends" => array(
+                                        "store.diypage.settings",
+                                        "store.diypage.page",
+                                        "store.goods",
+                                        "store.goods.goodsoption"
+                                    )
+                                ),
+                                array(
+                                    "title" => "店员管理",
+                                    "route" => "saler"
+                                ),
+                                array(
+                                    "title" => "关键词设置",
+                                    "route" => "set"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "门店商品管理",
+                            "items" => array(
+                                array(
+                                    "title" => "记次时商品管理",
+                                    "route" => "verifygoods",
+                                    "extends" => array(
+                                        "store.verifygoods.detail",
+                                        "store.verifygoods.verifygoodslog"
+                                    )
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "记次时商品统计",
+                            "route" => "verify.log"
+                        ),
+                        array(
+                            "title" => "核销订单记录",
+                            "route" => "verifyorder.log"
+                        )
+                    )
+                ),
+                "statistics" => array(
+                    "title" => "数据",
+                    "subtitle" => "数据统计",
+                    "icon" => "statistics",
+                    "items" => array(
+                        array(
+                            "title" => "销售统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售统计",
+                                    "route" => "sale"
+                                ),
+                                array(
+                                    "title" => "销售指标",
+                                    "route" => "sale_analysis"
+                                ),
+                                array(
+                                    "title" => "订单统计",
+                                    "route" => "order"
+                                )
+                            )
+                        ),
+                        array(
+                            "title" => "商品统计",
+                            "items" => array(
+                                array(
+                                    "title" => "销售明细",
+                                    "route" => "goods"
+                                ),
+                                array(
+                                    "title" => "销售排行",
+                                    "route" => "goods_rank"
+                                ),
+                                array(
+                                    "title" => "销售转化率",
+                                    "route" => "goods_trans"
+                                )
+                            )
+                        ),
+                    )
+                )
+            );
+        }
+
         if (!p("app")) {
             unset($shopmenu["app"]);
         }
@@ -1285,7 +2116,9 @@ class System_EweiShopV2Model {
         }
         return $shopmenu;
     }
-    protected function systemMenu() {
+
+    protected function systemMenu()
+    {
         return array(
             "plugin" => array(
                 "title" => "应用",
@@ -1294,27 +2127,27 @@ class System_EweiShopV2Model {
                 "items" => array(
                     array(
                         "title" => "应用信息"
-                    ) ,
+                    ),
                     array(
                         "title" => "组件信息",
                         "route" => "coms"
-                    ) ,
+                    ),
                     array(
                         "title" => "公众号权限",
                         "route" => "perm"
-                    ) ,
+                    ),
                     array(
                         "title" => "站点小程序",
                         "route" => "wxapp",
                         "route" => "wxapp",
                         "isplugin" => "app"
-                    ) ,
+                    ),
                     array(
                         'title' => '商家管理程序',
                         'route' => 'release1',
                         'route' => 'release1',
                         'isplugin' => 'app'
-                    ) ,
+                    ),
                     array(
                         "title" => "应用授权管理",
                         "isplugin" => "grant",
@@ -1322,23 +2155,23 @@ class System_EweiShopV2Model {
                             array(
                                 "title" => "幻灯片管理",
                                 "route" => "pluginadv"
-                            ) ,
+                            ),
                             array(
                                 "title" => "授权应用管理",
                                 "route" => "pluginmanage"
-                            ) ,
+                            ),
                             array(
                                 "title" => "授权套餐管理",
                                 "route" => "pluginpackage"
-                            ) ,
+                            ),
                             array(
                                 "title" => "销售记录",
                                 "route" => "pluginsale"
-                            ) ,
+                            ),
                             array(
                                 "title" => "系统授权管理",
                                 "route" => "plugingrant"
-                            ) ,
+                            ),
                             array(
                                 "title" => "授权管理设置",
                                 "route" => "pluginsetting"
@@ -1346,7 +2179,7 @@ class System_EweiShopV2Model {
                         )
                     )
                 )
-            ) ,
+            ),
             "copyright" => array(
                 "title" => "版权",
                 "subtitle" => "版权设置",
@@ -1354,11 +2187,11 @@ class System_EweiShopV2Model {
                 "items" => array(
                     array(
                         "title" => "手机端"
-                    ) ,
+                    ),
                     array(
                         "title" => "管理端",
                         "route" => "manage"
-                    ) ,
+                    ),
                     array(
                         "title" => "公告管理",
                         "items" => array(
@@ -1369,7 +2202,7 @@ class System_EweiShopV2Model {
                         )
                     )
                 )
-            ) ,
+            ),
             "data" => array(
                 "title" => "数据",
                 "subtitle" => "数据管理",
@@ -1377,11 +2210,11 @@ class System_EweiShopV2Model {
                 "items" => array(
                     array(
                         "title" => "数据清理"
-                    ) ,
+                    ),
                     array(
                         "title" => "数据转移",
                         "route" => "transfer"
-                    ) ,
+                    ),
                     array(
                         "title" => "计划任务",
                         "items" => array(
@@ -1390,7 +2223,7 @@ class System_EweiShopV2Model {
                                 "route" => "task"
                             )
                         )
-                    ) ,
+                    ),
                     array(
                         "title" => "工具",
                         "items" => array(
@@ -1401,7 +2234,7 @@ class System_EweiShopV2Model {
                         )
                     )
                 )
-            ) ,
+            ),
             "site" => array(
                 "title" => "网站",
                 "subtitle" => "网站设置",
@@ -1412,51 +2245,51 @@ class System_EweiShopV2Model {
                         "items" => array(
                             array(
                                 "title" => "基本设置"
-                            ) ,
+                            ),
                             array(
                                 "title" => "幻灯片",
                                 "route" => "banner"
-                            ) ,
+                            ),
                             array(
                                 "title" => "案例分类",
                                 "route" => "casecategory"
-                            ) ,
+                            ),
                             array(
                                 "title" => "案例",
                                 "route" => "case"
-                            ) ,
+                            ),
                             array(
                                 "title" => "友情链接",
                                 "route" => "link"
                             )
                         )
-                    ) ,
+                    ),
                     array(
                         "title" => "文章",
                         "items" => array(
                             array(
                                 "title" => "文章分类",
-                                "route" => "category"
-                            ) ,
+                                "route" => "job"
+                            ),
                             array(
                                 "title" => "文章管理",
                                 "route" => "article"
                             )
                         )
-                    ) ,
+                    ),
                     array(
                         "title" => "内容",
                         "items" => array(
                             array(
                                 "title" => "内容分类",
                                 "route" => "companycategory"
-                            ) ,
+                            ),
                             array(
                                 "title" => "内容管理",
                                 "route" => "companyarticle"
                             )
                         )
-                    ) ,
+                    ),
                     array(
                         "title" => "留言板",
                         "items" => array(
@@ -1465,7 +2298,7 @@ class System_EweiShopV2Model {
                                 "route" => "guestbook"
                             )
                         )
-                    ) ,
+                    ),
                     array(
                         "title" => "设置",
                         "items" => array(
@@ -1476,7 +2309,7 @@ class System_EweiShopV2Model {
                         )
                     )
                 )
-            ) ,
+            ),
             "auth" => array(
                 "title" => "授权",
                 "subtitle" => "授权管理",
@@ -1484,17 +2317,19 @@ class System_EweiShopV2Model {
                 "items" => array(
                     array(
                         "title" => "授权管理"
-                    ) ,
+                    ),
                     array(
                         "title" => "系统更新",
                         "route" => "upgrade"
-                    ) ,
+                    ),
 
                 )
             )
         );
     }
-    protected function otherMenu() {
+
+    protected function otherMenu()
+    {
         return array(
             "perm" => array(
                 "title" => "权限",
@@ -1504,11 +2339,11 @@ class System_EweiShopV2Model {
                     array(
                         "title" => "角色管理",
                         "route" => "role"
-                    ) ,
+                    ),
                     array(
                         "title" => "操作员管理",
                         "route" => "user"
-                    ) ,
+                    ),
                     array(
                         "title" => "操作日志",
                         "route" => "log"
@@ -1517,7 +2352,9 @@ class System_EweiShopV2Model {
             )
         );
     }
-    protected function pluginMenu($plugin = array() , $key = "menu") {
+
+    protected function pluginMenu($plugin = array(), $key = "menu")
+    {
         global $_W;
         if (empty($plugin)) {
             return array();
@@ -1538,10 +2375,14 @@ class System_EweiShopV2Model {
         }
         return (empty($config[$key]) ? array() : $config[$key]);
     }
-    protected function allPluginMenu() {
+
+    protected function allPluginMenu()
+    {
         return array();
     }
-    protected function verifyParam($item = array()) {
+
+    protected function verifyParam($item = array())
+    {
         global $_GPC;
         if (empty($item["param"])) {
             return true;
@@ -1555,12 +2396,14 @@ class System_EweiShopV2Model {
         }
         return $return;
     }
-    protected function initRightMenu($routes) {
+
+    protected function initRightMenu($routes)
+    {
         global $_W;
         $return_arr = array(
             "system" => 0,
             "menu_title" => "",
-            "menu_items" => array() ,
+            "menu_items" => array(),
             "logout" => ""
         );
         if ($this->merch) {
@@ -1578,13 +2421,13 @@ class System_EweiShopV2Model {
             if ($routes[0] == "system") {
                 $return_arr["menu_items"][] = array(
                     "text" => "返回商城",
-                    "href" => webUrl() ,
+                    "href" => webUrl(),
                     "icow" => "icow-qiehuan"
                 );
             } else {
                 $return_arr["menu_items"][] = array(
                     "text" => "切换公众号",
-                    "href" => webUrl("sysset/account") ,
+                    "href" => webUrl("sysset/account"),
                     "icow" => "icow-qiehuan"
                 );
                 if ($_W["role"] == "manager" || $_W["role"] == "founder") {
@@ -1596,7 +2439,7 @@ class System_EweiShopV2Model {
                     );
                     $return_arr["menu_items"][] = array(
                         "text" => "支付方式",
-                        "href" => webUrl("sysset/payset") ,
+                        "href" => webUrl("sysset/payset"),
                         "icow" => "icow-zhifu"
                     );
                 }
@@ -1605,7 +2448,7 @@ class System_EweiShopV2Model {
                     $return_arr["menu_items"][] = "line";
                     $return_arr["menu_items"][] = array(
                         "text" => "权限管理",
-                        "href" => webUrl("perm") ,
+                        "href" => webUrl("perm"),
                         "icow" => "icow-quanxian"
                     );
                 }
@@ -1613,7 +2456,7 @@ class System_EweiShopV2Model {
                     $return_arr["menu_items"][] = "line";
                     $return_arr["menu_items"][] = array(
                         "text" => "应用授权",
-                        "href" => webUrl("system/plugin/plugingrant") ,
+                        "href" => webUrl("system/plugin/plugingrant"),
                         "icow" => "icow-shouquan"
                     );
                 }
@@ -1630,24 +2473,26 @@ class System_EweiShopV2Model {
         }
         return $return_arr;
     }
-    public function init() {
+
+    public function init()
+    {
         global $_W;
         global $_GPC;
         $routes = explode(".", $GLOBALS["_W"]["routes"]);
         $arr = array(
-            "merch" => ($this->merch ? 1 : 0) ,
+            "merch" => ($this->merch ? 1 : 0),
             "order1" => 0,
             "order4" => 0,
-            "notice" => array() ,
+            "notice" => array(),
             "commission1" => 0,
             "commission2" => 0,
             "comment" => 0,
-            "foldnav" => intval($_COOKIE["foldnav"]) ,
-            "foldpanel" => intval($_COOKIE["foldpanel"]) ,
+            "foldnav" => intval($_COOKIE["foldnav"]),
+            "foldpanel" => intval($_COOKIE["foldpanel"]),
             "routes" => $routes,
             "funbar" => array(
                 "open" => intval($_W["shopset"]["shop"]["funbar"])
-            ) ,
+            ),
             "right_menu" => $this->initRightMenu($routes)
         );
         if ($this->cv("order.list.status1")) {
@@ -1712,7 +2557,9 @@ class System_EweiShopV2Model {
         }
         return $arr;
     }
-    protected function getOrderTotal($status = 0) {
+
+    protected function getOrderTotal($status = 0)
+    {
         global $_W;
         $total = 0;
         if ($status == 1) {
@@ -1721,7 +2568,7 @@ class System_EweiShopV2Model {
                 ":uniacid" => $_W["uniacid"]
             );
             if ($this->merch) {
-                $condition.= " and merchid=:merchid";
+                $condition .= " and merchid=:merchid";
                 $params[":merchid"] = intval($_W["merchid"]);
             }
             $total = pdo_fetchcolumn("SELECT COUNT(1) FROM " . tablename("ewei_shop_order") . " WHERE " . $condition, $params);
@@ -1732,7 +2579,7 @@ class System_EweiShopV2Model {
                     ":uniacid" => $_W["uniacid"]
                 );
                 if ($this->merch) {
-                    $condition.= " and merchid=:merchid";
+                    $condition .= " and merchid=:merchid";
                     $params[":merchid"] = intval($_W["merchid"]);
                 }
                 $total = pdo_fetchcolumn("SELECT COUNT(1) FROM " . tablename("ewei_shop_order") . " WHERE " . $condition, $params);
@@ -1740,7 +2587,9 @@ class System_EweiShopV2Model {
         }
         return $total;
     }
-    public function cv($str) {
+
+    public function cv($str)
+    {
         if ($str == "plugins") {
             $str = $this->isOpenPlugin();
         }
@@ -1749,7 +2598,9 @@ class System_EweiShopV2Model {
         }
         return cv($str);
     }
-    public function isOpenPlugin() {
+
+    public function isOpenPlugin()
+    {
         if (!com("perm")) {
             return array();
         }
@@ -1765,7 +2616,9 @@ class System_EweiShopV2Model {
         $name_keys = array_keys($name);
         return implode("|", $name_keys);
     }
-    public function history_url() {
+
+    public function history_url()
+    {
         global $_W;
         global $_GPC;
         if (!$this->merch) {
@@ -1813,11 +2666,14 @@ class System_EweiShopV2Model {
             if (10 < count($history_url)) {
                 $history_url = array_slice($history_url, 0, 10);
             }
-            isetcookie((!$this->merch ? "history_url" : "merch_history_url") , json_encode($history_url) , 7 * 86400);
+            isetcookie((!$this->merch ? "history_url" : "merch_history_url"), json_encode($history_url), 7 * 86400);
         }
     }
-    public function set_version($type = 0) {
+
+    public function set_version($type = 0)
+    {
         $GLOBALS["_W"]["shopversion"] = 1;
     }
 }
+
 ?>

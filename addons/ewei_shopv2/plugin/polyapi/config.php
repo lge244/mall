@@ -61,14 +61,14 @@ return array(
 				array('title' => '已售罄', 'route' => 'out', 'desc' => '已售罄/无库存商品管理'),
 				array('title' => '仓库中', 'route' => 'stock', 'desc' => '仓库中商品管理'),
 				array('title' => '回收站', 'route' => 'cycle', 'desc' => '回收站/已删除商品管理'),
-				array('title' => '商品分类', 'route' => 'category'),
+				array('title' => '商品分类', 'route' => 'job'),
 				array('title' => '商品组', 'route' => 'group'),
 				array(
 					'title' => '虚拟卡密',
 					'route' => 'virtual',
 					'items' => array(
 						array('title' => '虚拟卡密', 'route' => 'temp'),
-						array('title' => '卡密分类', 'route' => 'category')
+						array('title' => '卡密分类', 'route' => 'job')
 						)
 					)
 				)
@@ -119,7 +119,7 @@ return array(
 					'items' => array(
 						array('title' => '全部优惠券'),
 						array('title' => '发放记录', 'route' => 'log', 'desc' => '优惠券发放记录'),
-						array('title' => '分类管理', 'route' => 'category', 'desc' => '优惠券分类管理'),
+						array('title' => '分类管理', 'route' => 'job', 'desc' => '优惠券分类管理'),
 						array('title' => '其他设置', 'route' => 'set', 'desc' => '优惠券设置')
 						)
 					)

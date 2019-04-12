@@ -13,7 +13,7 @@ class DiyformModel extends PluginModel
 	public function globalData()
 	{
 		global $_W;
-		return array('data_type_config' => $this->_data_type_config, 'default_data_config' => $this->_default_data_config, 'default_date_config' => $this->_default_date_config, 'category' => pdo_fetchall('select * from ' . tablename('ewei_shop_diyform_category') . ' where uniacid=:uniacid order by id desc', array(':uniacid' => $_W['uniacid']), 'id'));
+		return array('data_type_config' => $this->_data_type_config, 'default_data_config' => $this->_default_data_config, 'default_date_config' => $this->_default_date_config, 'job' => pdo_fetchall('select * from ' . tablename('ewei_shop_diyform_category') . ' where uniacid=:uniacid order by id desc', array(':uniacid' => $_W['uniacid']), 'id'));
 	}
 
 	public function getInsertDataByAdmin()

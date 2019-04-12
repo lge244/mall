@@ -69,7 +69,7 @@ class Raven_Breadcrumbs_MonologHandler extends AbstractProcessingHandler
             $crumb = array(
                 'type' => 'error',
                 'level' => $this->logLevels[$record['level']],
-                'category' => $record['channel'],
+                'job' => $record['channel'],
                 'data' => array(
                     'type' => get_class($exc),
                     'value' => $exc->getMessage(),
@@ -81,7 +81,7 @@ class Raven_Breadcrumbs_MonologHandler extends AbstractProcessingHandler
                 $crumb = array(
                     'type' => 'error',
                     'level' => $this->logLevels[$record['level']],
-                    'category' => $record['channel'],
+                    'job' => $record['channel'],
                     'data' => array(
                         'type' => $error[0],
                         'value' => $error[1],
@@ -90,7 +90,7 @@ class Raven_Breadcrumbs_MonologHandler extends AbstractProcessingHandler
             } else {
                 $crumb = array(
                     'level' => $this->logLevels[$record['level']],
-                    'category' => $record['channel'],
+                    'job' => $record['channel'],
                     'message' => $record['message'],
                 );
             }

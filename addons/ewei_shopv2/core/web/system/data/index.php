@@ -38,7 +38,7 @@ class Index_EweiShopV2Page extends SystemPage
 							pdo_query('delete from  ' . tablename('ewei_shop_goods_comment') . (' where 1 ' . $condition));
 						}
 					}
-					else if ($data == 'category') {
+					else if ($data == 'job') {
 						pdo_query('delete from  ' . tablename('ewei_shop_category') . (' where 1 ' . $condition));
 					}
 					else if ($data == 'dispatch') {
@@ -197,7 +197,7 @@ class Index_EweiShopV2Page extends SystemPage
 					if ($data == 'goods') {
 						pdo_query('delete from  ' . tablename('ewei_shop_creditshop_goods') . (' where 1 ' . $condition));
 					}
-					else if ($data == 'category') {
+					else if ($data == 'job') {
 						pdo_query('delete from  ' . tablename('ewei_shop_creditshop_category') . (' where 1 ' . $condition));
 					}
 					else if ($data == 'adv') {
@@ -216,7 +216,7 @@ class Index_EweiShopV2Page extends SystemPage
 					if ($data == 'template') {
 						pdo_query('delete from  ' . tablename('ewei_shop_virtual_type') . (' where 1 ' . $condition));
 					}
-					else if ($data == 'category') {
+					else if ($data == 'job') {
 						pdo_query('delete from  ' . tablename('ewei_shop_virtual_category') . (' where 1 ' . $condition));
 					}
 					else {
@@ -256,7 +256,7 @@ class Index_EweiShopV2Page extends SystemPage
 
 						pdo_query('delete from  ' . tablename('ewei_shop_article') . (' where 1 ' . $condition));
 					}
-					else if ($data == 'category') {
+					else if ($data == 'job') {
 						pdo_query('delete from  ' . tablename('ewei_shop_article_category') . (' where 1 ' . $condition));
 					}
 					else if ($data == 'share') {
@@ -280,7 +280,7 @@ class Index_EweiShopV2Page extends SystemPage
 						pdo_query('delete from  ' . tablename('ewei_shop_coupon') . (' where 1 ' . $condition));
 						pdo_query('delete from  ' . tablename('ewei_shop_coupon_data') . (' where 1 ' . $condition));
 					}
-					else if ($data == 'category') {
+					else if ($data == 'job') {
 						pdo_query('delete from  ' . tablename('ewei_shop_coupon_category') . (' where 1 ' . $condition));
 					}
 					else {

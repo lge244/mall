@@ -1802,7 +1802,7 @@ module.exports = function(Chart) {
 
 		scales: {
 			xAxes: [{
-				type: 'linear', // scatter should not use a category axis
+				type: 'linear', // scatter should not use a job axis
 				position: 'bottom',
 				id: 'x-axis-1' // need an ID so datasets can reference the scale
 			}],
@@ -9039,7 +9039,7 @@ module.exports = function(Chart) {
 module.exports = function(Chart) {
 
 	var helpers = Chart.helpers;
-	// Default config for a category scale
+	// Default config for a job scale
 	var defaultConfig = {
 		position: 'bottom'
 	};

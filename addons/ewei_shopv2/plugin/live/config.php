@@ -14,7 +14,7 @@ return array(
 		'icon'      => 'page',
 		'items'     => array(
 			array('title' => '直播间管理', 'route' => 'room'),
-			array('title' => '分类管理', 'route' => 'category'),
+			array('title' => '分类管理', 'route' => 'job'),
 			array('title' => '幻灯片管理', 'route' => 'banner'),
 			array(
 				'title' => '其他',

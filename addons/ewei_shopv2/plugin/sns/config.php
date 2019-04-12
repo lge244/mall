@@ -20,7 +20,7 @@ return array(
 			array(
 				'title' => '社区管理',
 				'items' => array(
-					array('title' => '分类管理', 'route' => 'category'),
+					array('title' => '分类管理', 'route' => 'job'),
 					array('title' => '板块管理', 'route' => 'board'),
 					array('title' => '版主管理', 'route' => 'manage'),
 					array('title' => '会员管理', 'route' => 'member')
@@ -37,7 +37,7 @@ return array(
 				'title' => '投诉管理',
 				'route' => 'complain',
 				'items' => array(
-					array('title' => '投诉类别', 'route' => 'category'),
+					array('title' => '投诉类别', 'route' => 'job'),
 					array(
 						'title' => '待审核',
 						'param' => array('type' => 'untreated')

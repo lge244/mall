@@ -21,6 +21,6 @@ if($do == 'detail') {
 		message('门店不存在或已删除', referer(), 'error');
 	}
 	$store['photo_list'] = iunserializer($store['photo_list']);
-	$store['category'] = iunserializer($store['category']);
+	$store['job'] = iunserializer($store['job']);
 }
 template('mc/store');

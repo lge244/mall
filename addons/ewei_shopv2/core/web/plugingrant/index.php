@@ -31,7 +31,7 @@ class Index_EweiShopV2Page extends WebPage
 			}
 		}
 
-		$list = pdo_fetchall('SELECT gp.*,p.identity,p.name as pname,p.category,p.version,p.author,p.status FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " as gp\r\n                left join " . tablename('ewei_shop_plugin') . (" as p on p.id = gp.pluginid\r\n                WHERE 1 " . $condition . ' ORDER BY ' . $sortcondition . ' LIMIT ') . ($pindex - 1) * $psize . ',' . $psize, $params);
+		$list = pdo_fetchall('SELECT gp.*,p.identity,p.name as pname,p.job,p.version,p.author,p.status FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " as gp\r\n                left join " . tablename('ewei_shop_plugin') . (" as p on p.id = gp.pluginid\r\n                WHERE 1 " . $condition . ' ORDER BY ' . $sortcondition . ' LIMIT ') . ($pindex - 1) * $psize . ',' . $psize, $params);
 
 		foreach ($list as $key => $value) {
 			$list[$key]['data'] = unserialize($value['data']);
@@ -70,7 +70,7 @@ class Index_EweiShopV2Page extends WebPage
 		}
 		else {
 			if ($type == 'plugin') {
-				$item = pdo_fetch('SELECT gp.*,p.identity,p.name as pname,p.category,p.version,p.author,p.status,p.thumb,p.desc,p.isv2 FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " gp\r\n                left join " . tablename('ewei_shop_plugin') . " as p on p.id = gp.pluginid \r\n                WHERE gp.id =:id limit 1", array(':id' => $id));
+				$item = pdo_fetch('SELECT gp.*,p.identity,p.name as pname,p.job,p.version,p.author,p.status,p.thumb,p.desc,p.isv2 FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " gp\r\n                left join " . tablename('ewei_shop_plugin') . " as p on p.id = gp.pluginid \r\n                WHERE gp.id =:id limit 1", array(':id' => $id));
 
 				if (!empty($item)) {
 					$package = pdo_fetchall('select * from ' . tablename('ewei_shop_system_plugingrant_package') . " \r\n                    where find_in_set('" . $item['pluginid'] . '\',pluginid) and state = 1 ');
@@ -130,7 +130,7 @@ class Index_EweiShopV2Page extends WebPage
 		}
 		else {
 			if ($cate = 'plugin') {
-				$item = pdo_fetch('SELECT gp.*,p.identity,p.name as pname,p.category,p.version,p.author,p.status,p.thumb,p.desc FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " gp\r\n                left join " . tablename('ewei_shop_plugin') . " as p on p.id = gp.pluginid \r\n                WHERE gp.id =:id and state = 1 limit 1", array(':id' => $id));
+				$item = pdo_fetch('SELECT gp.*,p.identity,p.name as pname,p.job,p.version,p.author,p.status,p.thumb,p.desc FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " gp\r\n                left join " . tablename('ewei_shop_plugin') . " as p on p.id = gp.pluginid \r\n                WHERE gp.id =:id and state = 1 limit 1", array(':id' => $id));
 				$item['data'] = unserialize($item['data']);
 				$title = !empty($item['name']) ? $item['name'] : $item['pname'];
 			}
@@ -165,7 +165,7 @@ class Index_EweiShopV2Page extends WebPage
 		}
 		else {
 			if ($cate = 'plugin') {
-				$item = pdo_fetch('SELECT gp.*,p.identity,p.name as pname,p.category,p.version,p.author,p.status,p.thumb,p.desc FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " gp\r\n                left join " . tablename('ewei_shop_plugin') . " as p on p.id = gp.pluginid \r\n                WHERE gp.id =:id limit 1", array(':id' => $id));
+				$item = pdo_fetch('SELECT gp.*,p.identity,p.name as pname,p.job,p.version,p.author,p.status,p.thumb,p.desc FROM ' . tablename('ewei_shop_system_plugingrant_plugin') . " gp\r\n                left join " . tablename('ewei_shop_plugin') . " as p on p.id = gp.pluginid \r\n                WHERE gp.id =:id limit 1", array(':id' => $id));
 				$title = !empty($item['name']) ? $item['name'] : $item['pname'];
 				$logdata['pluginid'] = intval($item['pluginid']);
 			}

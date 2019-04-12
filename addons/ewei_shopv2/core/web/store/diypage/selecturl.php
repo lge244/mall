@@ -11,7 +11,7 @@ class Selecturl_EweiShopV2Page extends WebPage
 		global $_GPC;
 		$full = intval($_GPC['full']);
 		$storeid = intval($_W['storeid']);
-		$syscate = m('common')->getSysset('category');
+		$syscate = m('common')->getSysset('job');
 
 		if (0 < $syscate['level']) {
 			$categorys = pdo_fetchall('SELECT * FROM ' . tablename('ewei_shop_category') . ' WHERE uniacid=:uniacid  ORDER BY parentid ASC, displayorder DESC', array(':uniacid' => $_W['uniacid']));

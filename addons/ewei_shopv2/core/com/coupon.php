@@ -1183,7 +1183,7 @@ class Coupon_EweiShopV2ComModel extends ComModel
 	}
 	public function perms() 
 	{
-		return array( 'coupon' => array( 'text' => $this->getName(), 'isplugin' => true, 'child' => array( 'coupon' => array('text' => '优惠券', 'view' => '查看', 'add' => '添加优惠券-log', 'edit' => '编辑优惠券-log', 'delete' => '删除优惠券-log', 'send' => '发放优惠券-log'), 'category' => array('text' => '分类', 'view' => '查看', 'add' => '添加分类-log', 'edit' => '编辑分类-log', 'delete' => '删除分类-log'), 'log' => array('text' => '优惠券记录', 'view' => '查看', 'export' => '导出-log'), 'center' => array('text' => '领券中心设置', 'view' => '查看设置', 'save' => '保存设置-log'), 'set' => array('text' => '基础设置', 'view' => '查看设置', 'save' => '保存设置-log') ) ) );
+		return array( 'coupon' => array( 'text' => $this->getName(), 'isplugin' => true, 'child' => array( 'coupon' => array('text' => '优惠券', 'view' => '查看', 'add' => '添加优惠券-log', 'edit' => '编辑优惠券-log', 'delete' => '删除优惠券-log', 'send' => '发放优惠券-log'), 'job' => array('text' => '分类', 'view' => '查看', 'add' => '添加分类-log', 'edit' => '编辑分类-log', 'delete' => '删除分类-log'), 'log' => array('text' => '优惠券记录', 'view' => '查看', 'export' => '导出-log'), 'center' => array('text' => '领券中心设置', 'view' => '查看设置', 'save' => '保存设置-log'), 'set' => array('text' => '基础设置', 'view' => '查看设置', 'save' => '保存设置-log') ) ) );
 	}
 	public function addtaskdata($orderid) 
 	{

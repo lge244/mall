@@ -52,7 +52,7 @@ class Index_EweiShopV2Page extends PluginMobileLoginPage
 		$params = array(':uniacid' => $_W['uniacid']);
 
 		if (!empty($cate)) {
-			$condition .= ' and category = ' . $cateid;
+			$condition .= ' and job = ' . $cateid;
 		}
 
 		$sql = 'SELECT COUNT(*) FROM ' . tablename('ewei_shop_live') . ' where 1 ' . $condition;

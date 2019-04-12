@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license		http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -43,7 +43,7 @@ define('EULER', 2.71828182845904523536);
 /**
  * PHPExcel_Calculation_Engineering
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -783,7 +783,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		BESSELI(x,ord)
 	 *
 	 *	@access	public
-	 *	@category Engineering Functions
+	 *	@job Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELI returns the #VALUE! error value.
 	 *	@param	integer		$ord	The order of the Bessel function.
@@ -836,7 +836,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		BESSELJ(x,ord)
 	 *
 	 *	@access	public
-	 *	@category Engineering Functions
+	 *	@job Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELJ returns the #VALUE! error value.
 	 *	@param	integer		$ord	The order of the Bessel function. If n is not an integer, it is truncated.
@@ -925,7 +925,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		BESSELK(x,ord)
 	 *
 	 *	@access	public
-	 *	@category Engineering Functions
+	 *	@job Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELK returns the #VALUE! error value.
 	 *	@param	integer		$ord	The order of the Bessel function. If n is not an integer, it is truncated.
@@ -1005,7 +1005,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		BESSELY(x,ord)
 	 *
 	 *	@access	public
-	 *	@category Engineering Functions
+	 *	@job Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELK returns the #VALUE! error value.
 	 *	@param	integer		$ord	The order of the Bessel function. If n is not an integer, it is truncated.
@@ -1052,7 +1052,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		BIN2DEC(x)
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The binary number (as a string) that you want to convert. The number
 	 *								cannot contain more than 10 characters (10 bits). The most significant
 	 *								bit of number is the sign bit. The remaining 9 bits are magnitude bits.
@@ -1098,7 +1098,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		BIN2HEX(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The binary number (as a string) that you want to convert. The number
 	 *								cannot contain more than 10 characters (10 bits). The most significant
 	 *								bit of number is the sign bit. The remaining 9 bits are magnitude bits.
@@ -1152,7 +1152,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		BIN2OCT(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The binary number (as a string) that you want to convert. The number
 	 *								cannot contain more than 10 characters (10 bits). The most significant
 	 *								bit of number is the sign bit. The remaining 9 bits are magnitude bits.
@@ -1206,7 +1206,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		DEC2BIN(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The decimal integer you want to convert. If number is negative,
 	 *								valid place values are ignored and DEC2BIN returns a 10-character
 	 *								(10-bit) binary number in which the most significant bit is the sign
@@ -1262,7 +1262,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		DEC2HEX(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The decimal integer you want to convert. If number is negative,
 	 *								places is ignored and DEC2HEX returns a 10-character (40-bit)
 	 *								hexadecimal number in which the most significant bit is the sign
@@ -1316,7 +1316,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		DEC2OCT(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The decimal integer you want to convert. If number is negative,
 	 *								places is ignored and DEC2OCT returns a 10-character (30-bit)
 	 *								octal number in which the most significant bit is the sign bit.
@@ -1370,7 +1370,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		HEX2BIN(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x			the hexadecimal number you want to convert. Number cannot
 	 *									contain more than 10 characters. The most significant bit of
 	 *									number is the sign bit (40th bit from the right). The remaining
@@ -1418,7 +1418,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		HEX2DEC(x)
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The hexadecimal number you want to convert. This number cannot
 	 *								contain more than 10 characters (40 bits). The most significant
 	 *								bit of number is the sign bit. The remaining 39 bits are magnitude
@@ -1451,7 +1451,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		HEX2OCT(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x			The hexadecimal number you want to convert. Number cannot
 	 *									contain more than 10 characters. The most significant bit of
 	 *									number is the sign bit. The remaining 39 bits are magnitude
@@ -1500,7 +1500,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		OCT2BIN(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x			The octal number you want to convert. Number may not
 	 *									contain more than 10 characters. The most significant
 	 *									bit of number is the sign bit. The remaining 29 bits
@@ -1551,7 +1551,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		OCT2DEC(x)
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x		The octal number you want to convert. Number may not contain
 	 *								more than 10 octal characters (30 bits). The most significant
 	 *								bit of number is the sign bit. The remaining 29 bits are
@@ -1584,7 +1584,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		OCT2HEX(x[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$x			The octal number you want to convert. Number may not contain
 	 *									more than 10 octal characters (30 bits). The most significant
 	 *									bit of number is the sign bit. The remaining 29 bits are
@@ -1630,7 +1630,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		COMPLEX(realNumber,imaginary[,places])
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	float		$realNumber		The real coefficient of the complex number.
 	 * @param	float		$imaginary		The imaginary coefficient of the complex number.
 	 * @param	string		$suffix			The suffix for the imaginary component of the complex number.
@@ -1681,7 +1681,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		IMAGINARY(complexNumber)
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$complexNumber	The complex number for which you want the imaginary
 	 * 										coefficient.
 	 * @return	float
@@ -1703,7 +1703,7 @@ class PHPExcel_Calculation_Engineering {
 	 *		IMREAL(complexNumber)
 	 *
 	 * @access	public
-	 * @category Engineering Functions
+	 * @job Engineering Functions
 	 * @param	string		$complexNumber	The complex number for which you want the real coefficient.
 	 * @return	float
 	 */

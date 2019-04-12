@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license		http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -39,7 +39,7 @@ if (!defined('PHPEXCEL_ROOT')) {
 /**
  * PHPExcel_Calculation_DateTime
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -173,7 +173,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		NOW()
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @return	mixed	Excel date/time serial value, PHP date/time serial value or PHP date/time object,
 	 *						depending on the value of the ReturnDateType flag
 	 */
@@ -213,7 +213,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		TODAY()
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @return	mixed	Excel date/time serial value, PHP date/time serial value or PHP date/time object,
 	 *						depending on the value of the ReturnDateType flag
 	 */
@@ -255,7 +255,7 @@ class PHPExcel_Calculation_DateTime {
 	 *     as will a day value with a suffix (e.g. '21st' rather than simply 21); again only English language.
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	integer		$year	The value of the year argument can include one to four digits.
 	 *								Excel interprets the year argument according to the configured
 	 *								date system: 1900 or 1904.
@@ -368,7 +368,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		TIME(hour,minute,second)
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	integer		$hour		A number from 0 (zero) to 32767 representing the hour.
 	 *									Any value greater than 23 will be divided by 24 and the remainder
 	 *									will be treated as the hour value. For example, TIME(27,0,0) =
@@ -466,7 +466,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		DATEVALUE(dateValue)
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	string	$dateValue		Text that represents a date in a Microsoft Excel date format.
 	 *									For example, "1/30/2008" or "30-Jan-2008" are text strings within
 	 *									quotation marks that represent dates. Using the default date
@@ -572,7 +572,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		TIMEVALUE(timeValue)
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	string	$timeValue		A text string that represents a time in any one of the Microsoft
 	 *									Excel time formats; for example, "6:45 PM" and "18:45" text strings
 	 *									within quotation marks that represent time.
@@ -715,7 +715,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		DAYS360(startDate,endDate[,method])
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	mixed		$startDate		Excel date serial value (float), PHP date timestamp (integer),
 	 *										PHP DateTime object, or a standard date string
 	 * @param	mixed		$endDate		Excel date serial value (float), PHP date timestamp (integer),
@@ -775,7 +775,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		YEARFRAC(startDate,endDate[,method])
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	mixed	$startDate		Excel date serial value (float), PHP date timestamp (integer),
 	 *									PHP DateTime object, or a standard date string
 	 * @param	mixed	$endDate		Excel date serial value (float), PHP date timestamp (integer),
@@ -872,7 +872,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		NETWORKDAYS(startDate,endDate[,holidays[,holiday[,...]]])
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	mixed			$startDate		Excel date serial value (float), PHP date timestamp (integer),
 	 *											PHP DateTime object, or a standard date string
 	 * @param	mixed			$endDate		Excel date serial value (float), PHP date timestamp (integer),
@@ -952,7 +952,7 @@ class PHPExcel_Calculation_DateTime {
 	 *		WORKDAY(startDate,endDays[,holidays[,holiday[,...]]])
 	 *
 	 * @access	public
-	 * @category Date/Time Functions
+	 * @job Date/Time Functions
 	 * @param	mixed		$startDate		Excel date serial value (float), PHP date timestamp (integer),
 	 *										PHP DateTime object, or a standard date string
 	 * @param	integer		$endDays		The number of nonweekend and nonholiday days before or after

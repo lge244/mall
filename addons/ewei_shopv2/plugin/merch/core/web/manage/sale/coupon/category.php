@@ -23,15 +23,15 @@ class Category_EweiShopV2Page extends MerchWebPage
 				if (empty($v)) {
 					pdo_insert('ewei_shop_coupon_category', $data);
 					$insert_id = pdo_insertid();
-					mplog('sale.coupon.category.add', '添加分类 ID: ' . $insert_id);
+					mplog('sale.coupon.job.add', '添加分类 ID: ' . $insert_id);
 				}
 				else {
 					pdo_update('ewei_shop_coupon_category', $data, array('id' => $v));
-					mplog('sale.coupon.category.edit', '修改分类 ID: ' . $v);
+					mplog('sale.coupon.job.edit', '修改分类 ID: ' . $v);
 				}
 			}
 
-			mplog('sale.coupon.category.edit', '批量修改分类');
+			mplog('sale.coupon.job.edit', '批量修改分类');
 			show_json(1);
 		}
 
@@ -48,7 +48,7 @@ class Category_EweiShopV2Page extends MerchWebPage
 
 		if (!empty($item)) {
 			pdo_delete('ewei_shop_coupon_category', array('id' => $id));
-			mplog('sale.coupon.category.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
+			mplog('sale.coupon.job.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
 		}
 
 		show_json(1);

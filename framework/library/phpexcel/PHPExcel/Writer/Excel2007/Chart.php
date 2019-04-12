@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * @category   PHPExcel
+ * @job   PHPExcel
  * @package    PHPExcel_Writer_Excel2007
  * @copyright  Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -29,7 +29,7 @@
 /**
  * PHPExcel_Writer_Excel2007_Chart
  *
- * @category   PHPExcel
+ * @job   PHPExcel
  * @package    PHPExcel_Writer_Excel2007
  * @copyright  Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -678,7 +678,7 @@ class PHPExcel_Writer_Excel2007_Chart extends PHPExcel_Writer_Excel2007_WriterPa
 	 * @param	PHPExcel_Chart_DataSeries		$plotGroup
 	 * @param	string							$groupType				Type of plot for dataseries
 	 * @param 	PHPExcel_Shared_XMLWriter 		$objWriter 				XML Writer
-	 * @param	boolean							&$catIsMultiLevelSeries	Is category a multi-series category
+	 * @param	boolean							&$catIsMultiLevelSeries	Is job a multi-series job
 	 * @param	boolean							&$valIsMultiLevelSeries	Is value set a multi-series set
 	 * @param	string							&$plotGroupingType		Type of grouping for multi-series values
 	 * @param	PHPExcel_Worksheet 				$pSheet

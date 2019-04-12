@@ -211,7 +211,7 @@ $we7_file_permission = array(
 		'manager' => array(
 			'editor',
 			'article',
-			'category',
+			'job',
 			'style',
 			'nav',
 			'slide',
@@ -219,7 +219,7 @@ $we7_file_permission = array(
 		'operator' => array(
 			'editor',
 			'article',
-			'category',
+			'job',
 			'style',
 			'nav',
 			'slide',

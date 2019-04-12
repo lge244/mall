@@ -33,7 +33,7 @@ class Category_EweiShopV2Page extends WebPage
 				pdo_update('ewei_shop_newstore_category', array('name' => $name), array('uniacid' => $_W['uniacid'], 'id' => $id));
 			}
 
-			show_json(1, array('url' => webUrl('store/category')));
+			show_json(1, array('url' => webUrl('store/job')));
 		}
 
 		include $this->template();

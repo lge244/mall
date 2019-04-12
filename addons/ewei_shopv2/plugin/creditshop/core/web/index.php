@@ -12,8 +12,8 @@ class Index_EweiShopV2Page extends PluginWebPage
 		if (cv('creditshop.goods')) {
 			header('location: ' . webUrl('creditshop/goods'));
 		}
-		else if (cv('creditshop.category')) {
-			header('location: ' . webUrl('creditshop/category'));
+		else if (cv('creditshop.job')) {
+			header('location: ' . webUrl('creditshop/job'));
 		}
 		else if (cv('creditshop.adv')) {
 			header('location: ' . webUrl('creditshop/adv'));

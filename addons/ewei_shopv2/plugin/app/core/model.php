@@ -1614,7 +1614,7 @@ if( !class_exists("AppModel") )
 			global $_W;
 			if ($page == 'shop') 
 			{
-				$menu = array( array('url' => 'index', 'icon' => 'e647', 'text' => '首页'), array('url' => 'shop.category', 'icon' => 'e62c', 'text' => '全部分类'), array('url' => 'commission', 'icon' => 'e647', 'text' => '分销中心'), array('url' => 'member.cart', 'icon' => 'e642', 'text' => '购物车', 'needlogin' => 1), array('url' => 'member', 'icon' => 'e724', 'text' => '会员中心', 'needlogin' => 1) );
+				$menu = array( array('url' => 'index', 'icon' => 'e647', 'text' => '首页'), array('url' => 'shop.job', 'icon' => 'e62c', 'text' => '全部分类'), array('url' => 'commission', 'icon' => 'e647', 'text' => '分销中心'), array('url' => 'member.cart', 'icon' => 'e642', 'text' => '购物车', 'needlogin' => 1), array('url' => 'member', 'icon' => 'e724', 'text' => '会员中心', 'needlogin' => 1) );
 				if (p('commission') && (0 < $_W['shopset']['commission']['level'])) 
 				{
 					$member = m('member')->getMember($_W['openid']);

@@ -373,7 +373,7 @@ $.extend({
 $(function(){
 	if(typeof(SITEURL) == 'string') SITE_URL = SITEURL;//重写SITE_URL
 //首页左侧分类菜单
-$("#category ul").find("li").each(
+$("#job ul").find("li").each(
 	function() {
 		$(this).mouseover(
 			function() {

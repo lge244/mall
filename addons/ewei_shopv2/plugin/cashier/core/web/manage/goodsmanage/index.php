@@ -136,14 +136,14 @@ class Index_EweiShopV2Page extends CashierWebPage
 			if (!(empty($id))) 
 			{
 				pdo_update('ewei_shop_cashier_goods_category', $data, array('id' => $id));
-				plog('cashier.category.edit', '修改收银台分类 ID: ' . $id);
+				plog('cashier.job.edit', '修改收银台分类 ID: ' . $id);
 			}
 			else 
 			{
 				$data['createtime'] = time();
 				pdo_insert('ewei_shop_cashier_goods_category', $data);
 				$id = pdo_insertid();
-				plog('cashier.category.add', '添加收银台分类 ID: ' . $id);
+				plog('cashier.job.add', '添加收银台分类 ID: ' . $id);
 			}
 			show_json(1, array('url' => cashierUrl('goodsmanage/cate')));
 		}

@@ -33,7 +33,7 @@
                              {if $row['enabled']==1}显示{else}隐藏{/if}</div>
 
                 {ifp 'goods.category.edit|goods.category.view'}
-                <!--a class='btn btn-default btn-sm' href="{php echo merchUrl('goods/category/edit', array('id' => $row['id']))}" title="{ifp 'goods.category.edit'}修改{else}查看{/if}" ><i class="fa fa-edit"></i></a-->
+                <!--a class='btn btn-default btn-sm' href="{php echo merchUrl('goods/job/edit', array('id' => $row['id']))}" title="{ifp 'goods.job.edit'}修改{else}查看{/if}" ><i class="fa fa-edit"></i></a-->
                 {/if}
                 </span>
     </div>
@@ -56,7 +56,7 @@
                                          >
                                          {if $child['enabled']==1}显示{else}隐藏{/if}</div>
 
-            {ifp 'goods.category.edit|goods.category.view'}<!--a class='btn btn-default btn-sm' href="{php echo merchUrl('goods/category/edit', array('id' => $child['id']))}" title="{ifp 'goods.category.edit'}修改{else}查看{/if}" ><i class="fa fa-edit"></i></a-->{/if}
+            {ifp 'goods.category.edit|goods.category.view'}<!--a class='btn btn-default btn-sm' href="{php echo merchUrl('goods/job/edit', array('id' => $child['id']))}" title="{ifp 'goods.job.edit'}修改{else}查看{/if}" ><i class="fa fa-edit"></i></a-->{/if}
             </span>
             </div>
             {if count($children[$child['id']])>0 && intval($shopset['catlevel'])==3}
@@ -78,7 +78,7 @@
 											>
 											{if $third['enabled']==1}显示{else}隐藏{/if}</div>
 
-                    {ifp 'goods.category.edit|goods.category.view'}<!--a class='btn btn-default btn-sm' href="{php echo merchUrl('goods/category/edit', array('id' => $third['id']))}" title="{ifp 'goods.category.edit'}修改{else}查看{/if}" ><i class="fa fa-edit"></i></a-->{/if}
+                    {ifp 'goods.category.edit|goods.category.view'}<!--a class='btn btn-default btn-sm' href="{php echo merchUrl('goods/job/edit', array('id' => $third['id']))}" title="{ifp 'goods.job.edit'}修改{else}查看{/if}" ><i class="fa fa-edit"></i></a-->{/if}
                     </span>
                     </div>
                 </li>

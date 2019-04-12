@@ -22,15 +22,15 @@ class Category_EweiShopV2Page extends ComWebPage
 				if (empty($v)) {
 					pdo_insert('ewei_shop_coupon_category', $data);
 					$insert_id = pdo_insertid();
-					plog('sale.coupon.category.add', '添加分类 ID: ' . $insert_id);
+					plog('sale.coupon.job.add', '添加分类 ID: ' . $insert_id);
 				}
 				else {
 					pdo_update('ewei_shop_coupon_category', $data, array('id' => $v));
-					plog('sale.coupon.category.edit', '修改分类 ID: ' . $v);
+					plog('sale.coupon.job.edit', '修改分类 ID: ' . $v);
 				}
 			}
 
-			plog('sale.coupon.category.edit', '批量修改分类');
+			plog('sale.coupon.job.edit', '批量修改分类');
 			show_json(1);
 		}
 
@@ -47,7 +47,7 @@ class Category_EweiShopV2Page extends ComWebPage
 
 		if (!empty($item)) {
 			pdo_delete('ewei_shop_coupon_category', array('id' => $id));
-			plog('sale.coupon.category.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
+			plog('sale.coupon.job.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
 		}
 
 		show_json(1);

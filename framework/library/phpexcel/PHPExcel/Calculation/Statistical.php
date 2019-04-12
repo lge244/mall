@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license		http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -55,7 +55,7 @@ define('SQRT2PI', 2.5066282746310005024157652848110452530069867406099);
 /**
  * PHPExcel_Calculation_Statistical
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -693,7 +693,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		AVEDEV(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -741,7 +741,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		AVERAGE(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -783,7 +783,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		AVERAGEA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -831,7 +831,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		AVERAGEIF(value1[,value2[, ...]],condition)
 	 *
 	 * @access	public
-	 * @category Mathematical and Trigonometric Functions
+	 * @job Mathematical and Trigonometric Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	string		$condition		The criteria that defines which cells will be checked.
 	 * @param	mixed[]		$averageArgs	Data values
@@ -1158,7 +1158,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		COUNT(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	int
 	 */
@@ -1193,7 +1193,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		COUNTA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	int
 	 */
@@ -1224,7 +1224,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		COUNTBLANK(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	int
 	 */
@@ -1255,7 +1255,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		COUNTIF(value1[,value2[, ...]],condition)
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	string		$condition		The criteria that defines which cells will be counted.
 	 * @return	int
@@ -1427,7 +1427,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		DEVSQ(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -1702,7 +1702,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		GEOMEAN(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -1761,7 +1761,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		HARMEAN(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -1913,7 +1913,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		LARGE(value1[,value2[, ...]],entry)
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	int			$entry			Position (ordered from the largest) in the array or range of data to return
 	 * @return	float
@@ -2122,7 +2122,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MAX(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -2158,7 +2158,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MAXA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -2199,7 +2199,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MAXIF(value1[,value2[, ...]],condition)
 	 *
 	 * @access	public
-	 * @category Mathematical and Trigonometric Functions
+	 * @job Mathematical and Trigonometric Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	string		$condition		The criteria that defines which cells will be checked.
 	 * @return	float
@@ -2239,7 +2239,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MEDIAN(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -2284,7 +2284,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MIN(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -2320,7 +2320,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MINA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -2361,7 +2361,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MINIF(value1[,value2[, ...]],condition)
 	 *
 	 * @access	public
-	 * @category Mathematical and Trigonometric Functions
+	 * @job Mathematical and Trigonometric Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	string		$condition		The criteria that defines which cells will be checked.
 	 * @return	float
@@ -2435,7 +2435,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		MODE(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -2604,7 +2604,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		PERCENTILE(value1[,value2[, ...]],entry)
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	float		$entry			Percentile value in the range 0..1, inclusive.
 	 * @return	float
@@ -2765,7 +2765,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		QUARTILE(value1[,value2[, ...]],entry)
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	int			$entry			Quartile value in the range 1..3, inclusive.
 	 * @return	float
@@ -2924,7 +2924,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		SMALL(value1[,value2[, ...]],entry)
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	int			$entry			Position (ordered from the smallest) in the array or range of data to return
 	 * @return	float
@@ -2990,7 +2990,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		STDEV(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -3037,7 +3037,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		STDEVA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -3089,7 +3089,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		STDEVP(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -3136,7 +3136,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		STDEVPA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -3364,7 +3364,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		TRIMEAN(value1[,value2[, ...]],$discard)
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @param	float		$discard		Percentage to discard
 	 * @return	float
@@ -3407,7 +3407,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		VAR(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -3449,7 +3449,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		VARA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -3502,7 +3502,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		VARP(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */
@@ -3544,7 +3544,7 @@ class PHPExcel_Calculation_Statistical {
 	 *		VARPA(value1[,value2[, ...]])
 	 *
 	 * @access	public
-	 * @category Statistical Functions
+	 * @job Statistical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	float
 	 */

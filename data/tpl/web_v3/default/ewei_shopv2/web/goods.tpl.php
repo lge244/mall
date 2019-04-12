@@ -240,14 +240,14 @@
                                               <span class="text-info">[<?php  echo $category[$item['allcates'][$index]]['name'];?>]</span>
                                             <?php  } ?>
                                     <?php  } } ?>
-                                    <?php  if(!empty($category[$item['pcate']])) { ?>
-                                    <!--<span class="text-danger">[<?php  echo $category[$item['pcate']]['name'];?>]</span>-->
+                                    <?php  if(!empty($job[$item['pcate']])) { ?>
+                                    <!--<span class="text-danger">[<?php  echo $job[$item['pcate']]['name'];?>]</span>-->
                                     <?php  } ?>
-                                    <?php  if(!empty($category[$item['ccate']])) { ?>
-                                    <!--<span class="text-info">[<?php  echo $category[$item['ccate']]['name'];?>]</span>-->
+                                    <?php  if(!empty($job[$item['ccate']])) { ?>
+                                    <!--<span class="text-info">[<?php  echo $job[$item['ccate']]['name'];?>]</span>-->
                                     <?php  } ?>
-                                    <?php  if(!empty($category[$item['tcate']]) && intval($shopset['catlevel'])==3) { ?>
-                                    <!--<span class="text-info">[<?php  echo $category[$item['tcate']]['name'];?>]</span>-->
+                                    <?php  if(!empty($job[$item['tcate']]) && intval($shopset['catlevel'])==3) { ?>
+                                    <!--<span class="text-info">[<?php  echo $job[$item['tcate']]['name'];?>]</span>-->
                                     <?php  } ?>
                                 </span>
                         </span>

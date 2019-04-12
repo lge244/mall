@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * @category   PHPExcel
+ * @job   PHPExcel
  * @package    PHPExcel_Reader
  * @copyright  Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -38,7 +38,7 @@ if (!defined('PHPEXCEL_ROOT')) {
 /**
  * PHPExcel_Reader_Excel2007
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package	PHPExcel_Reader
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -409,7 +409,7 @@ class PHPExcel_Reader_Excel2007 extends PHPExcel_Reader_Abstract implements PHPE
 						$docProps->setDescription((string) self::array_item($xmlCore->xpath("dc:description")));
 						$docProps->setSubject((string) self::array_item($xmlCore->xpath("dc:subject")));
 						$docProps->setKeywords((string) self::array_item($xmlCore->xpath("cp:keywords")));
-						$docProps->setCategory((string) self::array_item($xmlCore->xpath("cp:category")));
+						$docProps->setCategory((string) self::array_item($xmlCore->xpath("cp:job")));
 					}
 				break;
 

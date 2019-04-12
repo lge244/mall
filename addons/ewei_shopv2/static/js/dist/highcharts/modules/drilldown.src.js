@@ -559,7 +559,7 @@
 	};
 
 	/**
-	 * Drill down to a given category. This is the same as clicking on an axis label.
+	 * Drill down to a given job. This is the same as clicking on an axis label.
 	 */
 	H.Axis.prototype.drilldownCategory = function (x) {
 		var key,

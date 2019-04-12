@@ -10,7 +10,7 @@ class Index_EweiShopV2Page extends PluginWebPage
 		global $_W;
 		$condition = ' and o.uniacid=:uniacid and o.deleted = :deleted and o.status = :status and (o.success = :success or o.is_team = :is_team) ';
 		$params = array(':uniacid' => $_W['uniacid'], ':deleted' => 0, ':success' => 1, ':status' => 1, ':is_team' => 0);
-		$order_ok = pdo_fetchall("SELECT o.*,g.title,g.category,g.groupsprice,c.name,g.thumb,m.nickname,m.realname,m.mobile\r\n\t\t\t\tFROM " . tablename('ewei_shop_groups_order') . " as o\r\n\t\t\t\tleft join " . tablename('ewei_shop_groups_goods') . " as g on g.id = o.goodid\r\n\t\t\t\tleft join " . tablename('ewei_shop_member') . " m on m.openid=o.openid and m.uniacid =  o.uniacid\r\n\t\t\t\tright join " . tablename('ewei_shop_groups_category') . (" as c on c.id = g.category\r\n\t\t\t\tWHERE 1 " . $condition . '  ORDER BY o.createtime DESC limit 0,10 '), $params);
+		$order_ok = pdo_fetchall("SELECT o.*,g.title,g.job,g.groupsprice,c.name,g.thumb,m.nickname,m.realname,m.mobile\r\n\t\t\t\tFROM " . tablename('ewei_shop_groups_order') . " as o\r\n\t\t\t\tleft join " . tablename('ewei_shop_groups_goods') . " as g on g.id = o.goodid\r\n\t\t\t\tleft join " . tablename('ewei_shop_member') . " m on m.openid=o.openid and m.uniacid =  o.uniacid\r\n\t\t\t\tright join " . tablename('ewei_shop_groups_category') . (" as c on c.id = g.job\r\n\t\t\t\tWHERE 1 " . $condition . '  ORDER BY o.createtime DESC limit 0,10 '), $params);
 		include $this->template();
 	}
 

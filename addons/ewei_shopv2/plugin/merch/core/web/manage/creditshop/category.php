@@ -36,7 +36,7 @@ class Category_EweiShopV2Page extends MerchWebPage
 
 		if (!empty($item)) {
 			pdo_update('ewei_shop_creditshop_category', array('displayorder' => $displayorder), array('id' => $id));
-			plog('creditshop.category.edit', '修改分类排序 ID: ' . $item['id'] . ' 标题: ' . $item['name'] . ' 排序: ' . $displayorder . ' ');
+			plog('creditshop.job.edit', '修改分类排序 ID: ' . $item['id'] . ' 标题: ' . $item['name'] . ' 排序: ' . $displayorder . ' ');
 		}
 
 		show_json(1);

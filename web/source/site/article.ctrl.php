@@ -38,11 +38,11 @@ if ($do == 'display') {
 		$params[':keyword'] = "%{$_GPC['keyword']}%";
 	}
 	
-	if (!empty($_GPC['category']['childid'])) {
-		$cid = intval($_GPC['category']['childid']);
+	if (!empty($_GPC['job']['childid'])) {
+		$cid = intval($_GPC['job']['childid']);
 		$condition .= " AND ccate = '{$cid}'";
-	} elseif (!empty($_GPC['category']['parentid'])) {
-		$cid = intval($_GPC['category']['parentid']);
+	} elseif (!empty($_GPC['job']['parentid'])) {
+		$cid = intval($_GPC['job']['parentid']);
 		$condition .= " AND pcate = '{$cid}'";
 	}
 	$list = pdo_fetchall("SELECT * FROM ".tablename('site_article')." WHERE uniacid = '{$_W['uniacid']}' $condition ORDER BY displayorder DESC, edittime DESC, id DESC LIMIT ".($pindex - 1) * $psize.','.$psize, $params);
@@ -110,8 +110,8 @@ if ($do == 'display') {
 			'uniacid' => $_W['uniacid'],
 			'iscommend' => intval($_GPC['option']['commend']),
 			'ishot' => intval($_GPC['option']['hot']),
-			'pcate' => intval($_GPC['category']['parentid']),
-			'ccate' => intval($_GPC['category']['childid']),
+			'pcate' => intval($_GPC['job']['parentid']),
+			'ccate' => intval($_GPC['job']['childid']),
 			'template' => addslashes($_GPC['template']),
 			'title' => addslashes($_GPC['title']),
 			'description' => addslashes($_GPC['description']),

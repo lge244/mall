@@ -16,8 +16,8 @@ class Index_EweiShopV2Page extends SeckillWebPage
 		else if (cv('seckill.goods')) {
 			header('location: ' . webUrl('seckill/goods'));
 		}
-		else if (cv('seckill.category')) {
-			header('location: ' . webUrl('seckill/category'));
+		else if (cv('seckill.job')) {
+			header('location: ' . webUrl('seckill/job'));
 		}
 		else if (cv('seckill.adv')) {
 			header('location: ' . webUrl('seckill/adv'));

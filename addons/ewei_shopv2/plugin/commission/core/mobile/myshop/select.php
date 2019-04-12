@@ -73,7 +73,7 @@ class Select_EweiShopV2Page extends CommissionMobileLoginPage
 
 		$set = m('common')->getSysset('shop');
 
-		if ($_W['shopset']['category']['level'] != -1) {
+		if ($_W['shopset']['job']['level'] != -1) {
 			$category = m('shop')->getCategory();
 		}
 

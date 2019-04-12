@@ -13,7 +13,7 @@ class Category_EweiShopV2Page extends PluginMobilePage
 		{
 			$openid = $_W['openid'];
 			$uniacid = $_W['uniacid'];
-			$cateid = intval($_GPC['category']);
+			$cateid = intval($_GPC['job']);
 			load()->model('mc');
 			$uid = mc_openid2uid($openid);
 			if (empty($uid)) 
@@ -43,7 +43,7 @@ class Category_EweiShopV2Page extends PluginMobilePage
 		try 
 		{
 			$uniacid = $_W['uniacid'];
-			$cateid = intval($_GPC['category']);
+			$cateid = intval($_GPC['job']);
 			$list = array();
 			$pindex = max(1, intval($_GPC['page']));
 			$psize = 10;
@@ -51,7 +51,7 @@ class Category_EweiShopV2Page extends PluginMobilePage
 			$params = array(':uniacid' => $_W['uniacid']);
 			if (!(empty($cateid))) 
 			{
-				$condition .= ' and category = ' . $cateid;
+				$condition .= ' and job = ' . $cateid;
 			}
 			$keyword = trim($_GPC['keyword']);
 			if (!(empty($keyword))) 
@@ -62,7 +62,7 @@ class Category_EweiShopV2Page extends PluginMobilePage
 			$total = pdo_fetchcolumn($sql, $params);
 			if (!(empty($total))) 
 			{
-				$sql = 'SELECT id,title,thumb,price,groupnum,groupsprice,category,isindex,goodsnum,is_ladder,more_spec,units,sales,description FROM ' . tablename('ewei_shop_groups_goods') . "\r\n\t\t\t\t\t\t" . 'where 1 ' . $condition . ' ORDER BY displayorder DESC,id DESC LIMIT ' . (($pindex - 1) * $psize) . ',' . $psize;
+				$sql = 'SELECT id,title,thumb,price,groupnum,groupsprice,job,isindex,goodsnum,is_ladder,more_spec,units,sales,description FROM ' . tablename('ewei_shop_groups_goods') . "\r\n\t\t\t\t\t\t" . 'where 1 ' . $condition . ' ORDER BY displayorder DESC,id DESC LIMIT ' . (($pindex - 1) * $psize) . ',' . $psize;
 				$list = pdo_fetchall($sql, $params);
 				$list = set_medias($list, 'thumb');
 			}

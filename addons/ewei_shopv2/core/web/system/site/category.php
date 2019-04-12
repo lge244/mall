@@ -17,15 +17,15 @@ class Category_EweiShopV2Page extends SystemPage
 				if (empty($v)) {
 					pdo_insert('ewei_shop_system_category', $data);
 					$insert_id = pdo_insertid();
-					plog('system.category.add', '添加分类 ID: ' . $insert_id);
+					plog('system.job.add', '添加分类 ID: ' . $insert_id);
 				}
 				else {
 					pdo_update('ewei_shop_system_category', $data, array('id' => $v));
-					plog('system.category.edit', '修改分类 ID: ' . $v);
+					plog('system.job.edit', '修改分类 ID: ' . $v);
 				}
 			}
 
-			plog('system.category.edit', '批量修改分类');
+			plog('system.job.edit', '批量修改分类');
 			show_json(1);
 		}
 
@@ -42,7 +42,7 @@ class Category_EweiShopV2Page extends SystemPage
 
 		if (!empty($item)) {
 			pdo_delete('ewei_shop_system_category', array('id' => $id));
-			plog('system.category.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
+			plog('system.job.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
 		}
 
 		show_json(1);

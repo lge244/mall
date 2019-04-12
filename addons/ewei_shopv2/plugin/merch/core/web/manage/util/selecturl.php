@@ -12,7 +12,7 @@ class Selecturl_EweiShopV2Page extends MerchWebPage
 		global $_GPC;
 		$full = intval($_GPC['full']);
 		$merchid = intval($_W['merchid']);
-		$syscate = m('common')->getSysset('category');
+		$syscate = m('common')->getSysset('job');
 		if (isset($_GPC['type']) && !(empty($_GPC['type']))) 
 		{
 			$type = $_GPC['type'];

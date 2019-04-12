@@ -23,7 +23,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 		if (!empty($item)) {
 			pdo_update('ewei_shop_groups_category', array('displayorder' => $displayorder), array('id' => $id));
-			plog('groups.category.delete', '修改分类排序 ID: ' . $item['id'] . ' 标题: ' . $item['name'] . ' 排序: ' . $displayorder . ' ');
+			plog('groups.job.delete', '修改分类排序 ID: ' . $item['id'] . ' 标题: ' . $item['name'] . ' 排序: ' . $displayorder . ' ');
 		}
 
 		show_json(1);
@@ -50,15 +50,15 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 			if (!empty($id)) {
 				pdo_update('ewei_shop_groups_category', $data, array('id' => $id));
-				plog('groups.category.edit', '修改积分商城分类 ID: ' . $id);
+				plog('groups.job.edit', '修改积分商城分类 ID: ' . $id);
 			}
 			else {
 				pdo_insert('ewei_shop_groups_category', $data);
 				$id = pdo_insertid();
-				plog('groups.category.add', '添加积分商城分类 ID: ' . $id);
+				plog('groups.job.add', '添加积分商城分类 ID: ' . $id);
 			}
 
-			show_json(1, array('url' => webUrl('groups/category', array('op' => 'display'))));
+			show_json(1, array('url' => webUrl('groups/job', array('op' => 'display'))));
 		}
 
 		$item = pdo_fetch('select * from ' . tablename('ewei_shop_groups_category') . ' where id=:id and uniacid=:uniacid limit 1', array(':id' => $id, ':uniacid' => $_W['uniacid']));
@@ -73,11 +73,11 @@ class Category_EweiShopV2Page extends PluginWebPage
 		$item = pdo_fetch('SELECT id,name FROM ' . tablename('ewei_shop_groups_category') . (' WHERE id = \'' . $id . '\' AND uniacid=') . $_W['uniacid'] . '');
 
 		if (empty($item)) {
-			message('抱歉，分类不存在或是已经被删除！', webUrl('groups/category', array('op' => 'display')), 'error');
+			message('抱歉，分类不存在或是已经被删除！', webUrl('groups/job', array('op' => 'display')), 'error');
 		}
 
 		pdo_delete('ewei_shop_groups_category', array('id' => $id));
-		plog('groups.category.delete', '删除积分商城分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
+		plog('groups.job.delete', '删除积分商城分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
 		show_json(1);
 	}
 
@@ -95,7 +95,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 		foreach ($items as $item) {
 			pdo_update('ewei_shop_groups_category', array('enabled' => intval($_GPC['enabled'])), array('id' => $item['id']));
-			plog('groups.category.edit', '修改商品分类<br/>ID: ' . $item['id'] . '<br/>标题: ' . $item['name'] . '<br/>状态: ' . $_GPC['enabled'] == 1 ? '显示' : '隐藏');
+			plog('groups.job.edit', '修改商品分类<br/>ID: ' . $item['id'] . '<br/>标题: ' . $item['name'] . '<br/>状态: ' . $_GPC['enabled'] == 1 ? '显示' : '隐藏');
 		}
 
 		show_json(1, array('url' => referer()));

@@ -172,7 +172,7 @@ class Index_EweiShopV2Page extends PluginMobilePage
 		$set = $this->model->getSet();
 
 		if (!empty($set['share'])) {
-			$_W['shopshare'] = array('title' => '全部分类', 'imgUrl' => tomedia($_W['shopset']['shop']['logo']), 'desc' => m('plugin')->getName('qa'), 'link' => mobileUrl('qa/category'));
+			$_W['shopshare'] = array('title' => '全部分类', 'imgUrl' => tomedia($_W['shopset']['shop']['logo']), 'desc' => m('plugin')->getName('qa'), 'link' => mobileUrl('qa/job'));
 
 			if (p('commission')) {
 				$commset = p('commission')->getSet();
@@ -180,11 +180,11 @@ class Index_EweiShopV2Page extends PluginMobilePage
 				if (!empty($commset['level'])) {
 					$member = m('member')->getMember($_W['openid']);
 					if (!empty($member) && $member['status'] == 1 && $member['isagent'] == 1) {
-						$_W['shopshare']['link'] = mobileUrl('qa/category', array('mid' => $member['id']), true);
+						$_W['shopshare']['link'] = mobileUrl('qa/job', array('mid' => $member['id']), true);
 					}
 					else {
 						if (!empty($_GPC['mid'])) {
-							$_W['shopshare']['link'] = mobileUrl('qa/category', array('mid' => $_GPC['mid']), true);
+							$_W['shopshare']['link'] = mobileUrl('qa/job', array('mid' => $_GPC['mid']), true);
 						}
 					}
 				}

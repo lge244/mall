@@ -39,7 +39,7 @@ class List_EweiShopV2Page extends PluginMobileLoginPage
 		$params = array(':uniacid' => $_W['uniacid']);
 
 		if (!empty($cateid)) {
-			$condition .= ' and category = ' . $cateid;
+			$condition .= ' and job = ' . $cateid;
 		}
 
 		if (!empty($keywords)) {

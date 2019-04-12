@@ -18,7 +18,7 @@ return array(
 			array('title' => '专题管理', 'route' => 'task'),
 			array('title' => '会场管理', 'route' => 'room'),
 			array('title' => '商品管理', 'route' => 'goods'),
-			array('title' => '分类管理', 'route' => 'category'),
+			array('title' => '分类管理', 'route' => 'job'),
 			array('title' => '广告管理', 'route' => 'adv'),
 			array(
 				'title' => '设置',

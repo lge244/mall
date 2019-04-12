@@ -730,7 +730,7 @@ class My_EweiShopV2Page extends MobileLoginPage
 		}
 
 		$allcategory = m('shop')->getCategory();
-		$catlevel = intval($_W['shopset']['category']['level']);
+		$catlevel = intval($_W['shopset']['job']['level']);
 		$opencategory = true;
 		$plugin_commission = p('commission');
 		if ($plugin_commission && 0 < intval($_W['shopset']['commission']['level'])) {

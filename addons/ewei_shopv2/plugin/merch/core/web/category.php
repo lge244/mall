@@ -51,16 +51,16 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 			if (!empty($id)) {
 				pdo_update('ewei_shop_merch_category', $data, array('id' => $id));
-				plog('merch.category.edit', '修改商户分类 ID: ' . $id);
+				plog('merch.job.edit', '修改商户分类 ID: ' . $id);
 			}
 			else {
 				$data['createtime'] = time();
 				pdo_insert('ewei_shop_merch_category', $data);
 				$id = pdo_insertid();
-				plog('merch.category.add', '添加商户分类 ID: ' . $id);
+				plog('merch.job.add', '添加商户分类 ID: ' . $id);
 			}
 
-			show_json(1, array('url' => webUrl('merch/category')));
+			show_json(1, array('url' => webUrl('merch/job')));
 		}
 
 		$item = pdo_fetch('select * from ' . tablename('ewei_shop_merch_category') . ' where id=:id and uniacid=:uniacid limit 1', array(':id' => $id, ':uniacid' => $_W['uniacid']));
@@ -81,7 +81,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 		foreach ($items as $item) {
 			pdo_delete('ewei_shop_merch_category', array('id' => $item['id']));
-			plog('merch.category.delete', '删除商户分类 ID: ' . $item['id'] . ' 标题: ' . $item['catename'] . ' ');
+			plog('merch.job.delete', '删除商户分类 ID: ' . $item['id'] . ' 标题: ' . $item['catename'] . ' ');
 		}
 
 		show_json(1, array('url' => referer()));
@@ -101,7 +101,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 		foreach ($items as $item) {
 			pdo_update('ewei_shop_merch_category', array('status' => intval($_GPC['status'])), array('id' => $item['id']));
-			plog('merch.category.edit', '修改商户分类状态<br/>ID: ' . $item['id'] . '<br/>分类名称: ' . $item['catename'] . '<br/>状态: ' . $_GPC['status'] == 1 ? '显示' : '隐藏');
+			plog('merch.job.edit', '修改商户分类状态<br/>ID: ' . $item['id'] . '<br/>分类名称: ' . $item['catename'] . '<br/>状态: ' . $_GPC['status'] == 1 ? '显示' : '隐藏');
 		}
 
 		show_json(1, array('url' => referer()));
@@ -153,16 +153,16 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 			if (!empty($id)) {
 				pdo_update('ewei_shop_merch_category_swipe', $data, array('id' => $id));
-				plog('merch.category.swipe.edit', '添加商户分类幻灯 ID: ' . $id);
+				plog('merch.job.swipe.edit', '添加商户分类幻灯 ID: ' . $id);
 			}
 			else {
 				$data['createtime'] = time();
 				pdo_insert('ewei_shop_merch_category_swipe', $data);
 				$id = pdo_insertid();
-				plog('merch.category.swipe.add', '添加商户分类幻灯 ID: ' . $id);
+				plog('merch.job.swipe.add', '添加商户分类幻灯 ID: ' . $id);
 			}
 
-			show_json(1, array('url' => webUrl('merch/category/swipe')));
+			show_json(1, array('url' => webUrl('merch/job/swipe')));
 		}
 
 		$item = pdo_fetch('select * from ' . tablename('ewei_shop_merch_category_swipe') . ' where id=:id and uniacid=:uniacid limit 1', array(':id' => $id, ':uniacid' => $_W['uniacid']));
@@ -183,7 +183,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 		foreach ($items as $item) {
 			pdo_delete('ewei_shop_merch_category_swipe', array('id' => $item['id']));
-			plog('merch.category.delete', '删除商户幻灯 ID: ' . $item['id'] . ' 标题: ' . $item['catename'] . ' ');
+			plog('merch.job.delete', '删除商户幻灯 ID: ' . $item['id'] . ' 标题: ' . $item['catename'] . ' ');
 		}
 
 		show_json(1, array('url' => referer()));
@@ -203,7 +203,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 		foreach ($items as $item) {
 			pdo_update('ewei_shop_merch_category_swipe', array('status' => intval($_GPC['status'])), array('id' => $item['id']));
-			plog('merch.category.edit', '修改商户幻灯状态<br/>ID: ' . $item['id'] . '<br/>分类名称: ' . $item['catename'] . '<br/>状态: ' . $_GPC['status'] == 1 ? '显示' : '隐藏');
+			plog('merch.job.edit', '修改商户幻灯状态<br/>ID: ' . $item['id'] . '<br/>分类名称: ' . $item['catename'] . '<br/>状态: ' . $_GPC['status'] == 1 ? '显示' : '隐藏');
 		}
 
 		show_json(1, array('url' => referer()));

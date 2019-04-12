@@ -14,7 +14,7 @@ return array(
 		'icon'      => 'page',
 		'items'     => array(
 			array('title' => '商品管理', 'route' => 'goods'),
-			array('title' => '分类管理', 'route' => 'category'),
+			array('title' => '分类管理', 'route' => 'job'),
 			array('title' => '幻灯片管理', 'route' => 'adv'),
 			array(
 				'title'  => '订单管理',

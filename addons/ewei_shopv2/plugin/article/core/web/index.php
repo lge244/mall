@@ -9,7 +9,7 @@ class Index_EweiShopV2Page extends PluginWebPage
 	{
 		global $_W;
 		global $_GPC;
-		$select_category = empty($_GPC['category']) ? '' : ' and a.article_category=' . intval($_GPC['category']) . ' ';
+		$select_category = empty($_GPC['job']) ? '' : ' and a.article_category=' . intval($_GPC['job']) . ' ';
 		$select_title = empty($_GPC['keyword']) ? '' : ' and a.article_title LIKE \'%' . $_GPC['keyword'] . '%\' ';
 		$page = empty($_GPC['page']) ? '' : $_GPC['page'];
 		$pindex = max(1, intval($page));

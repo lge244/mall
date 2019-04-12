@@ -20,8 +20,8 @@ $(function(){
 	    $(this).addClass("current");
 	});
 
-	$(".ncap-channel-category").sortable({ items: 'dl' });
-	$(".ncap-channel-category ul").sortable({ items: 'li' });
+	$(".ncap-channel-job").sortable({ items: 'dl' });
+	$(".ncap-channel-job ul").sortable({ items: 'li' });
 
 	slide_obj = $("#upload_slide_form");//初始化焦点大图区数据
     upload_obj = $("#upload_slide");
@@ -52,9 +52,9 @@ function get_goods_class(){//查询子分类
 	if (gc_id>0) {
 		if($("dl[select_class_id='"+gc_id+"']").size()>0) return;//避免重复
 		$.get('index.php?act=web_channel&op=get_category_list&id='+gc_id, function(data){
-		  $(".ncap-channel-category").append(data);
-		  $(".ncap-channel-category").sortable({ items: 'dl' });
-		  $(".ncap-channel-category ul").sortable({ items: 'li' });
+		  $(".ncap-channel-job").append(data);
+		  $(".ncap-channel-job").sortable({ items: 'dl' });
+		  $(".ncap-channel-job ul").sortable({ items: 'li' });
 		  upload_gc(gc_id);
 		});
 	}

@@ -10,7 +10,7 @@ class List_EweiShopV2Page extends AppMobilePage
 		global $_W;
 		global $_GPC;
 		$uniacid = $_W["uniacid"];
-		$cateid = intval($_GPC["category"]);
+		$cateid = intval($_GPC["job"]);
 		$list = array( );
 		$pindex = max(1, intval($_GPC["page"]));
 		$psize = 10;
@@ -18,7 +18,7 @@ class List_EweiShopV2Page extends AppMobilePage
 		$params = array( ":uniacid" => $_W["uniacid"] );
 		if( !empty($cateid) ) 
 		{
-			$condition .= " and category = " . $cateid;
+			$condition .= " and job = " . $cateid;
 		}
 		$keyword = trim($_GPC["keyword"]);
 		if( !empty($keyword) ) 
@@ -29,7 +29,7 @@ class List_EweiShopV2Page extends AppMobilePage
 		$total = pdo_fetchcolumn($sql, $params);
 		if( !empty($total) ) 
 		{
-			$sql = "SELECT id,title,thumb,price,groupnum,groupsprice,category,isindex,goodsnum,units,sales,description FROM " . tablename("ewei_shop_groups_goods") . "\r\n\t\t\t\t\t\twhere 1 " . $condition . " ORDER BY displayorder DESC,id DESC LIMIT " . ($pindex - 1) * $psize . "," . $psize;
+			$sql = "SELECT id,title,thumb,price,groupnum,groupsprice,job,isindex,goodsnum,units,sales,description FROM " . tablename("ewei_shop_groups_goods") . "\r\n\t\t\t\t\t\twhere 1 " . $condition . " ORDER BY displayorder DESC,id DESC LIMIT " . ($pindex - 1) * $psize . "," . $psize;
 			$list = pdo_fetchall($sql, $params);
 			$list = set_medias($list, "thumb");
 		}

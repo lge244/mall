@@ -180,7 +180,7 @@ class Shop_EweiShopV2Page extends AppMobilePage
 		global $_W;
 		global $_GPC;
 		$refresh = intval($_GPC['refresh']);
-		$category_set = $_W['shopset']['category'];
+		$category_set = $_W['shopset']['job'];
 		$category_set['advimg'] = tomedia($category_set['advimg']);
 		$level = intval($category_set['level']);
 		$category = m('shop')->getCategory();
@@ -275,7 +275,7 @@ class Shop_EweiShopV2Page extends AppMobilePage
 			$allcategory[] = $parent;
 		}
 
-		app_json(array('set' => $category_set, 'recommands' => $recommands, 'category' => $allcategory));
+		app_json(array('set' => $category_set, 'recommands' => $recommands, 'job' => $allcategory));
 	}
 
 	/**

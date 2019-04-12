@@ -722,7 +722,7 @@ function activity_store_sync() {
 		$location['status'] = $status2local[$location['available_state']];
 		$location['location_id'] = $location['poi_id'];
 		$category_temp = explode(',', $location['categories'][0]);
-		$location['category'] = iserializer(array('cate' => $category_temp[0], 'sub' => $category_temp[1], 'clas' => $category_temp[2]));
+		$location['job'] = iserializer(array('cate' => $category_temp[0], 'sub' => $category_temp[1], 'clas' => $category_temp[2]));
 		$location['photo_list'] = iserializer($location['photo_list']);
 		unset($location['categories'], $location['poi_id'], $location['update_status'], $location['available_state'],$location['offset_type'], $location['sid'], $location['type']);
 		pdo_update('activity_stores', $location, array('uniacid' => $_W['uniacid'], 'id' => $val['id']));

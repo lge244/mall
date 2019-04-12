@@ -121,7 +121,7 @@ CREATE TABLE `ims_ewei_shop_plugin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `displayorder` int(11) DEFAULT '0',
   `identity` varchar(50) DEFAULT '',
-  `category` varchar(255) DEFAULT '',
+  `job` varchar(255) DEFAULT '',
   `name` varchar(50) DEFAULT '',
   `version` varchar(10) DEFAULT '',
   `author` varchar(20) DEFAULT '',

@@ -16,7 +16,7 @@ class Index_EweiShopV2Page extends AppMobilePage
 		$category = set_medias($category, "thumb");
 		$recgoods = pdo_fetchall("select id,title,thumb,thumb_url,price,groupnum,groupsprice,isindex,goodsnum,units,sales,description,is_ladder,more_spec from " . tablename("ewei_shop_groups_goods") . "\r\n\t\t\t\t\twhere uniacid=:uniacid and isindex = 1 and status=1 and deleted=0 order by displayorder desc,id DESC limit 20", array( ":uniacid" => $uniacid ));
 		$recgoods = set_medias($recgoods, "thumb");
-		app_json(array( "advs" => $advs, "category" => $category, "recgoods" => $recgoods ));
+		app_json(array( "advs" => $advs, "job" => $category, "recgoods" => $recgoods ));
 	}
 }
 ?>

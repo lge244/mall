@@ -56,7 +56,7 @@ class Index_EweiShopV2Page extends AppMobilePage
 		}
 
 		array_values($category);
-		$data['category'] = $category;
+		$data['job'] = $category;
 		$lotterydraws = pdo_fetchall('select id, title,goodstype, subtitle, credit, money, thumb,`type`,price from ' . tablename('ewei_shop_creditshop_goods') . "\r\n\t\t\t\twhere " . $contation . ' and isrecommand = 1 and `type` = 1 and  status=1 and deleted=0 order by displayorder,id desc limit 4', array(':uniacid' => $uniacid));
 		$lotterydraws = set_medias($lotterydraws, 'thumb');
 		is_array($lotterydraws) ? $lotterydraws : ($lotterydraws = array());

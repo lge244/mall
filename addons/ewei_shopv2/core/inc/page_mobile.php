@@ -237,7 +237,7 @@ class MobilePage extends Page
 		{
 			$pageid = ((!(empty($controller)) ? $controller : 'shop'));
 			(($pageid == 'index' ? 'shop' : $pageid));
-			if (!(empty($_GPC['merchid'])) && (($_W['routes'] == 'shop.category') || ($_W['routes'] == 'goods'))) 
+			if (!(empty($_GPC['merchid'])) && (($_W['routes'] == 'shop.job') || ($_W['routes'] == 'goods')))
 			{
 				$pageid = 'merch';
 			}

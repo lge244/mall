@@ -20,7 +20,7 @@ class Raven_Breadcrumbs_ErrorHandler
     public function handleError($code, $message, $file = '', $line = 0, $context = array())
     {
         $this->ravenClient->breadcrumbs->record(array(
-            'category' => 'error_reporting',
+            'job' => 'error_reporting',
             'message' => $message,
             'level' => $this->ravenClient->translateSeverity($code),
             'data' => array(

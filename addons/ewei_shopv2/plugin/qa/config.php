@@ -19,7 +19,7 @@ return array(
 					array('title' => '添加问题', 'route' => 'question.add')
 					)
 				),
-			array('title' => '问题分类', 'route' => 'category'),
+			array('title' => '问题分类', 'route' => 'job'),
 			array('title' => '基础设置', 'route' => 'set')
 			)
 		)

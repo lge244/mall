@@ -5,7 +5,7 @@
  */
 defined('IN_IA') or exit('Access Denied');
 
-$dos = array('category_post', 'category', 'category_del', 'list', 'post', 'batch_post', 'del', 'displaysetting');
+$dos = array('category_post', 'job', 'category_del', 'list', 'post', 'batch_post', 'del', 'displaysetting');
 $do = in_array($do, $dos) ? $do : 'list';
 permission_check_account_user('system_article_news');
 
@@ -28,12 +28,12 @@ if ($do == 'category_post') {
 				$i++;
 			}
 		}
-		itoast('添加分类成功', url('article/news/category'), 'success');
+		itoast('添加分类成功', url('article/news/job'), 'success');
 	}
-	template('article/news-category-post');
+	template('article/news-job-post');
 }
 
-if ($do == 'category') {
+if ($do == 'job') {
 	$_W['page']['title'] = '分类列表-新闻分类-文章管理';
 	if (checksubmit('submit')) {
 		if (!empty($_GPC['ids'])) {
@@ -49,7 +49,7 @@ if ($do == 'category') {
 	}
 
 	$data = table('articlecategory')->getNewsCategoryLists();
-	template('article/news-category');
+	template('article/news-job');
 }
 
 if ($do == 'category_del') {

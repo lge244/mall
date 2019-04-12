@@ -395,7 +395,7 @@
 				rawColumns[col][row] = trimVal;
 			}
 			
-			// Disable number or date parsing by setting the X axis type to category
+			// Disable number or date parsing by setting the X axis type to job
 			if (forceCategory || (row === 0 && firstRowAsNames)) {
 				column[row] = trimVal;
 
@@ -705,7 +705,7 @@
 					}
 				}
 			}
-			// Axis type is category, then the "x" column should be called "name"
+			// Axis type is job, then the "x" column should be called "name"
 			if (type === 'category') {
 				for (seriesIndex = 0; seriesIndex < allSeriesBuilders.length; seriesIndex++) {
 					builder = allSeriesBuilders[seriesIndex];

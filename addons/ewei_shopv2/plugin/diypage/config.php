@@ -63,7 +63,7 @@ return array(
 				'route' => 'temp',
 				'items' => array(
 					array('title' => '全部模板'),
-					array('title' => '模板分类', 'route' => 'category')
+					array('title' => '模板分类', 'route' => 'job')
 					)
 				)
 			)

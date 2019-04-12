@@ -222,7 +222,7 @@ class Index_EweiShopV2Page extends MmanageMobilePage
 			$groups = array_merge(array(
 	array('id' => 0, 'groupname' => '未分组')
 	), $groups);
-			$catlevel = intval($_W['shopset']['category']['level']);
+			$catlevel = intval($_W['shopset']['job']['level']);
 			$category = m('shop')->getFullCategory(true, true);
 			$allcategory = m('shop')->getCategory();
 			$category_json = json_encode($allcategory);

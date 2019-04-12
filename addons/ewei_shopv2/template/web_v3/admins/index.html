@@ -1,29 +1,34 @@
 {template '_header'}
 <style>
-    tbody tr td{
+    tbody tr td {
         position: relative;
     }
-    tbody tr  .icow-weibiaoti--{
+
+    tbody tr .icow-weibiaoti-- {
         visibility: hidden;
         display: inline-block;
         color: #fff;
-        height:18px;
-        width:18px;
+        height: 18px;
+        width: 18px;
         background: #e0e0e0;
         text-align: center;
         line-height: 18px;
         vertical-align: middle;
     }
-    tbody tr:hover .icow-weibiaoti--{
+
+    tbody tr:hover .icow-weibiaoti-- {
         visibility: visible;
     }
-    tbody tr  .icow-weibiaoti--.hidden{
+
+    tbody tr .icow-weibiaoti--.hidden {
         visibility: hidden !important;
     }
-    .full .icow-weibiaoti--{
-        margin-left:10px;
+
+    .full .icow-weibiaoti-- {
+        margin-left: 10px;
     }
-    .full>span{
+
+    .full > span {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -31,14 +36,18 @@
         vertical-align: middle;
         align-items: center;
     }
-    tbody tr .label{
+
+    tbody tr .label {
         margin: 5px 0;
     }
-    .goods_attribute a{
+
+    .goods_attribute a {
         cursor: pointer;
     }
-    .newgoodsflag{
-        width: 22px;height: 16px;
+
+    .newgoodsflag {
+        width: 22px;
+        height: 16px;
         background-color: #ff0000;
         color: #fff;
         text-align: center;
@@ -47,6 +56,7 @@
         left: 57px;
         font-size: 12px;
     }
+
     .modal-dialog {
         min-width: 720px !important;
         position: absolute;
@@ -54,16 +64,17 @@
         right: 0;
         top: 50%;
     }
-    .catetag{
-        overflow:hidden;
 
-        text-overflow:ellipsis;
+    .catetag {
+        overflow: hidden;
 
-        display:-webkit-box;
+        text-overflow: ellipsis;
 
-        -webkit-box-orient:vertical;
+        display: -webkit-box;
 
-        -webkit-line-clamp:2;
+        -webkit-box-orient: vertical;
+
+        -webkit-line-clamp: 2;
     }
 </style>
 <div class="page-header">
@@ -79,17 +90,17 @@
         <div style="width: 80px;">库存</div>
         <div style="width: 80px;">销量</div>
         {if $goodsfrom!='cycle'}
-        <div  style="width:80px;" >状态</div>
+        <div style="width:80px;">状态</div>
         {/if}
         <div class="flex1">属性</div>
         <div style="width: 120px;">操作</div>
     </div>
     <form action="./index.php" method="get" class="form-horizontal form-search" role="form">
-        <input type="hidden" name="c" value="site" />
-        <input type="hidden" name="a" value="entry" />
-        <input type="hidden" name="m" value="ewei_shopv2" />
-        <input type="hidden" name="do" value="web" />
-        <input type="hidden" name="r"  value="goods.{$goodsfrom}" />
+        <input type="hidden" name="c" value="site"/>
+        <input type="hidden" name="a" value="entry"/>
+        <input type="hidden" name="m" value="ewei_shopv2"/>
+        <input type="hidden" name="do" value="web"/>
+        <input type="hidden" name="r" value="goods.{$goodsfrom}"/>
         <div class="page-toolbar">
             <span class="pull-left" style="margin-right:30px;">
                 <a class='btn btn-sm btn-primary' href="{php echo webUrl('admins/add')}"><i class='fa fa-plus'></i> 添加管理</a>
@@ -99,55 +110,47 @@
 
     <div class="row">
         <div class="col-md-12">
-            <div class="page-table-header">
-                <input type='checkbox' />
-            </div>
             <table class="table table-responsive">
                 <thead class="navbar-inner">
                 <tr>
-                    <th style="width:25px;"></th>
-                    <th style="width:80px;text-align:center;">排序</th>
-                    <th style="width:80px;">商品</th>
-                    <th style="">&nbsp;</th>
-                    <th style="width: 100px;">价格</th>
-                    <th style="width: 80px;">库存</th>
-                    <th style="width: 80px;">销量</th>
-                    <th  style="width:80px;" >状态</th>
-                    <th>属性</th>
-                    <th style="width: 120px;">操作</th>
+                    <th style="width:15%;">管理员ID</th>
+                    <th style="width:25%;">管理员</th>
+                    <th style="width:20%;">角色</th>
+                    <th style="width:20%;">真实姓名</th>
+                    <th style="width:20%;">操作</th>
                 </tr>
                 </thead>
                 <tbody>
+                {loop $admins_list $row}
                 <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
+                    <td>{$row['uid']}</td>
+                    <td>{$row['username']}</td>
+                    <td>{$row['jobtitle']}</td>
+                    <td>{$row['truename']}</td>
+                    <td>
+                        <a  class='btn  btn-op btn-operation' href="{php echo webUrl('admins/add', array('uid' => $row['uid']))}">
+                                   <span data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
+                                        <i class='icow icow-bianji2'></i>
+                                   </span>
+                        </a>
+                        <a class='btn  btn-op btn-operation' data-toggle='ajaxRemove'
+                           href="{php echo webUrl('admins/delete', array('id' => $row['uid']))}"
+                           data-confirm='确认彻底删除此管理员？'>
+                                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
+                                     <i class='icow icow-shanchu1'></i>
+                                </span>
+                        </a>
+                    </td>
                 </tr>
+                {/loop}
                 </tbody>
-                <tfoot>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td    {if $goodsfrom!='cycle'}colspan="4"{else}colspan="3" {/if}>
-                    <div class="btn-group">
-                        <button class="btn btn-default btn-sm  btn-operation" type="button" data-toggle='batch-remove' data-confirm="如果商品存在购买记录，会无法关联到商品, 确认要彻底删除吗?" data-href="{php echo webUrl('goods/delete1')}">
-                            <i class='icow icow-shanchu1'></i> 彻底删除</button>
-                    </div>
-                    </td>
-                    <td colspan="5" style="text-align: right">
-                        {$pager}
-                    </td>
-                </tr>
-                </tfoot>
             </table>
         </div>
     </div>
 
-    <div class="panel panel-default">
-        <div class="panel-body empty-data">暂时没有任何管理员!</div>
-    </div>
+    <!--<div class="panel panel-default">-->
+    <!--<div class="panel-body empty-data">暂时没有任何管理员!</div>-->
+    <!--</div>-->
 
 </div>
 {template 'goods/batchcates'}
@@ -185,9 +188,13 @@
             return $(this).val()
         }).get();
 
-        var cates=$('#cates').val();
-        var iscover=$('input[name="iscover"]:checked').val();
-        $.post(biz.url('goods/ajax_batchcates'),{'goodsids':goodsids,'cates': cates,'iscover':iscover}, function (ret) {
+        var cates = $('#cates').val();
+        var iscover = $('input[name="iscover"]:checked').val();
+        $.post(biz.url('goods/ajax_batchcates'), {
+            'goodsids': goodsids,
+            'cates': cates,
+            'iscover': iscover
+        }, function (ret) {
             if (ret.status == 1) {
                 $('#batchcates').hide();
                 tip.msgbox.suc('修改成功');

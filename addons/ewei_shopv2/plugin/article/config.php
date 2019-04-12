@@ -16,7 +16,7 @@ return array(
 				'route'   => '',
 				'extends' => array('article.record')
 				),
-			array('title' => '分类管理', 'route' => 'category'),
+			array('title' => '分类管理', 'route' => 'job'),
 			array('title' => '举报记录', 'route' => 'report'),
 			array('title' => '其他设置', 'route' => 'set')
 			)

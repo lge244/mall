@@ -24,7 +24,7 @@ class Pluginpackage_EweiShopV2Page extends SystemPage
 			$condition .= ' and gp.state=' . intval($_GPC['state']);
 		}
 
-		$list = pdo_fetchall('SELECT gp.*,p.identity,p.category,p.version,p.author,p.status,p.name FROM ' . tablename('ewei_shop_system_plugingrant_package') . " as gp\n                left join " . tablename('ewei_shop_plugin') . (" as p on p.id = gp.pluginid\n                WHERE 1 " . $condition . ' ORDER BY gp.displayorder,gp.id desc LIMIT ') . ($pindex - 1) * $psize . ',' . $psize, $params);
+		$list = pdo_fetchall('SELECT gp.*,p.identity,p.job,p.version,p.author,p.status,p.name FROM ' . tablename('ewei_shop_system_plugingrant_package') . " as gp\n                left join " . tablename('ewei_shop_plugin') . (" as p on p.id = gp.pluginid\n                WHERE 1 " . $condition . ' ORDER BY gp.displayorder,gp.id desc LIMIT ') . ($pindex - 1) * $psize . ',' . $psize, $params);
 
 		foreach ($list as $key => $value) {
 			$list[$key]['data'] = unserialize($value['data']);

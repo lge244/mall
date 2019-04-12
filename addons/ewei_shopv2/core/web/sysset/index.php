@@ -61,9 +61,9 @@ class Index_EweiShopV2Page extends WebPage
 										}
 										else 
 										{
-											if( cv("sysset.category") ) 
+											if( cv("sysset.job") )
 											{
-												header("location: " . webUrl("sysset/category"));
+												header("location: " . webUrl("sysset/job"));
 											}
 											else 
 											{
@@ -703,25 +703,25 @@ class Index_EweiShopV2Page extends WebPage
 		global $_GPC;
 		if( $_W["ispost"] ) 
 		{
-			ca("sysset.category.edit");
+			ca("sysset.job.edit");
 			$data = (is_array($_GPC["data"]) ? $_GPC["data"] : array( ));
 			$shop = m("common")->getSysset("shop");
 			$shop["level"] = intval($data["level"]);
 			$shop["show"] = intval($data["show"]);
 			$shop["advimg"] = save_media($data["advimg"]);
 			$shop["advurl"] = trim($data["advurl"]);
-			m("common")->updateSysset(array( "category" => $data ));
+			m("common")->updateSysset(array( "job" => $data ));
 			$shop = m("common")->getSysset("shop");
 			$shop["catlevel"] = $data["level"];
 			$shop["catshow"] = $data["show"];
 			$shop["catadvimg"] = save_media($data["advimg"]);
 			$shop["catadvurl"] = $data["advurl"];
 			m("common")->updateSysset(array( "shop" => $shop ));
-			plog("sysset.category.edit", "修改系统设置-分类层级设置");
+			plog("sysset.job.edit", "修改系统设置-分类层级设置");
 			m("shop")->getCategory(true);
 			show_json(1);
 		}
-		$data = m("common")->getSysset("category");
+		$data = m("common")->getSysset("job");
 		if( empty($data) ) 
 		{
 			$shop = m("common")->getSysset("shop");

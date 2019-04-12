@@ -109,11 +109,11 @@ class coupon extends WeiXinAccount {
 		if (is_error($token)) {
 			return $token;
 		}
-		if (!empty($data['category'])) {
-			$data['category'] = array(rtrim(implode(',', array_values($data['category'])), ','));
+		if (!empty($data['job'])) {
+			$data['job'] = array(rtrim(implode(',', array_values($data['job'])), ','));
 		}
-		$data['categories'] = $data['category'];
-		unset($data['category']);
+		$data['categories'] = $data['job'];
+		unset($data['job']);
 		$data['offset_type'] = 1;
 		$post = array(
 			'business' => array(

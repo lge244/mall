@@ -187,7 +187,7 @@
 	    });
 	}
 	//左侧分类菜单
-	$(".channel-category ul.menu").find("li").each(
+	$(".channel-job ul.menu").find("li").each(
 		function() {
 		    var obj = $(this);
 		    if (obj.css("display") != 'none') {

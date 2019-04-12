@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license		http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -39,7 +39,7 @@ if (!defined('PHPEXCEL_ROOT')) {
 /**
  * PHPExcel_Calculation_Database
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -159,7 +159,7 @@ class PHPExcel_Calculation_Database {
 	 *		DAVERAGE(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -208,7 +208,7 @@ class PHPExcel_Calculation_Database {
 	 *		DAVERAGE(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -257,7 +257,7 @@ class PHPExcel_Calculation_Database {
 	 *		DCOUNTA(database,[field],criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -307,7 +307,7 @@ class PHPExcel_Calculation_Database {
 	 *		DGET(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -358,7 +358,7 @@ class PHPExcel_Calculation_Database {
 	 *		DMAX(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -405,7 +405,7 @@ class PHPExcel_Calculation_Database {
 	 *		DMIN(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -451,7 +451,7 @@ class PHPExcel_Calculation_Database {
 	 *		DPRODUCT(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -498,7 +498,7 @@ class PHPExcel_Calculation_Database {
 	 *		DSTDEV(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -545,7 +545,7 @@ class PHPExcel_Calculation_Database {
 	 *		DSTDEVP(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -591,7 +591,7 @@ class PHPExcel_Calculation_Database {
 	 *		DSUM(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -638,7 +638,7 @@ class PHPExcel_Calculation_Database {
 	 *		DVAR(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The
@@ -685,7 +685,7 @@ class PHPExcel_Calculation_Database {
 	 *		DVARP(database,field,criteria)
 	 *
 	 * @access	public
-	 * @category Database Functions
+	 * @job Database Functions
 	 * @param	mixed[]			$database	The range of cells that makes up the list or database.
 	 *										A database is a list of related data in which rows of related
 	 *										information are records, and columns of data are fields. The

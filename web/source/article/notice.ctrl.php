@@ -7,7 +7,7 @@ defined('IN_IA') or exit('Access Denied');
 
 load()->model('article');
 
-$dos = array('category_post', 'category', 'category_del', 'list', 'post', 'batch_post', 'del', 'displaysetting');
+$dos = array('category_post', 'job', 'category_del', 'list', 'post', 'batch_post', 'del', 'displaysetting');
 $do = in_array($do, $dos) ? $do : 'list';
 permission_check_account_user('system_article_notice');
 
@@ -30,12 +30,12 @@ if ($do == 'category_post') {
 				$i++;
 			}
 		}
-		itoast('添加公告分类成功', url('article/notice/category'), 'success');
+		itoast('添加公告分类成功', url('article/notice/job'), 'success');
 	}
-	template('article/notice-category-post');
+	template('article/notice-job-post');
 }
 
-if ($do == 'category') {
+if ($do == 'job') {
 	$_W['page']['title'] = '分类列表-公告分类-公告管理-文章-系统管理';
 	if (checksubmit('submit')) {
 		if (!empty($_GPC['ids'])) {
@@ -50,7 +50,7 @@ if ($do == 'category') {
 		}
 	}
 	$data = table('articlecategory')->getNoticeCategoryLists();
-	template('article/notice-category');
+	template('article/notice-job');
 }
 
 if ($do == 'category_del') {

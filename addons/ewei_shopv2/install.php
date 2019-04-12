@@ -3579,7 +3579,7 @@ CREATE TABLE IF NOT EXISTS `ims_ewei_shop_groups_goods` (
   `displayorder` int(11) unsigned DEFAULT '0',
   `uniacid` int(11) DEFAULT '0',
   `title` varchar(255) NOT NULL DEFAULT '',
-  `category` int(11) DEFAULT NULL,
+  `job` int(11) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   `price` decimal(10,2) DEFAULT '0.00',
   `groupsprice` decimal(10,2) DEFAULT '0.00',
@@ -3632,11 +3632,11 @@ CREATE TABLE IF NOT EXISTS `ims_ewei_shop_groups_goods` (
   `is_ladder` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `idx_uniacid` (`uniacid`),
-  KEY `idx_type` (`category`),
+  KEY `idx_type` (`job`),
   KEY `idx_createtime` (`createtime`),
   KEY `idx_status` (`status`),
   KEY `idx_istop` (`isindex`),
-  KEY `idx_category` (`category`),
+  KEY `idx_category` (`job`),
   KEY `idx_dispatchid` (`dispatchid`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
@@ -3995,7 +3995,7 @@ CREATE TABLE IF NOT EXISTS `ims_ewei_shop_live` (
   `liveidentity` varchar(50) NOT NULL,
   `screen` tinyint(3) NOT NULL DEFAULT '0',
   `goodsid` text NOT NULL,
-  `category` int(11) NOT NULL DEFAULT '0',
+  `job` int(11) NOT NULL DEFAULT '0',
   `url` varchar(1000) NOT NULL,
   `thumb` varchar(1000) NOT NULL,
   `hot` tinyint(3) NOT NULL DEFAULT '0',
@@ -4038,7 +4038,7 @@ CREATE TABLE IF NOT EXISTS `ims_ewei_shop_live` (
   PRIMARY KEY (`id`),
   KEY `idx_uniacid` (`uniacid`),
   KEY `idx_merchid` (`merchid`),
-  KEY `idx_category` (`category`),
+  KEY `idx_category` (`job`),
   KEY `idx_hot` (`hot`),
   KEY `idx_recommend` (`recommend`),
   KEY `idx_living` (`living`),
@@ -6092,7 +6092,7 @@ CREATE TABLE IF NOT EXISTS `ims_ewei_shop_plugin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `displayorder` int(11) DEFAULT '0',
   `identity` varchar(50) DEFAULT '',
-  `category` varchar(255) DEFAULT '',
+  `job` varchar(255) DEFAULT '',
   `name` varchar(50) DEFAULT '',
   `version` varchar(10) DEFAULT '',
   `author` varchar(20) DEFAULT '',
@@ -6111,7 +6111,7 @@ CREATE TABLE IF NOT EXISTS `ims_ewei_shop_plugin` (
 -- 转存表中的数据 `ims_ewei_shop_plugin`
 --
 
-INSERT INTO `ims_ewei_shop_plugin` (`id`, `displayorder`, `identity`, `category`, `name`, `version`, `author`, `status`, `thumb`, `desc`, `iscom`, `deprecated`, `isv2`) VALUES
+INSERT INTO `ims_ewei_shop_plugin` (`id`, `displayorder`, `identity`, `job`, `name`, `version`, `author`, `status`, `thumb`, `desc`, `iscom`, `deprecated`, `isv2`) VALUES
 (1, 1, 'qiniu', 'tool', '七牛存储', '1.0', '官方', 1, '../addons/ewei_shopv2/static/images/qiniu.jpg', NULL, 1, 0, 0),
 (2, 2, 'taobao', 'tool', '商品助手', '1.0', '官方', 1, '../addons/ewei_shopv2/static/images/taobao.jpg', '', 0, 0, 0),
 (3, 3, 'commission', 'biz', '人人分销', '1.0', '官方', 1, '../addons/ewei_shopv2/static/images/commission.jpg', '', 0, 0, 0),

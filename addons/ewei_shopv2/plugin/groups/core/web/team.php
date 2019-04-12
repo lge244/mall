@@ -95,7 +95,7 @@ class Team_EweiShopV2Page extends PluginWebPage
 		{
 			$teams = $this->multi_array_sort($teams, "groups_team", SORT_ASC);
 		}
-		$total = pdo_fetchcolumn("SELECT count(1) FROM " . tablename("ewei_shop_groups_order") . " as o\r\n\t\t\t\t\tleft join " . tablename("ewei_shop_groups_goods") . " as g on g.id = o.goodid\r\n\t\t\t\t\tright join " . tablename("ewei_shop_groups_category") . " as c on c.id = g.category\r\n\t\t\t\t\tWHERE " . $condition, $params);
+		$total = pdo_fetchcolumn("SELECT count(1) FROM " . tablename("ewei_shop_groups_order") . " as o\r\n\t\t\t\t\tleft join " . tablename("ewei_shop_groups_goods") . " as g on g.id = o.goodid\r\n\t\t\t\t\tright join " . tablename("ewei_shop_groups_category") . " as c on c.id = g.job\r\n\t\t\t\t\tWHERE " . $condition, $params);
 		if( empty($teams) && !empty($_GPC["keyword"]) && $_GPC["searchfield"] == "orderno" ) 
 		{
 			$grouporder = pdo_fetch("select teamid from " . tablename("ewei_shop_groups_order") . " where uniacid = :uniacid and orderno like :orderno ", array( ":uniacid" => intval($_W["uniacid"]), ":orderno" => "%" . $_GPC["keyword"] . "%" ));

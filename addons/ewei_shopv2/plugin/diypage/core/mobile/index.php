@@ -238,11 +238,11 @@ class Index_EweiShopV2Page extends PluginMobilePage
 		{
 			$goodsnum = 20;
 		}
-		if (($urlData[0] == 'goodsids') || ($urlData[0] == 'category') || ($urlData[0] == 'groups')) 
+		if (($urlData[0] == 'goodsids') || ($urlData[0] == 'job') || ($urlData[0] == 'groups'))
 		{
 			$urlType = $urlData[0];
 			$urlValue = explode('?', $urlData[1]);
-			if ($urlData[0] == 'category') 
+			if ($urlData[0] == 'job')
 			{
 				$pcate = $urlValue[0];
 				$goodsql = 'SELECT id,title,subtitle,thumb,marketprice,productprice,minprice,maxprice,isdiscount,isdiscount_time,isdiscount_discounts,sales,salesreal,total,description,bargain,`type`,ispresell,`virtual`,hasoption,video FROM ' . tablename('ewei_shop_goods') . ' WHERE FIND_IN_SET(' . $pcate . ',cates) AND status > 0 AND deleted = 0 AND uniacid =' . $_W['uniacid'] . ' limit 0,' . $goodsnum;

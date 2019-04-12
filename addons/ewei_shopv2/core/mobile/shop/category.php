@@ -10,7 +10,7 @@ class Category_EweiShopV2Page extends MobilePage
 		global $_W;
 		global $_GPC;
 		$merchid = intval($_GPC['merchid']);
-		$category_set = $_W['shopset']['category'];
+		$category_set = $_W['shopset']['job'];
 		$category_set['advimg'] = tomedia($category_set['advimg']);
 
 		if ($category_set['level'] == -1) {
@@ -18,7 +18,7 @@ class Category_EweiShopV2Page extends MobilePage
 		}
 
 		$category = $this->getCategory($category_set['level'], $merchid);
-		$set = m('common')->getSysset('category');
+		$set = m('common')->getSysset('job');
 		include $this->template();
 	}
 

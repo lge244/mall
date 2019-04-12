@@ -215,7 +215,7 @@ class Index_EweiShopV2Page extends PluginMobilePage
 
 		$set = m('common')->getSysset('shop');
 
-		if ($_W['shopset']['category']['level'] != -1) {
+		if ($_W['shopset']['job']['level'] != -1) {
 			$category = m('shop')->getCategory();
 		}
 

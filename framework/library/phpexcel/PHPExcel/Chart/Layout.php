@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Chart
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license		http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -29,7 +29,7 @@
 /**
  * PHPExcel_Chart_Layout
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Chart
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -101,8 +101,8 @@ class PHPExcel_Chart_Layout
 	private $_showVal	= NULL;
 
 	/**
-	 * show category name
-	 * Specifies that the category name should be shown in the data label.
+	 * show job name
+	 * Specifies that the job name should be shown in the data label.
 	 *
 	 * @var boolean
 	 */
@@ -320,7 +320,7 @@ class PHPExcel_Chart_Layout
 	}
 
 	/**
-	 * Get show category name
+	 * Get show job name
 	 *
 	 * @return boolean
 	 */
@@ -330,7 +330,7 @@ class PHPExcel_Chart_Layout
 
 	/**
 	 * Set show cat name
-	 * Specifies that the category name should be shown in data labels.
+	 * Specifies that the job name should be shown in data labels.
 	 *
 	 * @param boolean $value		Show cat name
 	 */

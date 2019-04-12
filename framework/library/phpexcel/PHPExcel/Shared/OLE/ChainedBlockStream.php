@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * @category   PHPExcel
+ * @job   PHPExcel
  * @package    PHPExcel_Shared_OLE
  * @copyright  Copyright (c) 2006 - 2007 Christian Schmidt
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -32,7 +32,7 @@
  * for PHP's stream_wrapper_register(). For creating streams using this
  * wrapper, use PHPExcel_Shared_OLE_PPS_File::getStream().
  *
- * @category   PHPExcel
+ * @job   PHPExcel
  * @package    PHPExcel_Shared_OLE
  */
 class PHPExcel_Shared_OLE_ChainedBlockStream

@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license		http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -46,7 +46,7 @@ define('FINANCIAL_PRECISION', 1.0e-08);
 /**
  * PHPExcel_Calculation_Financial
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -172,7 +172,7 @@ class PHPExcel_Calculation_Financial {
 	 *		ACCRINT(issue,firstinterest,settlement,rate,par,frequency[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	$issue			The security's issue date.
 	 * @param	mixed	$firstinterest	The security's first interest date.
 	 * @param	mixed	$settlement		The security's settlement date.
@@ -236,7 +236,7 @@ class PHPExcel_Calculation_Financial {
 	 *		ACCRINTM(issue,settlement,rate[,par[,basis]])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	issue		The security's issue date.
 	 * @param	mixed	settlement	The security's settlement (or maturity) date.
 	 * @param	float	rate		The security's annual coupon rate.
@@ -291,7 +291,7 @@ class PHPExcel_Calculation_Financial {
 	 *		AMORDEGRC(cost,purchased,firstPeriod,salvage,period,rate[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	cost		The cost of the asset.
 	 * @param	mixed	purchased	Date of the purchase of the asset.
 	 * @param	mixed	firstPeriod	Date of the end of the first period.
@@ -367,7 +367,7 @@ class PHPExcel_Calculation_Financial {
 	 *		AMORLINC(cost,purchased,firstPeriod,salvage,period,rate[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	cost		The cost of the asset.
 	 * @param	mixed	purchased	Date of the purchase of the asset.
 	 * @param	mixed	firstPeriod	Date of the end of the first period.
@@ -425,7 +425,7 @@ class PHPExcel_Calculation_Financial {
 	 *		COUPDAYBS(settlement,maturity,frequency[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	settlement	The security's settlement date.
 	 *								The security settlement date is the date after the issue
 	 *								date when the security is traded to the buyer.
@@ -483,7 +483,7 @@ class PHPExcel_Calculation_Financial {
 	 *		COUPDAYS(settlement,maturity,frequency[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	settlement	The security's settlement date.
 	 *								The security settlement date is the date after the issue
 	 *								date when the security is traded to the buyer.
@@ -553,7 +553,7 @@ class PHPExcel_Calculation_Financial {
 	 *		COUPDAYSNC(settlement,maturity,frequency[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	settlement	The security's settlement date.
 	 *								The security settlement date is the date after the issue
 	 *								date when the security is traded to the buyer.
@@ -611,7 +611,7 @@ class PHPExcel_Calculation_Financial {
 	 *		COUPNCD(settlement,maturity,frequency[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	settlement	The security's settlement date.
 	 *								The security settlement date is the date after the issue
 	 *								date when the security is traded to the buyer.
@@ -668,7 +668,7 @@ class PHPExcel_Calculation_Financial {
 	 *		COUPNUM(settlement,maturity,frequency[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	settlement	The security's settlement date.
 	 *								The security settlement date is the date after the issue
 	 *								date when the security is traded to the buyer.
@@ -738,7 +738,7 @@ class PHPExcel_Calculation_Financial {
 	 *		COUPPCD(settlement,maturity,frequency[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	settlement	The security's settlement date.
 	 *								The security settlement date is the date after the issue
 	 *								date when the security is traded to the buyer.
@@ -794,7 +794,7 @@ class PHPExcel_Calculation_Financial {
 	 *		CUMIPMT(rate,nper,pv,start,end[,type])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	$rate	The Interest rate
 	 * @param	integer	$nper	The total number of payment periods
 	 * @param	float	$pv		Present Value
@@ -841,7 +841,7 @@ class PHPExcel_Calculation_Financial {
 	 *		CUMPRINC(rate,nper,pv,start,end[,type])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	$rate	The Interest rate
 	 * @param	integer	$nper	The total number of payment periods
 	 * @param	float	$pv		Present Value
@@ -893,7 +893,7 @@ class PHPExcel_Calculation_Financial {
 	 *		DB(cost,salvage,life,period[,month])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	cost		Initial cost of the asset.
 	 * @param	float	salvage		Value at the end of the depreciation.
 	 *								(Sometimes called the salvage value of the asset)
@@ -959,7 +959,7 @@ class PHPExcel_Calculation_Financial {
 	 *		DDB(cost,salvage,life,period[,factor])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	cost		Initial cost of the asset.
 	 * @param	float	salvage		Value at the end of the depreciation.
 	 *								(Sometimes called the salvage value of the asset)
@@ -1017,7 +1017,7 @@ class PHPExcel_Calculation_Financial {
 	 *		DISC(settlement,maturity,price,redemption[,basis])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	mixed	settlement	The security's settlement date.
 	 *								The security settlement date is the date after the issue
 	 *								date when the security is traded to the buyer.
@@ -1071,7 +1071,7 @@ class PHPExcel_Calculation_Financial {
 	 *		DOLLARDE(fractional_dollar,fraction)
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	$fractional_dollar	Fractional Dollar
 	 * @param	integer	$fraction			Fraction
 	 * @return	float
@@ -1107,7 +1107,7 @@ class PHPExcel_Calculation_Financial {
 	 *		DOLLARFR(decimal_dollar,fraction)
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	$decimal_dollar		Decimal Dollar
 	 * @param	integer	$fraction			Fraction
 	 * @return	float
@@ -1142,7 +1142,7 @@ class PHPExcel_Calculation_Financial {
 	 *		EFFECT(nominal_rate,npery)
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	$nominal_rate		Nominal interest rate
 	 * @param	integer	$npery				Number of compounding payments per year
 	 * @return	float
@@ -1169,7 +1169,7 @@ class PHPExcel_Calculation_Financial {
 	 *		FV(rate,nper,pmt[,pv[,type]])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	$rate	The interest rate per period
 	 * @param	int		$nper	Total number of payment periods in an annuity
 	 * @param	float	$pmt	The payment made each period: it cannot change over the
@@ -1811,7 +1811,7 @@ class PHPExcel_Calculation_Financial {
 	 *		RATE(nper,pmt,pv[,fv[,type[,guess]]])
 	 *
 	 * @access	public
-	 * @category Financial Functions
+	 * @job Financial Functions
 	 * @param	float	nper		The total number of payment periods in an annuity.
 	 * @param	float	pmt			The payment made each period and cannot change over the life
 	 *									of the annuity.

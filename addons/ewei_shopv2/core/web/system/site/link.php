@@ -24,7 +24,7 @@ class Link_EweiShopV2Page extends SystemPage
 				}
 			}
 
-			plog('system.category.edit', '批量修改分类');
+			plog('system.job.edit', '批量修改分类');
 			show_json(1);
 		}
 

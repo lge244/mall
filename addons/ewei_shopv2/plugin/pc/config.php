@@ -46,7 +46,7 @@ return array(
 		/*	array(
 				'title' => '帮助中心',
 				'items' => array(
-					array('title' => '文章分类', 'route' => 'article.category'),
+					array('title' => '文章分类', 'route' => 'article.job'),
 					array('title' => '文章管理', 'route' => 'pay'),
 					array('title' => '公告管理', 'route' => 'pay')
 					)

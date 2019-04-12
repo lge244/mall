@@ -34,7 +34,7 @@ class Category_EweiShopV2Page extends MerchWebPage
 
 			if (!empty($item)) {
 				pdo_delete('ewei_shop_diypage_template_category', array('id' => $id));
-				plog('diypage.temp.category.delete', '删除模板分类 名称:' . $item['name']);
+				plog('diypage.temp.job.delete', '删除模板分类 名称:' . $item['name']);
 			}
 
 			show_json(1);
@@ -53,7 +53,7 @@ class Category_EweiShopV2Page extends MerchWebPage
 
 		pdo_insert('ewei_shop_diypage_template_category', array('name' => $name, 'uniacid' => $_W['uniacid'], 'merch' => $_W['merchid']));
 		$id = pdo_insertid();
-		plog('diypage.temp.category.add', '添加模板分类 id:' . $id . ' 名称:' . $name);
+		plog('diypage.temp.job.add', '添加模板分类 id:' . $id . ' 名称:' . $name);
 		show_json(1);
 	}
 
@@ -67,7 +67,7 @@ class Category_EweiShopV2Page extends MerchWebPage
 
 		if (!empty($item)) {
 			pdo_update('ewei_shop_diypage_template_category', array('name' => $name), array('id' => $id, 'merch' => intval($_W['merchid'])));
-			plog('diypage.temp.category.edit', '编辑模板分类 id:' . $id . ' 原名称:' . $item['name'] . ' 新名称:' . $name);
+			plog('diypage.temp.job.edit', '编辑模板分类 id:' . $id . ' 原名称:' . $item['name'] . ' 新名称:' . $name);
 			show_json(1);
 		}
 		else {

@@ -3,7 +3,7 @@
  * PHPMailer RFC821 SMTP email transport class.
  * Version 5.2.7
  * PHP version 5.0.0
- * @category  PHP
+ * @job  PHP
  * @package   PHPMailer
  * @link      https://github.com/PHPMailer/PHPMailer/
  * @author Marcus Bointon (coolbru) <phpmailer@synchromedia.co.uk>
@@ -23,7 +23,7 @@
  *
  * PHP Version 5.0.0
  *
- * @category PHP
+ * @job PHP
  * @package  PHPMailer
  * @link     https://github.com/PHPMailer/PHPMailer/blob/master/class.smtp.php
  * @author   Chris Ryan <unknown@example.com>

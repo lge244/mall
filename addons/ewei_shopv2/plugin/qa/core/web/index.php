@@ -10,8 +10,8 @@ class Index_EweiShopV2Page extends PluginWebPage
 		if (cv('qa.question')) {
 			header('location: ' . webUrl('qa/question'));
 		}
-		else if (cv('qa.category')) {
-			header('location: ' . webUrl('qa/category'));
+		else if (cv('qa.job')) {
+			header('location: ' . webUrl('qa/job'));
 		}
 		else if (cv('qa.set')) {
 			header('location: ' . webUrl('qa/set'));

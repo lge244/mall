@@ -257,7 +257,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'view' => '查看',
                 'delete' => '删除-log'
             );
-            $perm['category'] = array(
+            $perm['job'] = array(
                 'text' => '门店分类管理',
                 'main' => '查看列表',
                 'add' => '添加-log',
@@ -400,7 +400,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'console' => '控制台-log',
                 'deleted' => '删除-log'
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类管理',
                 'main' => '查看列表',
                 'view' => '查看内容',
@@ -579,7 +579,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'goodsprice' => 'edit',
                 'change' => 'edit'
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '商品分类',
                 'add' => '添加-log',
                 'edit' => '修改-log',
@@ -617,7 +617,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                     'edit' => '修改-log',
                     'delete' => '删除-log'
                 ) ,
-                'category' => array(
+                'job' => array(
                     'text' => '卡密分类管理',
                     'add' => '添加-log',
                     'edit' => '编辑-log',
@@ -790,7 +790,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'xxx' => array(
                     'displayorder' => 'edit'
                 ) ,
-                'category' => array(
+                'job' => array(
                     'text' => '优惠券分类',
                     'main' => '查看',
                     'edit' => '修改-log'
@@ -1086,7 +1086,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'main' => '查看',
                 'edit' => '修改-log'
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类层级',
                 'main' => '查看',
                 'edit' => '修改-log'
@@ -1296,7 +1296,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'text' => '数据',
                 'main' => '查看'
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类',
                 'main' => '查看',
                 'edit' => '修改-log',
@@ -1368,7 +1368,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                     'status' => 'edit'
                 )
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类管理',
                 'view' => '查看',
                 'edit' => '编辑-log',
@@ -1493,7 +1493,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'displayorder' => 'edit',
                 'state' => 'edit'
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类管理',
                 'main' => '查看',
                 'edit' => '修改-log',
@@ -1526,7 +1526,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                     'querygoods' => 'edit'
                 )
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类',
                 'main' => '查看列表',
                 'view' => '查看详细',
@@ -1666,7 +1666,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'text' => '模板管理',
                 'main' => '通过模板创建页面',
                 'delete' => '删除模板',
-                'category' => array(
+                'job' => array(
                     'text' => '模板分类',
                     'main' => '查看',
                     'add' => '添加-log',
@@ -2052,7 +2052,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'edit' => '修改-log',
                 'delete' => '删除-log'
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '商户分类',
                 'view' => '查看详情',
                 'add' => '添加-log',
@@ -2177,7 +2177,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                     'isrecommand' => 'edit'
                 )
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类管理',
                 'main' => '查看列表',
                 'view' => '查看',
@@ -2211,7 +2211,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                     'status' => 'edit'
                 )
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '门店分类',
                 'main' => '查看列表',
                 'add' => '添加-log',
@@ -2434,7 +2434,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                     'status' => 'edit'
                 )
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '收银台分类',
                 'main' => '查看列表',
                 'add' => '添加-log',
@@ -2884,7 +2884,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                     'enabled' => 'edit'
                 )
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => '分类管理',
                 'main' => '查看列表',
                 'view' => '查看详细',
@@ -2955,7 +2955,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
             'complain' => array(
                 'text' => '投诉管理',
                 'main' => '查看',
-                'category' => '投诉类别',
+                'job' => '投诉类别',
                 'delete' => '删除-log',
                 'delete1' => '彻底删除-log',
                 'check' => '审核-log'
@@ -3005,7 +3005,7 @@ class Perm_EweiShopV2ComModel extends ComModel {
                 'view' => '查看',
                 'delete' => '取消-log'
             ) ,
-            'category' => array(
+            'job' => array(
                 'text' => ' 分类管理',
                 'view' => '查看',
                 'edit' => '编辑-log',

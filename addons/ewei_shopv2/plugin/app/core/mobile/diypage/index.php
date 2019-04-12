@@ -139,7 +139,7 @@ class Index_EweiShopV2Page extends AppMobilePage
 			if (strpos($dataurl, '/pages/') === false) 
 			{
 				$dataParams = explode('=', $dataurl);
-				if ($dataParams[0] == 'category') 
+				if ($dataParams[0] == 'job')
 				{
 					$pcate = $dataParams[1];
 					$goodsql = 'SELECT id,title,subtitle,thumb,marketprice,hascommission,nocommission,commission,commission1_rate,commission1_rate,marketprice,commission1_pay,maxprice,productprice,minprice,maxprice,isdiscount,isdiscount_time,isdiscount_discounts,sales,salesreal,total,description,bargain,`type`,ispresell,`virtual`,hasoption,video FROM ' . tablename('ewei_shop_goods') . ' WHERE FIND_IN_SET(' . $pcate . ',cates) AND status > 0 AND deleted = 0 AND uniacid =' . $_W['uniacid'] . ' limit 0,' . $goodsnum;

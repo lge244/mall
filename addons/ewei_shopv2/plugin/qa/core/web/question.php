@@ -82,13 +82,13 @@ class Question_EweiShopV2Page extends PluginWebPage
 
 			if (!empty($id)) {
 				pdo_update('ewei_shop_qa_question', $data, array('id' => $id));
-				plog('qa.category.edit', '修改积分商城分类 ID: ' . $id);
+				plog('qa.job.edit', '修改积分商城分类 ID: ' . $id);
 			}
 			else {
 				$data['createtime'] = time();
 				pdo_insert('ewei_shop_qa_question', $data);
 				$id = pdo_insertid();
-				plog('qa.category.add', '添加积分商城分类 ID: ' . $id);
+				plog('qa.job.add', '添加积分商城分类 ID: ' . $id);
 			}
 
 			show_json(1, array('url' => webUrl('qa/question/edit', array('id' => $id))));

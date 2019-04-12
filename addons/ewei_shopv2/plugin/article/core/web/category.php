@@ -23,7 +23,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 				$data = array('category_name' => trim($cate['name']), 'displayorder' => intval($cate['displayorder']), 'isshow' => intval($cate['isshow']));
 				if (!empty($id) && !empty($data['category_name'])) {
 					pdo_update('ewei_shop_article_category', $data, array('id' => $id));
-					plog('article.category.save', '修改文章分类 ID: ' . $id . ' 名称: ' . $data['category_name']);
+					plog('article.job.save', '修改文章分类 ID: ' . $id . ' 名称: ' . $data['category_name']);
 				}
 			}
 		}
@@ -38,11 +38,11 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 				pdo_insert('ewei_shop_article_category', array('category_name' => $cate_new, 'uniacid' => $_W['uniacid']));
 				$insert_id = pdo_insertid();
-				plog('article.category.save', '添加分类 ID: ' . $insert_id . ' 名称: ' . $cate_new);
+				plog('article.job.save', '添加分类 ID: ' . $insert_id . ' 名称: ' . $cate_new);
 			}
 		}
 
-		plog('article.category.save', '批量修改分类');
+		plog('article.job.save', '批量修改分类');
 		show_json(1);
 	}
 
@@ -55,7 +55,7 @@ class Category_EweiShopV2Page extends PluginWebPage
 
 		if (!empty($item)) {
 			pdo_delete('ewei_shop_article_category', array('id' => $id));
-			plog('article.category.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
+			plog('article.job.delete', '删除分类 ID: ' . $id . ' 标题: ' . $item['name'] . ' ');
 		}
 
 		show_json(1);

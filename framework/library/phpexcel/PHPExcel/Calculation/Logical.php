@@ -18,7 +18,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license		http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
@@ -39,7 +39,7 @@ if (!defined('PHPEXCEL_ROOT')) {
 /**
  * PHPExcel_Calculation_Logical
  *
- * @category	PHPExcel
+ * @job	PHPExcel
  * @package		PHPExcel_Calculation
  * @copyright	Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
  */
@@ -54,7 +54,7 @@ class PHPExcel_Calculation_Logical {
 	 *		=TRUE()
 	 *
 	 * @access	public
-	 * @category Logical Functions
+	 * @job Logical Functions
 	 * @return	boolean		True
 	 */
 	public static function TRUE() {
@@ -71,7 +71,7 @@ class PHPExcel_Calculation_Logical {
 	 *		=FALSE()
 	 *
 	 * @access	public
-	 * @category Logical Functions
+	 * @job Logical Functions
 	 * @return	boolean		False
 	 */
 	public static function FALSE() {
@@ -96,7 +96,7 @@ class PHPExcel_Calculation_Logical {
 	 *			the value TRUE or FALSE, in which case it is evaluated as the corresponding boolean value
 	 *
 	 * @access	public
-	 * @category Logical Functions
+	 * @job Logical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	boolean		The logical AND of the arguments.
 	 */
@@ -151,7 +151,7 @@ class PHPExcel_Calculation_Logical {
 	 *			the value TRUE or FALSE, in which case it is evaluated as the corresponding boolean value
 	 *
 	 * @access	public
-	 * @category Logical Functions
+	 * @job Logical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	boolean		The logical OR of the arguments.
 	 */
@@ -205,7 +205,7 @@ class PHPExcel_Calculation_Logical {
 	 *			the value TRUE or FALSE, in which case it is evaluated as the corresponding boolean value
 	 *
 	 * @access	public
-	 * @category Logical Functions
+	 * @job Logical Functions
 	 * @param	mixed		$logical	A value or expression that can be evaluated to TRUE or FALSE
 	 * @return	boolean		The boolean inverse of the argument.
 	 */
@@ -251,7 +251,7 @@ class PHPExcel_Calculation_Logical {
 	 *			ReturnIfFalse can be another formula.
 	 *
 	 * @access	public
-	 * @category Logical Functions
+	 * @job Logical Functions
 	 * @param	mixed	$condition		Condition to evaluate
 	 * @param	mixed	$returnIfTrue	Value to return when condition is true
 	 * @param	mixed	$returnIfFalse	Optional value to return when condition is false
@@ -273,7 +273,7 @@ class PHPExcel_Calculation_Logical {
 	 *		=IFERROR(testValue,errorpart)
 	 *
 	 * @access	public
-	 * @category Logical Functions
+	 * @job Logical Functions
 	 * @param	mixed	$testValue	Value to check, is also the value returned when no error
 	 * @param	mixed	$errorpart	Value to return when testValue is an error condition
 	 * @return	mixed	The value of errorpart or testValue determined by error condition

@@ -11,8 +11,8 @@ class Index_EweiShopV2Page extends PluginWebPage
 		if (cv('diyform.temp')) {
 			header('location: ' . webUrl('diyform/temp'));
 		}
-		else if (cv('diyform.category')) {
-			header('location: ' . webUrl('diyform/category'));
+		else if (cv('diyform.job')) {
+			header('location: ' . webUrl('diyform/job'));
 		}
 		else if (cv('diyform.set')) {
 			header('location: ' . webUrl('diyform/set'));
