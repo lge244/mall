@@ -63,6 +63,7 @@ class Index_EweiShopV2Page extends ComWebPage
 		$area_set = m('util')->get_area_config_set();
 		$new_area = intval($area_set['new_area']);
 		$address_street = intval($area_set['address_street']);
+		$lists = pdo_fetchall('SELECT * FROM ' . tablename('users').'Where jobid=6');
 
 		if ($_W['ispost']) {
 			if (!empty($_GPC['perms'])) {
@@ -81,6 +82,9 @@ class Index_EweiShopV2Page extends ComWebPage
 			}
 
 			if (empty($_GPC['address'])) {
+				show_json(0, '门店地址不能为空');
+			}
+			if (empty($_GPC['uid'])) {
 				show_json(0, '门店地址不能为空');
 			}
 			else {

@@ -200,3 +200,35 @@ $shopmenu = array(
         )
     )
 );
+
+$shopmenu = array(
+
+    "order" => array(
+        "title" => "订单",
+        "subtitle" => "订单管理",
+        "icon" => "order",
+        "items" => array(
+            array(
+                "title" => "门店订单",
+                "route" => "list",
+                "items" => array(
+                    array(
+                        "title" => "待付款",
+                        "route" => "status4",
+                        "desc" => "待付款订单管理"
+                    ),
+                    array(
+                        "title" => "待发货",
+                        "route" => "status5",
+                        "desc" => "待发货订单管理"
+                    ),
+                    array(
+                        "title" => "已完成",
+                        "route" => "list.status3",
+                        "desc" => "已完成订单管理"
+                    )
+                )
+            ),
+        )
+    )
+);

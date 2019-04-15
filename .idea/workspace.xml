@@ -2,375 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a701d574-fe47-4661-abe0-57512a43e714" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/job.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/job/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/job/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/com/coupon.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/com/coupon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/com/perm.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/com/perm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/inc/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/inc/page_mobile.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/inc/page_mobile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/goods/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/goods/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/sale/coupon/my.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/sale/coupon/my.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/shop/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/shop/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/virtual/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/virtual/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/plugingrant/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/plugingrant/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/sale/coupon/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/sale/coupon/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/diypage/selecturl.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/diypage/selecturl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/sysset/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/sysset/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/data/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/data/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/plugin/pluginmanage.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/plugin/pluginmanage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/plugin/pluginpackage.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/plugin/pluginpackage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/site/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/site/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/site/companycategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/site/companycategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/site/link.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/system/site/link.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/util/selecturl.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/util/selecturl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/install.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/install.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/creditshop/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/creditshop/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/diypage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/diypage/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/goods.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/goods.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/groups/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/groups/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/groups/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/groups/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/mobile/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/core/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/static/js/diy.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/app/static/js/diy.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/article/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/article/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/article/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/article/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/article/core/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/article/core/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/cashier/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/cashier/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/cashier/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/cashier/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/cashier/core/web/manage/goodsmanage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/cashier/core/web/manage/goodsmanage/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/commission/core/mobile/myshop/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/commission/core/mobile/myshop/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/commission/core/mobile/myshop/select.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/commission/core/mobile/myshop/select.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/core/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/core/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/core/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/core/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/static/js/lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/creditshop/static/js/lists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/core/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/core/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/core/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diyform/core/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/core/mobile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/core/mobile/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/core/web/temp/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/core/web/temp/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/static/js/diy.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/diypage/static/js/diy.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/mobile/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/mobile/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/goods.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/goods.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/refund.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/refund.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/team.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/team.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/core/web/verify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/static/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/groups/static/js/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/mobile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/mobile/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/mobile/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/mobile/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/web/room.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/core/web/room.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/creditshop/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/creditshop/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/diypage/temp/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/diypage/temp/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/goods/virtual/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/goods/virtual/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/sale/coupon/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/sale/coupon/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/util/selecturl.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/core/web/manage/util/selecturl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/template/web/manage/goods/category/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/template/web/manage/goods/category/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/template/web_v3/manage/goods/category/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/merch/template/web_v3/manage/goods/category/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/mmanage/core/mobile/goods/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/mmanage/core/mobile/goods/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/biz/h5app.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/biz/h5app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/mobile/goods/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/mobile/goods/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/web/util.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/core/web/util.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/channel_tp.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/channel_tp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/flea/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/flea/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/flea/kissy.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/flea/kissy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/home_channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/home_channel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/polyapi/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/polyapi/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/mobile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/mobile/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/web/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/qa/core/web/question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/quick/static/js/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/quick/static/js/web.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/seckill/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/seckill/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/seckill/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/seckill/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/seckill/core/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/seckill/core/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/sign/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/sign/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/sns/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/sns/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/sns/core/web/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/sns/core/web/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/fonts/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/fonts/iconfont.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/goods/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/goods/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/h5app.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/h5app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/sale/coupon/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/sale/coupon/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/dist/highcharts/modules/data.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/dist/highcharts/modules/data.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/dist/highcharts/modules/drilldown.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/dist/highcharts/modules/drilldown.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/web/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/web/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/upgrade.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/upgrade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/source/mc/store.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/source/mc/store.ctrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_account.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_copyright.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_footer.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_header.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_menu.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_share.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_wapqrcode.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/goods/detail.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/goods/picker.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/goods/wholesalePicker.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/index_tpl.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/share.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/create.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/pay.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/pay/wechat_jie.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/sale/coupon/util/couponpicker.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/sale/coupon/util/picker.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/category.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/adv.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/banner.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/cube.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/goods.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/nav.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/notice.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/recommand.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/search.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/index/seckill.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/shopstrengthen.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default2/account/login.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default2/account/rf.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/pc/default/mobile/pc.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/pc/default/mobile/pc/layout/_footer.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/pc/default/mobile/pc/layout/_header.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/pc/default/mobile/pc/layout/top.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/header-site.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/system/site.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/edit-base.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/_message.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins/post.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins/post.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/app.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/app/_tab.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/app/page.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/finance/log/recharge.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/finance/log/withdraw.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/list.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/pc/shop.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/cover.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/payment.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/payment/post.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/payset.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/trade.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/class/coupon.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/class/coupon.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/function/tpl.func.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/function/tpl.func.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/json/JSON.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/json/JSON.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Autoloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Autoloader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/APC.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/APC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/CacheBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/CacheBase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/DiscISAM.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/DiscISAM.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/ICache.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/ICache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Igbinary.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Igbinary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Memcache.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Memcache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Memory.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Memory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/MemoryGZip.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/MemoryGZip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/MemorySerialized.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/MemorySerialized.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/PHPTemp.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/PHPTemp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/SQLite.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/SQLite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/SQLite3.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/SQLite3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Wincache.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorage/Wincache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CachedObjectStorageFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CalcEngine/CyclicReferenceStack.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CalcEngine/CyclicReferenceStack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CalcEngine/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/CalcEngine/Logger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/DateTime.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/DateTime.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Engineering.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Engineering.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/ExceptionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/ExceptionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Financial.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Financial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/FormulaParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/FormulaParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/FormulaToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/FormulaToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Function.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Logical.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Logical.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/LookupRef.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/LookupRef.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/MathTrig.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/MathTrig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Statistical.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Statistical.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/TextData.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/TextData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Token/Stack.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Calculation/Token/Stack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/AdvancedValueBinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/AdvancedValueBinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/DataType.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/DataType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/DataValidation.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/DataValidation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/DefaultValueBinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/DefaultValueBinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/Hyperlink.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/Hyperlink.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/IValueBinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Cell/IValueBinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/DataSeries.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/DataSeries.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/DataSeriesValues.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/DataSeriesValues.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Legend.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Legend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/PlotArea.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/PlotArea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Renderer/jpgraph.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Renderer/jpgraph.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Title.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Chart/Title.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/DocumentProperties.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/DocumentProperties.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/DocumentSecurity.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/DocumentSecurity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/HashTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/HashTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/IComparable.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/IComparable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/IOFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/IOFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/NamedRange.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/NamedRange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Abstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Abstract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/CSV.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/CSV.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/DefaultReadFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/DefaultReadFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2003XML.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2003XML.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2007.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2007.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2007/Chart.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2007/Chart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2007/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel2007/Theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel5.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel5/Escher.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Excel5/Escher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Gnumeric.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/Gnumeric.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/HTML.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/HTML.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/IReadFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/IReadFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/IReader.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/IReader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/OOCalc.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/OOCalc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/SYLK.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Reader/SYLK.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/ReferenceHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/ReferenceHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText/ITextElement.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText/ITextElement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText/Run.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText/Run.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText/TextElement.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/RichText/TextElement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/CodePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/CodePage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Date.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Date.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Drawing.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Drawing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DgContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DgContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Excel5.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Excel5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Font.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/Font.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/ChainedBlockStream.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/ChainedBlockStream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/PPS.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/PPS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/PPS/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/PPS/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/PPS/Root.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLE/PPS/Root.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLERead.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/OLERead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/PasswordHasher.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/PasswordHasher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/String.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/String.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/TimeZone.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/TimeZone.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/XMLWriter.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/XMLWriter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/ZipArchive.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/ZipArchive.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/ZipStreamWrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/ZipStreamWrapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/bestFitClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/bestFitClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/exponentialBestFitClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/exponentialBestFitClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/linearBestFitClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/linearBestFitClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/logarithmicBestFitClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/logarithmicBestFitClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/polynomialBestFitClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/polynomialBestFitClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/powerBestFitClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/powerBestFitClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/trendClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Shared/trend/trendClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Alignment.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Alignment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Border.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Border.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Borders.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Borders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Color.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Color.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Conditional.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Conditional.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Fill.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Fill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Font.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Font.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/NumberFormat.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/NumberFormat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Protection.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Protection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Supervisor.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Style/Supervisor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/AutoFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/AutoFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/AutoFilter/Column.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/AutoFilter/Column.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/BaseDrawing.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/BaseDrawing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/CellIterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/CellIterator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/ColumnDimension.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/ColumnDimension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Drawing.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Drawing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Drawing/Shadow.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Drawing/Shadow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/HeaderFooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/HeaderFooter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/HeaderFooterDrawing.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/HeaderFooterDrawing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/MemoryDrawing.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/MemoryDrawing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/PageMargins.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/PageMargins.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/PageSetup.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/PageSetup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Protection.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Protection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Row.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/Row.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/RowDimension.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/RowDimension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/RowIterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/RowIterator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/SheetView.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Worksheet/SheetView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/WorksheetIterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/WorksheetIterator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Abstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Abstract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/CSV.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/CSV.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Chart.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Chart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/ContentTypes.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/ContentTypes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/DocProps.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/DocProps.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Drawing.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Drawing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Rels.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Rels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/StringTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/StringTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Style.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Workbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Workbook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Worksheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/Worksheet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/WriterPart.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel2007/WriterPart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/BIFFwriter.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/BIFFwriter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Escher.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Escher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Font.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Font.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Parser.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Parser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Workbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Workbook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Worksheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Worksheet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Xf.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Excel5/Xf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/HTML.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/HTML.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/IWriter.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/IWriter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/Core.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/Core.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/DomPDF.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/DomPDF.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/mPDF.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/mPDF.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/tcPDF.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpexcel/PHPExcel/Writer/PDF/tcPDF.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/phpmailer/class.smtp.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/phpmailer/class.smtp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/sentry/Raven/Breadcrumbs/ErrorHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/sentry/Raven/Breadcrumbs/ErrorHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/library/sentry/Raven/Breadcrumbs/MonologHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/library/sentry/Raven/Breadcrumbs/MonologHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/model/activity.mod.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/model/activity.mod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/permission.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/permission.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resource/components/chart/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/components/chart/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resource/js/app/common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/app/common.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resource/js/app/wapeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/app/wapeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resource/js/common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/common.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resource/js/lib/jquery.wookmark.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/lib/jquery.wookmark.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resource/js/wapeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/wapeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/source/article/news.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/source/article/news.ctrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/source/article/notice.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/source/article/notice.ctrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/source/site/article.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/source/site/article.ctrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/source/site/category.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/source/site/category.ctrl.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -380,70 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="1889" column="9" selection-start-line="1889" selection-start-column="9" selection-end-line="1889" selection-end-column="9" />
-              <folding>
-                <element signature="e#27258#57259#0#PHP" />
-                <element signature="e#27454#28970#1#PHP" />
-                <element signature="e#28993#29806#1#PHP" />
-                <element signature="e#29949#30144#1#PHP" />
-                <element signature="e#30444#30674#1#PHP" />
-                <element signature="e#34010#35210#1#PHP" />
-                <element signature="e#35236#37844#1#PHP" />
-                <element signature="e#45446#47044#1#PHP" />
-                <element signature="e#47075#49123#1#PHP" />
-                <element signature="e#49201#49328#1#PHP" />
-                <element signature="e#49355#57249#1#PHP" />
-                <element signature="e#59164#65064#0#PHP" />
-                <element signature="e#67595#75883#0#PHP" />
-                <element signature="e#75951#84239#0#PHP" />
-                <element signature="e#84314#92602#0#PHP" />
-              </folding>
+            <state relative-caret-position="206">
+              <caret line="1625" column="34" lean-forward="true" selection-start-line="1625" selection-start-column="34" selection-end-line="1625" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="131" column="116" selection-start-line="131" selection-start-column="116" selection-end-line="131" selection-end-column="116" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="418">
+              <caret line="91" column="50" lean-forward="true" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/job.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="9" column="78" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="78" />
+            <state relative-caret-position="814">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -451,42 +49,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="89" column="19" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="19" />
+            <state relative-caret-position="1034">
+              <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.php">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="4004">
+              <caret line="182" column="42" selection-start-line="182" selection-start-column="42" selection-end-line="182" selection-end-column="42" />
               <folding>
-                <element signature="e#18#13278#0#PHP" />
+                <element signature="n#style#0;n#select#0;n#p#0;n#div#0;n#div#4;n#div#1;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="439" column="55" lean-forward="true" selection-start-line="439" selection-start-column="55" selection-end-line="439" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="199" selection-start-line="199" selection-end-line="199" />
             </state>
           </provider>
         </entry>
@@ -502,8 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>积分</find>
-      <find>setLogin</find>
       <find>title</find>
       <find>小程序</find>
       <find>库存</find>
@@ -529,9 +103,11 @@
       <find>删除</find>
       <find>data-original-title=&quot;删除&quot;</find>
       <find>delete</find>
-      <find>mendian</find>
       <find>data-original-title=</find>
+      <find>pdo_update</find>
       <find>if</find>
+      <find>mendian</find>
+      <find>省市区 :</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -569,17 +145,19 @@
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/job/post.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/job.php" />
         <option value="$PROJECT_DIR$/1.html" />
-        <option value="$PROJECT_DIR$/1.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/model/plugin.php" />
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/job/index.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html" />
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html" />
+        <option value="$PROJECT_DIR$/1.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php" />
       </list>
     </option>
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="9018" listening_started="true" />
+  <component name="PhpDebugGeneral" xdebug_debug_port="9018" />
   <component name="PhpServers">
     <servers>
       <server host="hmj.cn" id="971a9b89-0fc2-4501-b1cb-adfcb78d908b" name="hmj.cn" />
@@ -604,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -635,29 +212,23 @@
               <item name="hmj" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
               <item name="hmj" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmj" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="admins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -700,12 +271,13 @@
       <workItem from="1554109596937" duration="961000" />
       <workItem from="1554165951949" duration="65878000" />
       <workItem from="1554684222754" duration="5485000" />
-      <workItem from="1554947116782" duration="45916000" />
+      <workItem from="1554947116782" duration="54367000" />
+      <workItem from="1555289618076" duration="1205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118240000" />
+    <option name="totallyTimeSpent" value="127896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,13 +292,13 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17406876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2299427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27860028" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27860028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
@@ -788,46 +360,10 @@
           <line>9</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php</url>
-          <line>40</line>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/phpqrcode/phpqrcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="3091" column="9" lean-forward="true" selection-start-line="3091" selection-start-column="9" selection-end-line="3091" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="e#16#22#0" expanded="true" />
-            <element signature="e#22#28#0" expanded="true" />
-            <element signature="e#27#33#0" expanded="true" />
-            <element signature="e#33#39#0" expanded="true" />
-            <element signature="e#39#45#0" expanded="true" />
-            <element signature="e#45#51#0" expanded="true" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#63#69#0" expanded="true" />
-            <element signature="e#69#75#0" expanded="true" />
-            <element signature="e#16#22#1" expanded="true" />
-            <element signature="e#16#22#1" expanded="true" />
-            <element signature="e#16#22#1" expanded="true" />
-            <element signature="e#16#22#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="381" column="9" selection-start-line="381" selection-start-column="9" selection-end-line="381" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../qr.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -971,13 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html" />
     <entry file="file://$PROJECT_DIR$/data/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1132,9 +662,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/1.html" />
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/plugins/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -1162,37 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="1889" column="9" selection-start-line="1889" selection-start-column="9" selection-end-line="1889" selection-end-column="9" />
-          <folding>
-            <element signature="e#27258#57259#0#PHP" />
-            <element signature="e#27454#28970#1#PHP" />
-            <element signature="e#28993#29806#1#PHP" />
-            <element signature="e#29949#30144#1#PHP" />
-            <element signature="e#30444#30674#1#PHP" />
-            <element signature="e#34010#35210#1#PHP" />
-            <element signature="e#35236#37844#1#PHP" />
-            <element signature="e#45446#47044#1#PHP" />
-            <element signature="e#47075#49123#1#PHP" />
-            <element signature="e#49201#49328#1#PHP" />
-            <element signature="e#49355#57249#1#PHP" />
-            <element signature="e#59164#65064#0#PHP" />
-            <element signature="e#67595#75883#0#PHP" />
-            <element signature="e#75951#84239#0#PHP" />
-            <element signature="e#84314#92602#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="508" selection-start-line="508" selection-end-line="524" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/inc/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -1210,13 +707,6 @@
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/job.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="9" column="78" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -1240,45 +730,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/job.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="19" />
+        <state relative-caret-position="194">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.php">
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding>
-            <element signature="e#18#13278#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="439" column="55" lean-forward="true" selection-start-line="439" selection-start-column="55" selection-end-line="439" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="513" column="24" selection-start-line="513" selection-start-column="24" selection-end-line="513" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        <state relative-caret-position="-132">
+          <caret line="177" column="39" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="131" column="116" selection-start-line="131" selection-start-column="116" selection-end-line="131" selection-end-column="116" />
+        <state relative-caret-position="434">
+          <caret line="130" column="69" selection-start-line="130" selection-start-column="69" selection-end-line="130" selection-end-column="69" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1297,10 +773,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="203" selection-start-line="203" selection-end-line="233" selection-end-column="2" />
+          <folding>
+            <element signature="e#5933#8719#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="457" column="21" selection-start-line="457" selection-start-column="21" selection-end-line="457" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="814">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4004">
+          <caret line="182" column="42" selection-start-line="182" selection-start-column="42" selection-end-line="182" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#p#0;n#div#0;n#div#4;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="91" column="50" lean-forward="true" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="1625" column="34" lean-forward="true" selection-start-line="1625" selection-start-column="34" selection-end-line="1625" selection-end-column="34" />
         </state>
       </provider>
     </entry>

@@ -145,7 +145,7 @@
         <label class="col-sm-2 control-label"></label>
         <div class="col-sm-9 subtitle">
             <input type="submit" value="保存商品" class="btn btn-primary"/>
-            <a class="btn btn-default" href="{php echo webUrl('goods',array('goodsfrom'=>$_GPC['goodsfrom'], 'page'=>$_GPC['page']))}">返回列表</a>
+            <a class="btn btn-default" href="{php echo webUrl('admins')}">返回列表</a>
         </div>
     </div>
     </form>
@@ -164,7 +164,6 @@
         })
     });
     window.optionchanged = false;
-
     $('form').submit(function () {
         var check = true;
         var uid = $('#uid').val();
@@ -197,6 +196,7 @@
         }
 
         $.post("http://www.hmj.cn/web/index.php?c=site&a=entry&m=ewei_shopv2&do=web&r=admins.doadd", {
+            uid: uid,
             username: username,
             password: password,
             phone:phone,

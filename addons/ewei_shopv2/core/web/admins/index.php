@@ -60,8 +60,15 @@ class Index_EweiShopV2Page extends WebPage
                 exit(json_encode(array('code' => 0, 'msg' => '管理员添加成功！')));
             }
             exit(json_encode(array('code' => 1, 'msg' => '网络错误请检查网络！')));
-
         }
+        $data['joinip'] = $_SERVER['SERVER_ADDR'];
+        $data['salt'] = $this->str_rand();
+        $data['password'] = user_hash($data['password'], $data['salt']);
+        $res = pdo_update('users', $data,array('uid'=>$uid));
+        if ($res) {
+            exit(json_encode(array('code' => 0, 'msg' => '管理员添加成功！')));
+        }
+        exit(json_encode(array('code' => 1, 'msg' => '网络错误请检查网络！')));
 
     }
 
