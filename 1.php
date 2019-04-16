@@ -1,4 +1,5 @@
 <?php
+echo 1;
 $shopmenu = array(
     "admins" => array(
         "title" => "管理",
