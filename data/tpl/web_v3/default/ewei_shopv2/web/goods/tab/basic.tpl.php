@@ -66,6 +66,30 @@
         </div>
 
         <div class="form-group">
+            <label class="col-sm-2 control-label">比例</label>
+            <?php if( ce('goods' ,$item) ) { ?>
+            <div class="col-sm-9">
+                <input type="text" name="proportion" class="form-control" value="<?php  echo $item['proportion'];?>"/>
+                <div class="help-block">购买此商品赠送的积分比例</div>
+            </div>
+            <?php  } else { ?>
+            <div class='form-control-static'><?php  echo $item['proportion'];?></div>
+            <?php  } ?>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">积分</label>
+            <?php if( ce('goods' ,$item) ) { ?>
+            <div class="col-sm-9">
+                <input type="text" name="integral" class="form-control" value="<?php  echo $item['integral'];?>"/>
+                <div class="help-block">换购此商品所需积分</div>
+            </div>
+            <?php  } else { ?>
+            <div class='form-control-static'><?php  echo $item['integral'];?></div>
+            <?php  } ?>
+        </div>
+
+        <div class="form-group">
             <label class="col-sm-2 control-label">商品类型</label>
             <div class="col-sm-9 col-xs-12">
                 <input type="hidden" name="goodstype" value="<?php  echo $item['type'];?>">
