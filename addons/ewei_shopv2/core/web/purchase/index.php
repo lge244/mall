@@ -8,7 +8,7 @@ class Index_EweiShopV2Page extends WebPage
 	public function main()
 	{
 		global $_W;
-		$list = pdo_fetchall('SELECT * FROM ' . tablename('ewei_shop_purchase'));
+		$list = pdo_getall('ewei_shop_purchase', ['uid' => $_W['uid']]);
 		$store_list = [];
 		foreach (pdo_getall('ewei_shop_store', ['uid' => $_W['uid']]) as $v) {
 			$store_list[$v['id']] = $v['storename'];
@@ -42,16 +42,9 @@ class Index_EweiShopV2Page extends WebPage
 				$this->message('进货数量不得大于总库存！', webUrl('purchase/add'));
 			}
 			$val['stock'] = $stock[$val['id']];
-			$info = pdo_get('ewei_shop_purchase', [
-				'good_id' => $val['id'],
-			]);
-			if ($info !== false && $info['shop_id'] == $shop_id) {
-				$update_res = pdo_update('ewei_shop_purchase', ['stock' => $info['stock'] + $val['stock']], ['good_id' => $info['good_id']]);
-				if (!$update_res) $this->message('进货失败！', webUrl('purchase/add'));
-				$this->message('进货成功！', webUrl('purchase'));
-			}
 			$insert_res = pdo_insert('ewei_shop_purchase', [
 				'shop_id'     => $shop_id,
+				'uid'         => $_W['uid'],
 				'good_id'     => $val['id'],
 				'name'        => $val['title'],
 				'price'       => $val['marketprice'],
@@ -60,16 +53,19 @@ class Index_EweiShopV2Page extends WebPage
 				'stock'       => $val['stock'],
 				'details'     => $val['content'],
 				'c_id'        => $val['cates'],
+				'proportion'  => $val['proportion'],
+				'integral'    => $val['integral'],
+				'status'      => 0,
 				'create_time' => time(),
 				'update_time' => time(),
 			]);
 			unset($good_info);
 			if (!$insert_res) $this->message('进货失败！', webUrl('purchase/add'));
-			$this->message('进货成功！', webUrl('purchase'));
+			$this->message('进货成功，请等待审核结果！', webUrl('purchase'));
 		}
 	}
 
-	public function delete()
+	public function del()
 	{
 		global $_W;
 		global $_GPC;

@@ -118,6 +118,7 @@
 					<th style="width:15%;">图片</th>
 					<th style="width:25%;">价格</th>
 					<th style="width:20%;">库存</th>
+					<th style="width:20%;">订单状态</th>
 					<th style="width:20%;">操作</th>
 				</tr>
 				</thead>
@@ -134,6 +135,7 @@
 					</td>
 					<td><?php  echo $row['price'];?></td>
 					<td><?php  echo $row['stock'];?></td>
+					<td><?php if(cv($row['status'] ==1)) { ?>已完成<?php  } else { ?>进行中<?php  } ?></td>
 					<td>
 						<a class='btn  btn-op btn-operation' data-toggle='ajaxRemove'
 						   href="<?php  echo webUrl('purchase/del', array('id' => $row['id']))?>"

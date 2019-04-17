@@ -1922,6 +1922,11 @@ class System_EweiShopV2Model
                             "permmust" => "order.list.main"
                         ),
                         array(
+                            "title" => "内购订单",
+                            "route" => "list.purchase",
+                            "desc"  => "内购订单列表",
+                        ),
+                        array(
                             "title" => "维权",
                             "route" => "list",
                             "items" => array(
