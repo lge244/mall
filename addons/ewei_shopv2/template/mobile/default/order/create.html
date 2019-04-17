@@ -30,6 +30,7 @@
         position: relative;
         top:0;
     }
+
 </style>
 
 <div class='fui-page order-create-page'>
@@ -223,11 +224,6 @@
         </div>
         {/loop}
         {/loop}
-
-
-
-
-
         <script type="text/javascript">
             $(function(){
                 $(".package-goods-img").height($(".package-goods-img").width());
@@ -428,10 +424,39 @@
     </div>
     {/if}
     <div class="fui-cell">
+        <div class="fui-cell-label" >积分抵用</div>
+        <div class="fui-cell-info"></div>
+        <div class="fui-cell-remark noremark">
+            <input type="checkbox" name="cashier"  value="0" aria-invalid="false" class="valid" data-checked="false" >
+        </div>
+    </div>
+    <script>
+        $('.valid').click(function () {
+            var data_checked = $('.valid').attr('data-checked');
+            // console.log(data_checked);
+            if (data_checked == 'false') {
+                $.post("http://www.hmj.cn/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=order.create.integralcalculation", {
+                    "total":{$total},
+                    "createInfo":{php echo json_encode($createInfo)}
+                }, function (res) {
+                console.log(res);
+                    if (res.code == 0) {
+                        $('#price').text(res.price);
+                    }else{
+                        alert(res.msg);
+                        $('.valid').removeAttr("checked");
+                        $('.valid').attr("data-checked","false");
+                    }
+                },'json')
+            }
+
+        })
+    </script>
+    <div class="fui-cell">
         <div class="fui-cell-label" >商品小计</div>
         <div class="fui-cell-info"></div>
         <div class="fui-cell-remark noremark">&yen; <span class='{if !$packageid && empty($exchangeOrder)}goodsprice{/if}'>
-            {if !empty($exchangeOrder)}{$exchangeprice}{elseif $taskgoodsprice}{$taskgoodsprice}{else}{php echo price_format($goodsprice,2)}{/if}
+                    {if !empty($exchangeOrder)}{$exchangeprice}{elseif $taskgoodsprice}{$taskgoodsprice}{else}{php echo price_format($goodsprice,2)}{/if}
         </span></div>
     </div>
 
@@ -585,10 +610,17 @@
 {/if}
 
 <div class="fui-navbar order-create-checkout">
+    <a href="javascript:;" class="nav-item btn  buybtn" style="background: #FFBF00">积分购买</a>
     <a href="javascript:;" class="nav-item total">
         <p style="color: #000">
-            需付：<span class="text-danger  bigprice">&yen; <span class="{if !$packageid && empty($exchangeOrder)}totalprice{/if}">
-                {if !empty($exchangeOrder)}{$exchangerealprice}{elseif $taskgoodsprice}{$taskgoodsprice}{else}{php echo price_format($realprice,2)}{/if}</span></span>
+            积分<span class="text-danger  bigprice"><span class="">
+               123</span></span>
+        </p>
+    </a>
+    <a href="javascript:;" class="nav-item total">
+        <p style="color: #000">
+            金额 <span class="text-danger  bigprice"><span class="{if !$packageid && empty($exchangeOrder)}totalprice{/if}" id="price">
+                {php echo price_format($realprice,2)}</span></span>
         </p>
     </a>
     <a href="javascript:;" class="nav-item btn btn-danger buybtn">立即支付</a>
@@ -727,8 +759,8 @@
         });
 
     require(['biz/order/create'], function (modal) {
-        modal.init({php echo json_encode($createInfo)},{php echo empty($invoice_arr)?'false':$invoice_arr}||{});
 
+        modal.init({php echo json_encode($createInfo)},{php echo empty($invoice_arr)?'false':$invoice_arr}||{});
 
         {if !$followed && !empty($share['followqrcode'])&& empty($trade['shop_strengthen'])}
         $("#attention").css("display","block");

@@ -856,131 +856,131 @@ class System_EweiShopV2Model
                         )
                     )
                 ),
-//            "sale" => array(
-//                "title" => "营销",
-//                "subtitle" => "营销设置",
-//                "icon" => "yingxiao",
-//                "items" => array(
-//                    array(
-//                        "title" => "基本功能",
-//                        "items" => array(
-//                            array(
-//                                "title" => "满额立减",
-//                                "route" => "enough",
-//                                "desc" => "满额立减设置",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "满额包邮",
-//                                "route" => "enoughfree",
-//                                "desc" => "满额包邮设置",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "抵扣设置",
-//                                "route" => "deduct",
-//                                "desc" => "抵扣设置",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "充值优惠",
-//                                "route" => "recharge",
-//                                "desc" => "充值优惠设置",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "积分优惠",
-//                                "route" => "credit1",
-//                                "desc" => "积分优惠设置",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "套餐管理",
-//                                "route" => "package",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "赠品管理",
-//                                "route" => "gift",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "全返管理",
-//                                "route" => "fullback",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "找人代付",
-//                                "route" => "peerpay",
-//                                "keywords" => "营销"
-//                            ) ,
-//                            array(
-//                                "title" => "绑定送积分",
-//                                "route" => "bindmobile"
-//                            )
-//                        )
-//                    ) ,
-//                    array(
-//                        "title" => "优惠券",
-//                        "route" => "coupon",
-//                        "iscom" => "coupon",
-//                        "items" => array(
-//                            array(
-//                                "title" => "全部优惠券"
-//                            ) ,
-//                            array(
-//                                "title" => "手动发送",
-//                                "route" => "sendcoupon",
-//                                "desc" => "手动发送优惠券"
-//                            ) ,
-//                            array(
-//                                "title" => "购物送券",
-//                                "route" => "shareticket",
-//                                "extends" => array(
-//                                    "sale.coupon.goodssend",
-//                                    "sale.coupon.usesendtask",
-//                                    "sale.coupon.goodssend.add",
-//                                    "sale.coupon.usesendtask.add"
-//                                )
-//                            ) ,
-//                            array(
-//                                "title" => "发放记录",
-//                                "route" => "log",
-//                                "desc" => "优惠券发放记录"
-//                            ) ,
-//                            array(
-//                                "title" => "分类管理",
-//                                "route" => "job",
-//                                "desc" => "优惠券分类管理"
-//                            ) ,
-//                            array(
-//                                "title" => "其他设置",
-//                                "route" => "set",
-//                                "desc" => "优惠券设置"
-//                            )
-//                        )
-//                    ) ,
-//                    array(
-//                        "title" => "微信卡券",
-//                        "iscom" => "wxcard",
-//                        "items" => array(
-//                            array(
-//                                "title" => "卡券管理",
-//                                "route" => "wxcard"
-//                            )
-//                        )
-//                    ) ,
-//                    array(
-//                        "title" => "其他工具",
-//                        "items" => array(
-//                            array(
-//                                "title" => "关注回复",
-//                                "route" => "virtual"
-//                            )
-//                        )
-//                    )
-//                )
-//            ) ,
+            "sale" => array(
+                "title" => "营销",
+                "subtitle" => "营销设置",
+                "icon" => "yingxiao",
+                "items" => array(
+                    array(
+                        "title" => "基本功能",
+                        "items" => array(
+                            array(
+                                "title" => "满额立减",
+                                "route" => "enough",
+                                "desc" => "满额立减设置",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "满额包邮",
+                                "route" => "enoughfree",
+                                "desc" => "满额包邮设置",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "抵扣设置",
+                                "route" => "deduct",
+                                "desc" => "抵扣设置",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "充值优惠",
+                                "route" => "recharge",
+                                "desc" => "充值优惠设置",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "积分优惠",
+                                "route" => "credit1",
+                                "desc" => "积分优惠设置",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "套餐管理",
+                                "route" => "package",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "赠品管理",
+                                "route" => "gift",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "全返管理",
+                                "route" => "fullback",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "找人代付",
+                                "route" => "peerpay",
+                                "keywords" => "营销"
+                            ) ,
+                            array(
+                                "title" => "绑定送积分",
+                                "route" => "bindmobile"
+                            )
+                        )
+                    ) ,
+                    array(
+                        "title" => "优惠券",
+                        "route" => "coupon",
+                        "iscom" => "coupon",
+                        "items" => array(
+                            array(
+                                "title" => "全部优惠券"
+                            ) ,
+                            array(
+                                "title" => "手动发送",
+                                "route" => "sendcoupon",
+                                "desc" => "手动发送优惠券"
+                            ) ,
+                            array(
+                                "title" => "购物送券",
+                                "route" => "shareticket",
+                                "extends" => array(
+                                    "sale.coupon.goodssend",
+                                    "sale.coupon.usesendtask",
+                                    "sale.coupon.goodssend.add",
+                                    "sale.coupon.usesendtask.add"
+                                )
+                            ) ,
+                            array(
+                                "title" => "发放记录",
+                                "route" => "log",
+                                "desc" => "优惠券发放记录"
+                            ) ,
+                            array(
+                                "title" => "分类管理",
+                                "route" => "job",
+                                "desc" => "优惠券分类管理"
+                            ) ,
+                            array(
+                                "title" => "其他设置",
+                                "route" => "set",
+                                "desc" => "优惠券设置"
+                            )
+                        )
+                    ) ,
+                    array(
+                        "title" => "微信卡券",
+                        "iscom" => "wxcard",
+                        "items" => array(
+                            array(
+                                "title" => "卡券管理",
+                                "route" => "wxcard"
+                            )
+                        )
+                    ) ,
+                    array(
+                        "title" => "其他工具",
+                        "items" => array(
+                            array(
+                                "title" => "关注回复",
+                                "route" => "virtual"
+                            )
+                        )
+                    )
+                )
+            ) ,
                 "finance" => array(
                     "title" => "财务",
                     "subtitle" => "财务管理",

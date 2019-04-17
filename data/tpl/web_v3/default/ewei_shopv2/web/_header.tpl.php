@@ -78,11 +78,7 @@
         <?php  } ?>
         <li class="dropdown <?php  if($system['merch']) { ?>auto<?php  } ?> ellipsis">
             <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <?php  if(strlen($system['right_menu']['menu_title'])>60) { ?>
-                <?php  echo substr($system['right_menu']['menu_title'],0,60).'...'?>
-                <?php  } else { ?>
-                <?php  echo $system['right_menu']['menu_title'];?>
-                <?php  } ?>
+                <?php  echo $_W['user']['username'];?>
             </a>
         </li>
         <li data-toggle="tooltip" data-placement="bottom" title="退出登录" data-href="<?php  echo $system['right_menu']['logout'];?>">
