@@ -113,6 +113,7 @@
 				<thead class="navbar-inner">
 				<tr>
 					<th style="width:15%;">ID</th>
+					<th style="width:15%;">门店</th>
 					<th style="width:15%;">名称</th>
 					<th style="width:15%;">图片</th>
 					<th style="width:25%;">价格</th>
@@ -124,6 +125,7 @@
 				<?php  if(is_array($list)) { foreach($list as $row) { ?>
 				<tr>
 					<td><?php  echo $row['id'];?></td>
+					<td><?php  echo $store_list[$row['shop_id']];?></td>
 					<td><?php  echo $row['name'];?></td>
 					<td>
 						<a href="javascript:;">

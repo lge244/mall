@@ -84,8 +84,52 @@
 		<div class="flex1">属性</div>
 		<div style="width: 120px;">操作</div>
 	</div>
+	<form action="<?php  echo webUrl('purchase/goodList')?>" method="get" class="form-horizontal form-search" role="form">
+		<input type="hidden" name="c" value="site" />
+		<input type="hidden" name="a" value="entry" />
+		<input type="hidden" name="m" value="ewei_shopv2" />
+		<input type="hidden" name="do" value="web" />
+		<input type="hidden" name="r"  value="purchase.goodList" />
+		<div class="page-toolbar">
+			<div class="input-group col-sm-6 pull-right">
+				<span class="input-group-select">
+					<select name="attribute" class='form-control select2' style="width:200px;" data-placeholder="商品属性">
+						<option value="" <?php  if(empty($_GPC['attribute'])) { ?>selected<?php  } ?>>商品属性</option>
+						<option value="new" <?php  if($_GPC['attribute']=='new') { ?>selected<?php  } ?>>新品</option>
+						<option value="hot" <?php  if($_GPC['attribute']=='hot') { ?>selected<?php  } ?> >热卖</option>
+						<option value="recommand" <?php  if($_GPC['attribute']=='recommand') { ?>selected<?php  } ?> >推荐</option>
+						<option value="discount" <?php  if($_GPC['attribute']== 'discount') { ?>selected<?php  } ?> >促销</option>
+						<option value="sendfree" <?php  if($_GPC['attribute']== 'sendfree') { ?>selected<?php  } ?> >包邮</option>
+						<option value="time" <?php  if($_GPC['attribute'] == 'time') { ?>selected<?php  } ?> >限时卖</option>
+						<option value="nodiscount" <?php  if($_GPC['attribute'] == 'nodiscount') { ?>selected<?php  } ?> >不参与折扣</option>
+					</select>
+				</span>
+				<span class="input-group-select">
+					<select name="cate" class='form-control select2' style="width:200px;" data-placeholder="商品分类">
+						<option value="" <?php  if(empty($_GPC['cate'])) { ?>selected<?php  } ?> >商品分类</option>
+						<?php  if(is_array($category)) { foreach($category as $c) { ?>
+						<option value="<?php  echo $c['id'];?>" <?php  if($_GPC['cate']==$c['id']) { ?>selected<?php  } ?> ><?php  echo $c['name'];?></option>
+						<?php  } } ?>
+					</select>
+				</span>
+				<input type="text" class="input-sm form-control" name='keyword' value="<?php  echo $_GPC['keyword'];?>" placeholder="ID/名称/编号/条码<?php  if($merch_plugin) { ?>/商户名称<?php  } ?>">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="submit"> 搜索</button>
+				</span>
+			</div>
+		</div>
+	</form>
 	<form method="post" action="<?php  echo webUrl('purchase/post')?>">
 	<?php  if(count($list)>0 && cv('purchase.main')) { ?>
+		<div class="input-group col-sm-6" style="margin-bottom: 10px;">
+		<span class="input-group-select">
+			<select id="store" name="shop_id" class='form-control select2' style="width:200px;" data-placeholder="选择门店">
+				<?php  if(is_array($store_list)) { foreach($store_list as $v) { ?>
+				<option value="<?php  echo $v['id'];?>"><?php  echo $v['storename'];?></option>
+				<?php  } } ?>
+			</select>
+		</span>
+		</div>
 	<div class="row">
 		<div class="col-md-12">
 			<table class="table table-responsive">
