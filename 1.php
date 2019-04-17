@@ -209,7 +209,30 @@ $shopmenu = array(
         "icon" => "order",
         "items" => array(
             array(
-                "title" => "门店订单",
+                "title" => "订单",
+                "route" => "list",
+                "items" => array(
+                    array(
+                        "title" => "待付款",
+                        "route" => "status4",
+                        "desc" => "待付款订单管理"
+                    ),
+                    array(
+                        "title" => "待发货",
+                        "route" => "status5",
+                        "desc" => "待发货订单管理"
+                    ),
+                    array(
+                        "title" => "已完成",
+                        "route" => "list.status3",
+                        "desc" => "已完成订单管理"
+                    )
+                )
+            ),
+        ),
+        "items" => array(
+            array(
+                "title" => "订单",
                 "route" => "list",
                 "items" => array(
                     array(
@@ -231,4 +254,62 @@ $shopmenu = array(
             ),
         )
     )
+);
+
+
+$shopmenu = array(
+
+
+    "store" => array(
+        "title" => "门店",
+        "subtitle" => "门店",
+        "icon" => "mendianguanli",
+        "items" => array(
+            array(
+                "title" => "门店管理",
+                "items" => array(
+                    array(
+                        "title" => "门店管理",
+                        "route" => "",
+                        "extends" => array(
+                            "store.diypage.settings",
+                            "store.diypage.page",
+                            "store.goods",
+                            "store.goods.goodsoption"
+                        )
+                    ),
+                    array(
+                        "title" => "店员管理",
+                        "route" => "saler"
+                    ),
+                    array(
+                        "title" => "关键词设置",
+                        "route" => "set"
+                    )
+                )
+            ),
+            array(
+                "title" => "门店商品管理",
+                "items" => array(
+                    array(
+                        "title" => "记次时商品管理",
+                        "route" => "verifygoods",
+                        "extends" => array(
+                            "store.verifygoods.detail",
+                            "store.verifygoods.verifygoodslog"
+                        )
+                    )
+                )
+            ),
+            array(
+                "title" => "记次时商品统计",
+                "route" => "verify.log"
+            ),
+            array(
+                "title" => "核销订单记录",
+                "route" => "verifyorder.log"
+            )
+        )
+    ),
+
 );

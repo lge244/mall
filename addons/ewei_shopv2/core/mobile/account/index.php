@@ -84,6 +84,7 @@ class Index_EweiShopV2Page extends MobilePage
 		if (is_weixin() || !empty($_GPC['__ewei_shopv2_member_session_' . $_W['uniacid']])) {
 			header('location: ' . mobileUrl());
 		}
+		$shopid = pdo_fetch('select shopid from ' . tablename('ewei_shop_member') . ' where id=:id limit 1', array(':id' => $uid));
 
 		if ($_W['ispost']) {
 			$mobile = trim($_GPC['mobile']);
@@ -140,6 +141,7 @@ class Index_EweiShopV2Page extends MobilePage
 			}
 			$invite = pdo_fetch('select invite from ' . tablename('ewei_shop_member') . ' where id=:id limit 1', array(':id' => $uid));
 			$invite['invite'] = $invite['invite']+1;
+			$data['shopid'] = $shopid['shopid'];
 			if (empty($member)) {
 				pdo_insert('ewei_shop_member', $data);
 				pdo_update('ewei_shop_member',array('invite'=> $invite['invite']),array('id'=>$uid));

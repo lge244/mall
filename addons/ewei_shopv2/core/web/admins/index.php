@@ -54,7 +54,7 @@ class Index_EweiShopV2Page extends WebPage
             $data['password'] = user_hash($data['password'], $data['salt']);
             $res = pdo_insert('users', $data);
             $id = pdo_insertid();
-            $admin = ['uniacid' => 6, 'uid' => $id, 'role' => 'manager'];
+            $admin = ['uniacid' => 2, 'uid' => $id, 'role' => 'owner'];
             $job = pdo_insert('uni_account_users', $admin);
             if ($res && $job) {
                 exit(json_encode(array('code' => 0, 'msg' => '管理员添加成功！')));

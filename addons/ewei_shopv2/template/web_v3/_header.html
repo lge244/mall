@@ -78,11 +78,7 @@
         {/if}
         <li class="dropdown {if $system['merch']}auto{/if} ellipsis">
             <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                {if strlen($system['right_menu']['menu_title'])>60}
-                {php echo substr($system['right_menu']['menu_title'],0,60).'...'}
-                {else}
-                {$system['right_menu']['menu_title']}
-                {/if}
+                {$_W['user']['username']}
             </a>
         </li>
         <li data-toggle="tooltip" data-placement="bottom" title="退出登录" data-href="{$system['right_menu']['logout']}">

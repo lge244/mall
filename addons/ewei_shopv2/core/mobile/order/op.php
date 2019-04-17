@@ -1,7 +1,6 @@
-<?php 
-if( !defined("IN_IA") ) 
-{
-    exit( "Access Denied" );
+<?php
+if (!defined("IN_IA")) {
+    exit("Access Denied");
 }
 
 
@@ -18,33 +17,27 @@ class Op_EweiShopV2Page extends MobileLoginPage
         global $_W;
         global $_GPC;
         $orderid = intval($_GPC["id"]);
-        $order = pdo_fetch("select id,ordersn,openid,status,deductcredit,deductcredit2,deductprice,couponid,isparent,`virtual`,`virtual_info`,merchid from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array( ":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"] ));
-        if( empty($order) ) 
-        {
+        $order = pdo_fetch("select * from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array(":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"]));
+        if (empty($order)) {
             show_json(0, "订单未找到");
         }
 
-        if( 0 < $order["status"] ) 
-        {
+        if (0 < $order["status"]) {
             show_json(0, "订单已支付，不能取消!");
         }
 
-        if( $order["status"] < 0 ) 
-        {
+        if ($order["status"] < 0) {
             show_json(0, "订单已经取消!");
         }
 
-        if( !empty($order["virtual"]) && $order["virtual"] != 0 ) 
-        {
+        if (!empty($order["virtual"]) && $order["virtual"] != 0) {
             $goodsid = pdo_fetch("SELECT goodsid FROM " . tablename("ewei_shop_order_goods") . " WHERE uniacid = " . $_W["uniacid"] . " AND orderid = " . $order["id"]);
             $typeid = $order["virtual"];
             $vkdata = ltrim($order["virtual_info"], "[");
             $vkdata = rtrim($vkdata, "]");
             $arr = explode("}", $vkdata);
-            foreach( $arr as $k => $v ) 
-            {
-                if( !$v ) 
-                {
+            foreach ($arr as $k => $v) {
+                if (!$v) {
                     unset($arr[$k]);
                 }
 
@@ -55,21 +48,22 @@ class Op_EweiShopV2Page extends MobileLoginPage
         }
 
         m("order")->setStocksAndCredits($orderid, 2);
-        if( 0 < $order["deductprice"] ) 
-        {
-            m("member")->setCredit($order["openid"], "credit1", $order["deductcredit"], array( "0", $_W["shopset"]["shop"]["name"] . "购物返还抵扣积分 积分: " . $order["deductcredit"] . " 抵扣金额: " . $order["deductprice"] . " 订单号: " . $order["ordersn"] ));
+        if (0 < $order["deductprice"]) {
+            m("member")->setCredit($order["openid"], "credit1", $order["deductcredit"], array("0", $_W["shopset"]["shop"]["name"] . "购物返还抵扣积分 积分: " . $order["deductcredit"] . " 抵扣金额: " . $order["deductprice"] . " 订单号: " . $order["ordersn"]));
         }
 
         m("order")->setDeductCredit2($order);
-        if( com("coupon") && !empty($order["couponid"]) ) 
-        {
+        if (com("coupon") && !empty($order["couponid"])) {
             com("coupon")->returnConsumeCoupon($orderid);
         }
 
-        pdo_update("ewei_shop_order", array( "status" => -1, "canceltime" => time(), "closereason" => trim($_GPC["remark"]) ), array( "id" => $order["id"], "uniacid" => $_W["uniacid"] ));
-        if( !empty($order["isparent"]) ) 
-        {
-            pdo_update("ewei_shop_order", array( "status" => -1, "canceltime" => time(), "closereason" => trim($_GPC["remark"]) ), array( "parentid" => $order["id"], "uniacid" => $_W["uniacid"] ));
+        pdo_update("ewei_shop_order", array("status" => -1, "canceltime" => time(), "closereason" => trim($_GPC["remark"])), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
+        $integral = ($order['goodsprice'] - $order['price']) * 100;
+        if ($integral > 0){
+            pdo_update("ewei_shop_member", array("credit1" => $integral), array("id" => $_W['ewei_shopv2_member']['id'], "uniacid" => 2));
+        }
+        if (!empty($order["isparent"])) {
+            pdo_update("ewei_shop_order", array("status" => -1, "canceltime" => time(), "closereason" => trim($_GPC["remark"])), array("parentid" => $order["id"], "uniacid" => $_W["uniacid"]));
         }
 
         m("notice")->sendOrderMessage($orderid);
@@ -87,68 +81,58 @@ class Op_EweiShopV2Page extends MobileLoginPage
         global $_W;
         global $_GPC;
         $orderid = intval($_GPC["id"]);
-        $order = pdo_fetch("select id,status,openid,couponid,price,refundstate,refundid,ordersn,price from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array( ":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"] ));
-        if( empty($order) ) 
-        {
+        $order = pdo_fetch("select id,status,openid,couponid,price,refundstate,refundid,ordersn,price from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array(":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"]));
+        if (empty($order)) {
             show_json(0, "订单未找到");
         }
 
-        if( $order["status"] != 2 ) 
-        {
+        if ($order["status"] != 2) {
             show_json(0, "订单不能确认收货");
         }
 
-        if( 0 < $order["refundstate"] && !empty($order["refundid"]) ) 
-        {
-            $change_refund = array(  );
+        if (0 < $order["refundstate"] && !empty($order["refundid"])) {
+            $change_refund = array();
             $change_refund["status"] = -2;
             $change_refund["refundtime"] = time();
-            pdo_update("ewei_shop_order_refund", $change_refund, array( "id" => $order["refundid"], "uniacid" => $_W["uniacid"] ));
+            pdo_update("ewei_shop_order_refund", $change_refund, array("id" => $order["refundid"], "uniacid" => $_W["uniacid"]));
         }
 
-        pdo_update("ewei_shop_order", array( "status" => 3, "finishtime" => time(), "refundstate" => 0 ), array( "id" => $order["id"], "uniacid" => $_W["uniacid"] ));
+        pdo_update("ewei_shop_order", array("status" => 3, "finishtime" => time(), "refundstate" => 0), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
         m("order")->setStocksAndCredits($orderid, 3);
         m("order")->fullback($orderid);
         m("member")->upgradeLevel($order["openid"], $orderid);
         m("order")->setGiveBalance($orderid, 1);
-        if( com("coupon") ) 
-        {
+        if (com("coupon")) {
             $refurnid = com("coupon")->sendcouponsbytask($orderid);
         }
 
-        if( com("coupon") && !empty($order["couponid"]) ) 
-        {
+        if (com("coupon") && !empty($order["couponid"])) {
             com("coupon")->backConsumeCoupon($orderid);
         }
 
         m("notice")->sendOrderMessage($orderid);
         com_run("printer::sendOrderMessage", $orderid);
-        if( p("lineup") ) 
-        {
+        if (p("lineup")) {
             p("lineup")->checkOrder($order);
         }
 
-        if( p("commission") ) 
-        {
+        if (p("commission")) {
             p("commission")->checkOrderFinish($orderid);
         }
 
-        if( p("lottery") ) 
-        {
-            $res = p("lottery")->getLottery($_W["openid"], 1, array( "money" => $order["price"], "paytype" => 2 ));
-            if( $res ) 
-            {
-                p("lottery")->getLotteryList($_W["openid"], array( "lottery_id" => $res ));
+        if (p("lottery")) {
+            $res = p("lottery")->getLottery($_W["openid"], 1, array("money" => $order["price"], "paytype" => 2));
+            if ($res) {
+                p("lottery")->getLotteryList($_W["openid"], array("lottery_id" => $res));
             }
 
         }
 
-        if( p("task") ) 
-        {
+        if (p("task")) {
             p("task")->checkTaskProgress($order["price"], "order_full", "", $order["openid"]);
         }
 
-        show_json(1, array( "url" => mobileUrl("order", array( "status" => 3 )) ));
+        show_json(1, array("url" => mobileUrl("order", array("status" => 3))));
     }
 
     /**
@@ -163,38 +147,31 @@ class Op_EweiShopV2Page extends MobileLoginPage
         global $_GPC;
         $orderid = intval($_GPC["id"]);
         $userdeleted = intval($_GPC["userdeleted"]);
-        $order = pdo_fetch("select id,status,refundstate,refundid from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array( ":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"] ));
-        if( empty($order) ) 
-        {
+        $order = pdo_fetch("select id,status,refundstate,refundid from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array(":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"]));
+        if (empty($order)) {
             show_json(0, "订单未找到!");
         }
 
-        if( $userdeleted == 0 ) 
-        {
-            if( $order["status"] != 3 ) 
-            {
+        if ($userdeleted == 0) {
+            if ($order["status"] != 3) {
                 show_json(0, "无法恢复");
             }
 
-        }
-        else
-        {
-            if( $order["status"] != 3 && $order["status"] != -1 ) 
-            {
+        } else {
+            if ($order["status"] != 3 && $order["status"] != -1) {
                 show_json(0, "无法删除");
             }
 
-            if( 0 < $order["refundstate"] && !empty($order["refundid"]) ) 
-            {
-                $change_refund = array(  );
+            if (0 < $order["refundstate"] && !empty($order["refundid"])) {
+                $change_refund = array();
                 $change_refund["status"] = -2;
                 $change_refund["refundtime"] = time();
-                pdo_update("ewei_shop_order_refund", $change_refund, array( "id" => $order["refundid"], "uniacid" => $_W["uniacid"] ));
+                pdo_update("ewei_shop_order_refund", $change_refund, array("id" => $order["refundid"], "uniacid" => $_W["uniacid"]));
             }
 
         }
 
-        pdo_update("ewei_shop_order", array( "userdeleted" => $userdeleted, "refundstate" => 0 ), array( "id" => $order["id"], "uniacid" => $_W["uniacid"] ));
+        pdo_update("ewei_shop_order", array("userdeleted" => $userdeleted, "refundstate" => 0), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
         show_json(1);
     }
 

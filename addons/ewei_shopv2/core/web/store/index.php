@@ -29,8 +29,12 @@ class Index_EweiShopV2Page extends ComWebPage
 			$condition .= ' AND type = :type';
 			$paras[':type'] = $type;
 		}
+		if ($_W['user']['uid'] >= 2 ){
+			$sql = 'SELECT * FROM ' . tablename('ewei_shop_store') . (' WHERE  uid='.$_W['user']['uid'] .' and '.$condition);
+		}else{
+			$sql = 'SELECT * FROM ' . tablename('ewei_shop_store') . (' WHERE ' . $condition . ' ORDER BY displayorder desc,id desc');
+		}
 
-		$sql = 'SELECT * FROM ' . tablename('ewei_shop_store') . (' WHERE ' . $condition . ' ORDER BY displayorder desc,id desc');
 		$sql .= ' LIMIT ' . ($pindex - 1) * $psize . ',' . $psize;
 		$sql_count = 'SELECT count(1) FROM ' . tablename('ewei_shop_store') . (' WHERE ' . $condition);
 		$total = pdo_fetchcolumn($sql_count, $paras);
@@ -77,15 +81,11 @@ class Index_EweiShopV2Page extends ComWebPage
 				show_json(0, '门店LOGO不能为空');
 			}
 
-			if (empty($_GPC['map']['lng']) || empty($_GPC['map']['lat'])) {
-				show_json(0, '门店位置不能为空');
-			}
-
 			if (empty($_GPC['address'])) {
 				show_json(0, '门店地址不能为空');
 			}
 			if (empty($_GPC['uid'])) {
-				show_json(0, '门店地址不能为空');
+				show_json(0, '门店店长不能为空');
 			}
 			else {
 				if (30 < mb_strlen($_GPC['address'], 'UTF-8')) {
@@ -163,7 +163,7 @@ class Index_EweiShopV2Page extends ComWebPage
 			if (P('newstore')) {
 				$data['storegroupid'] = intval($_GPC['storegroupid']);
 			}
-
+			$data['uid'] = intval($_GPC['uid']);
 			$data['order_printer'] = is_array($_GPC['order_printer']) ? implode(',', $_GPC['order_printer']) : '';
 			$data['order_template'] = intval($_GPC['order_template']);
 			$data['ordertype'] = is_array($_GPC['ordertype']) ? implode(',', $_GPC['ordertype']) : '';
