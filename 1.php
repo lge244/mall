@@ -255,6 +255,7 @@ $shopmenu = array(
         )
     )
 );
+<<<<<<< HEAD
 
 
 $shopmenu = array(
@@ -313,3 +314,5 @@ $shopmenu = array(
     ),
 
 );
+=======
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3

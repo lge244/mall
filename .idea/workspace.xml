@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a701d574-fe47-4661-abe0-57512a43e714" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/123.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/entrance.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/entrance.html" afterDir="false" />
@@ -82,6 +83,12 @@
       <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/index.tpl.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/system/plugin.tpl.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/system/plugin/release1.tpl.php" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php" afterDir="false" />
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +113,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="482">
@@ -177,10 +185,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="631">
               <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+=======
+        <entry file="file://$PROJECT_DIR$/1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/create.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -191,6 +206,13 @@
                 <element signature="e#22002#22007#0" expanded="true" />
                 <element signature="e#30161#30188#0" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="44" />
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
             </state>
           </provider>
         </entry>
@@ -215,6 +237,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>$_W['shopset']</find>
       <find>trade</find>
       <find>积分</find>
@@ -245,6 +268,38 @@
       <find>cancel</find>
       <find>register</find>
       <find>pdo_fetch</find>
+=======
+      <find>商品属性</find>
+      <find>isstatustime</find>
+      <find>tp_title</find>
+      <find>添加</find>
+      <find>goodsname</find>
+      <find>include</find>
+      <find>category</find>
+      <find>jobdesc</find>
+      <find>副标题</find>
+      <find>win</find>
+      <find>err</find>
+      <find>$category</find>
+      <find>loop</find>
+      <find>应用</find>
+      <find>user_hash</find>
+      <find>pdo_insert</find>
+      <find>password</find>
+      <find>getList</find>
+      <find>删除</find>
+      <find>data-original-title=&quot;删除&quot;</find>
+      <find>delete</find>
+      <find>data-original-title=</find>
+      <find>pdo_update</find>
+      <find>if</find>
+      <find>mendian</find>
+      <find>省市区 :</find>
+      <find>$data</find>
+      <find>keyword</find>
+      <find>col-sm-2 control-label</find>
+      <find>add</find>
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -253,7 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/config.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/map.json" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/account/default/login.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/account/default3/login.html" />
@@ -285,6 +339,7 @@
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/index.php" />
         <option value="$PROJECT_DIR$/1.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php" />
@@ -299,6 +354,16 @@
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/create.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/create.php" />
+=======
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php" />
+        <option value="$PROJECT_DIR$/1.php" />
+        <option value="$PROJECT_DIR$/data/config.php" />
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
       </list>
     </option>
   </component>
@@ -322,63 +387,175 @@
     <option name="width" value="852" />
     <option name="height" value="513" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmj" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmj" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmj" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmj" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmj" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="mobile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hmj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmj" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="mobile" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="virtual" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="tab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../auto_shop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -433,7 +610,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="235572000" />
+=======
+    <option name="totallyTimeSpent" value="128675000" />
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,10 +626,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19484241" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17291667" />
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -510,6 +695,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/job.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -518,6 +704,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/index.php">
+=======
+    <entry file="file://$PROJECT_DIR$/../qr.php" />
+    <entry file="file://$PROJECT_DIR$/framework/library/qrcode/phpqrcode.php">
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="513" column="24" selection-start-line="513" selection-start-column="24" selection-end-line="513" selection-end-column="24" />
@@ -649,6 +839,7 @@
         <state relative-caret-position="-27" />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/static/js/myconfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
@@ -658,12 +849,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/404.html" />
+    <entry file="file://$PROJECT_DIR$/data/install.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/static/js/config0.8.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/static/myconfig-app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
@@ -680,6 +877,9 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/_header.html">
+=======
+    <entry file="file://$PROJECT_DIR$/web/resource/js/app/common.min.js">
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="99" column="43" lean-forward="true" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
@@ -698,6 +898,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/share.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -713,6 +914,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php">
+=======
+    <entry file="file://$PROJECT_DIR$/payment/alipay/pay.htm">
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
@@ -841,6 +1045,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/data/tpl/web/default/common/header-base.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -849,12 +1054,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/themes/default/common/header-base.html">
+=======
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html">
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -880,6 +1089,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/pay.php">
+=======
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php">
+>>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -935,6 +1147,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="631">
           <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="116" column="232" selection-start-line="116" selection-start-column="225" selection-end-line="116" selection-end-column="232" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="104" column="33" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1588">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="92" column="75" selection-start-line="92" selection-start-column="75" selection-end-line="92" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="496" column="23" selection-start-line="496" selection-start-column="20" selection-end-line="496" selection-end-column="23" />
+          <folding>
+            <element signature="n#main#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#delete#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#status#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#checked#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#delete1#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#restore#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#property#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#change#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#tpl#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#query#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#goodsprice#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#batchcates#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#ajax_batchcates#0;n#Index_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#reust_cates#0;n#Index_EweiShopV2Page#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>

@@ -1678,59 +1678,7 @@ class System_EweiShopV2Model
         }
         // 门店
         if ($_W['user']['jobid'] == 6){
-            $shopmenu = array(
-                "store" => array(
-                    "title" => "门店",
-                    "subtitle" => "门店",
-                    "icon" => "mendianguanli",
-                    "items" => array(
-                        array(
-                            "title" => "门店管理",
-                            "items" => array(
-                                array(
-                                    "title" => "门店管理",
-                                    "route" => "",
-                                    "extends" => array(
-                                        "store.diypage.settings",
-                                        "store.diypage.page",
-                                        "store.goods",
-                                        "store.goods.goodsoption"
-                                    )
-                                ),
-                                array(
-                                    "title" => "店员管理",
-                                    "route" => "saler"
-                                ),
-                                array(
-                                    "title" => "入口",
-                                    "route" => "entrance"
-                                )
-                            )
-                        ),
-                        array(
-                            "title" => "门店商品管理",
-                            "items" => array(
-                                array(
-                                    "title" => "记次时商品管理",
-                                    "route" => "verifygoods",
-                                    "extends" => array(
-                                        "store.verifygoods.detail",
-                                        "store.verifygoods.verifygoodslog"
-                                    )
-                                )
-                            )
-                        ),
-                        array(
-                            "title" => "记次时商品统计",
-                            "route" => "verify.log"
-                        ),
-                        array(
-                            "title" => "核销订单记录",
-                            "route" => "verifyorder.log"
-                        )
-                    )
-                ),
-            );
+          
         }
 
         if (!p("app")) {
