@@ -35,6 +35,9 @@ class Index_EweiShopV2Page extends WebPage
 				$this->message('进货数量不得大于总库存！', webUrl('purchase/add'));
 			}
 			$val['stock'] = $stock[$val['id']];
+			$info[] = pdo_get('ewei_shop_purchase', ['name' => $val['title']]);
+			dump($info);
+			die;
 			$res = pdo_insert('ewei_shop_purchase', [
 				'name'        => $val['title'],
 				'price'       => $val['marketprice'],
@@ -46,7 +49,7 @@ class Index_EweiShopV2Page extends WebPage
 				'create_time' => time(),
 				'update_time' => time(),
 			]);
-			if (!$res)  $this->message('进货失败！', webUrl('purchase/add'));
+			if (!$res) $this->message('进货失败！', webUrl('purchase/add'));
 			$this->message('进货成功！', webUrl('purchase/add'));
 		}
 	}
