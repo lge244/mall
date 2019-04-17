@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a701d574-fe47-4661-abe0-57512a43e714" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/123.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/entrance.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/entrance.html" afterDir="false" />
@@ -89,6 +90,15 @@
       <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php" afterDir="false" />
 >>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
+=======
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/purchase/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/good_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.php" afterDir="false" />
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +123,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -191,6 +202,29 @@
             <state relative-caret-position="24">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
 >>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
+=======
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/purchase/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="685">
+              <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/good_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2664">
+              <caret line="111" column="25" lean-forward="true" selection-start-line="107" selection-start-column="20" selection-end-line="111" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#th#8;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" />
+                <element signature="n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" />
+                <element signature="n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#input#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
             </state>
           </provider>
         </entry>
@@ -208,8 +242,9 @@
               </folding>
 =======
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/config.php">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="120">
               <caret line="5" column="44" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="44" />
 >>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
@@ -222,6 +257,25 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="200" column="31" selection-start-line="200" selection-start-column="31" selection-end-line="200" selection-end-column="31" />
+=======
+            <state relative-caret-position="420">
+              <caret line="126" column="43" lean-forward="true" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
             </state>
           </provider>
         </entry>
@@ -237,6 +291,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <find>$_W['shopset']</find>
       <find>trade</find>
@@ -278,6 +333,8 @@
       <find>category</find>
       <find>jobdesc</find>
       <find>副标题</find>
+=======
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
       <find>win</find>
       <find>err</find>
       <find>$category</find>
@@ -299,8 +356,23 @@
       <find>keyword</find>
       <find>col-sm-2 control-label</find>
       <find>add</find>
+<<<<<<< HEAD
 >>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
+=======
+      <find>6</find>
+      <find>goods</find>
+      <find>cow icow-weibiaoti--</find>
+      <find>消息提醒</find>
+      <find>shop</find>
+      <find>IN</find>
+      <find>WHERE IN</find>
+      <find>url</find>
+      <find>weburl</find>
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
     </findStrings>
+    <replaceStrings>
+      <replace>purchase</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -356,14 +428,24 @@
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/create.php" />
 =======
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html" />
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/store/index.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php" />
         <option value="$PROJECT_DIR$/1.php" />
         <option value="$PROJECT_DIR$/data/config.php" />
+<<<<<<< HEAD
 >>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
+=======
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/good_lsit.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/post.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/index.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/order/detail.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/purchase/index.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/good_list.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/index.html" />
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
       </list>
     </option>
   </component>
@@ -382,10 +464,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="360" />
-    <option name="y" value="147" />
-    <option name="width" value="852" />
-    <option name="height" value="513" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="408" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -454,8 +535,7 @@
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-              <item name="virtual" type="462c0819:PsiDirectoryNode" />
+              <item name="purchase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
@@ -479,7 +559,7 @@
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="web_v3" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="admins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
@@ -489,7 +569,15 @@
               <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="web_v3" type="462c0819:PsiDirectoryNode" />
               <item name="goods" type="462c0819:PsiDirectoryNode" />
-              <item name="tab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="purchase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall" type="b2602c69:ProjectViewProjectNode" />
@@ -557,12 +645,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../auto_shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase" />
+      <recent name="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3" />
+      <recent name="$PROJECT_DIR$/addons/ewei_shopv2/core/web/purchase" />
+      <recent name="$PROJECT_DIR$/addons/ewei_shopv2/core/web" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpStudy\WWW\hmj\addons\ewei_shopv2\template\web_v3\admins\job" />
       <recent name="D:\phpStudy\WWW\hmj\addons\ewei_shopv2\core\mobile\member" />
@@ -611,10 +705,14 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="235572000" />
 =======
     <option name="totallyTimeSpent" value="128675000" />
 >>>>>>> 93d454d5ca66cd2cb2fa88d4e78fc4e49be8b7a3
+=======
+    <option name="totallyTimeSpent" value="149203000" />
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,6 +793,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/job.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -835,6 +934,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/static/js/myconfig-app.js">
+=======
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/create.php">
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
       </provider>
@@ -1011,6 +1113,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/inc/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2296">
@@ -1032,6 +1135,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html">
+=======
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/job/index.html">
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="200" column="31" selection-start-line="200" selection-start-column="31" selection-end-line="200" selection-end-column="31" />
@@ -1045,6 +1151,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/data/tpl/web/default/common/header-base.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1077,6 +1184,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/account/index.php">
+=======
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php">
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-192">
           <caret line="82" column="49" selection-start-line="81" selection-start-column="8" selection-end-line="82" selection-end-column="49" />
@@ -1088,6 +1198,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/pay.php">
 =======
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/admins/index.php">
@@ -1099,6 +1210,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
+=======
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/store/post.html">
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
@@ -1143,6 +1257,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="631">
@@ -1150,6 +1265,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 89f4ddfb3a1525406bed349ed2301c2d9613d0ba
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1196,13 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1588">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-205">
@@ -1210,12 +1320,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/purchase/virtual/set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="2435" column="47" selection-start-line="2435" selection-start-column="47" selection-end-line="2435" selection-end-column="47" />
+          <folding>
+            <element signature="e#27322#59143#0#PHP" />
+            <element signature="e#59178#67534#0#PHP" />
+            <element signature="e#67557#71503#0#PHP" />
+            <element signature="e#79952#82804#1#PHP" />
+            <element signature="e#82834#84108#1#PHP" />
+            <element signature="e#84137#87008#1#PHP" />
+            <element signature="e#87037#89251#1#PHP" />
+            <element signature="e#89253#89283#0#PHP" />
+            <element signature="e#94811#96577#1#PHP" />
+            <element signature="e#96611#98864#1#PHP" />
+            <element signature="e#98945#99088#1#PHP" />
+            <element signature="e#99118#107274#1#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/tab/buy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="189" column="18" selection-end-line="596" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="92" column="14" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="92" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="496" column="23" selection-start-line="496" selection-start-column="20" selection-end-line="496" selection-end-column="23" />
+        <state relative-caret-position="-253">
+          <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="63" />
           <folding>
-            <element signature="n#main#0;n#Index_EweiShopV2Page#0;n#!!top" />
             <element signature="n#delete#0;n#Index_EweiShopV2Page#0;n#!!top" />
             <element signature="n#status#0;n#Index_EweiShopV2Page#0;n#!!top" />
             <element signature="n#checked#0;n#Index_EweiShopV2Page#0;n#!!top" />
@@ -1233,17 +1419,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.php">
+    <entry file="file://$PROJECT_DIR$/app/common/common.func.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/config.php">
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/order/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="291">
+          <caret line="36" column="114" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/static/sendticket/js/jquery-1.7.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="5580" column="4" selection-start-line="5580" selection-start-column="4" selection-end-line="5580" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="258" column="43" lean-forward="true" selection-start-line="258" selection-start-column="43" selection-end-line="258" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/inc/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="450" column="52" selection-start-line="450" selection-start-column="52" selection-end-line="450" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcsite/core/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/pcsite/core/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/inc/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="1426" column="13" selection-start-line="1426" selection-start-column="13" selection-end-line="1426" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#31#38#0" expanded="true" />
+            <element signature="e#34#41#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="210" column="17" selection-start-line="197" selection-start-column="8" selection-end-line="210" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="126" column="39" selection-start-line="126" selection-start-column="39" selection-end-line="126" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="213" column="28" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/purchase/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/good_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2664">
+          <caret line="111" column="25" lean-forward="true" selection-start-line="107" selection-start-column="20" selection-end-line="111" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#th#8;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" />
+            <element signature="n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" />
+            <element signature="n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#input#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/purchase/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="126" column="43" lean-forward="true" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
