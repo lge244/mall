@@ -37,6 +37,7 @@ class Index_EweiShopV2Page extends WebPage
 			$val['stock'] = $stock[$val['id']];
 			$info[] = pdo_get('ewei_shop_purchase', ['name' => $val['title']]);
 			dump($info);
+			
 			die;
 			$res = pdo_insert('ewei_shop_purchase', [
 				'name'        => $val['title'],
