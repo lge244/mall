@@ -1,4 +1,4 @@
-{template '_header'}
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
 <style>
 	tbody tr td {
 		position: relative;
@@ -89,9 +89,9 @@
 		<div style="width: 100px;">价格</div>
 		<div style="width: 80px;">库存</div>
 		<div style="width: 80px;">销量</div>
-		{if $goodsfrom!='cycle'}
+		<?php  if($goodsfrom!='cycle') { ?>
 		<div style="width:80px;">状态</div>
-		{/if}
+		<?php  } ?>
 		<div class="flex1">属性</div>
 		<div style="width: 120px;">操作</div>
 	</div>
@@ -100,10 +100,10 @@
 		<input type="hidden" name="a" value="entry"/>
 		<input type="hidden" name="m" value="ewei_shopv2"/>
 		<input type="hidden" name="do" value="web"/>
-		<input type="hidden" name="r" value="goods.{$goodsfrom}"/>
+		<input type="hidden" name="r" value="goods.<?php  echo $goodsfrom;?>"/>
 		<div class="page-toolbar">
 			<span class="pull-left" style="margin-right:30px;">
-				<a class='btn btn-sm btn-primary' href="{php echo webUrl('purchase/add')}"><i class='fa fa-plus'></i>进货</a>
+				<a class='btn btn-sm btn-primary' href="<?php  echo webUrl('purchase/add')?>"><i class='fa fa-plus'></i>进货</a>
 			</span>
 		</div>
 	</form>
@@ -123,22 +123,22 @@
 				</tr>
 				</thead>
 				<tbody>
-				{loop $list $row}
+				<?php  if(is_array($list)) { foreach($list as $row) { ?>
 				<tr>
-					<td>{$row['id']}</td>
-					<td>{$store_list[$row['shop_id']]}</td>
-					<td>{$row['name']}</td>
+					<td><?php  echo $row['id'];?></td>
+					<td><?php  echo $store_list[$row['shop_id']];?></td>
+					<td><?php  echo $row['name'];?></td>
 					<td>
 						<a href="javascript:;">
-							<img src="{php echo tomedia($row['img'])}" style="width:72px;height:72px;padding:1px;border:1px solid #efefef;margin: 7px 0" />
+							<img src="<?php  echo tomedia($row['img'])?>" style="width:72px;height:72px;padding:1px;border:1px solid #efefef;margin: 7px 0" />
 						</a>
 					</td>
-					<td>{$row['price']}</td>
-					<td>{$row['stock']}</td>
-					<td>{ifp $row['status'] ==1}已完成{else}进行中{/if}</td>
+					<td><?php  echo $row['price'];?></td>
+					<td><?php  echo $row['stock'];?></td>
+					<td><?php if(cv($row['status'] ==1)) { ?>已完成<?php  } else { ?>进行中<?php  } ?></td>
 					<td>
 						<a class='btn  btn-op btn-operation' data-toggle='ajaxRemove'
-						   href="{php echo webUrl('purchase/del', array('id' => $row['id']))}"
+						   href="<?php  echo webUrl('purchase/del', array('id' => $row['id']))?>"
 						   data-confirm='确认彻底删除此商品？'>
 							<span data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
 								<i class='icow icow-shanchu1'></i>
@@ -146,10 +146,10 @@
 						</a>
 					</td>
 				</tr>
-				{/loop}
+				<?php  } } ?>
 				</tbody>
 			</table>
 		</div>
 	</div>
 </div>
-{template '_footer'}
+<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>

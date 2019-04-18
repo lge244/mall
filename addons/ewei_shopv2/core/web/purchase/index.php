@@ -7,7 +7,12 @@ class Index_EweiShopV2Page extends WebPage
 {
 	public function main()
 	{
-		$list = pdo_fetchall('SELECT * FROM ' . tablename('ewei_shop_purchase'));
+		global $_W;
+		$list = pdo_getall('ewei_shop_purchase', ['uid' => $_W['uid']]);
+		$store_list = [];
+		foreach (pdo_getall('ewei_shop_store', ['uid' => $_W['uid']]) as $v) {
+			$store_list[$v['id']] = $v['storename'];
+		}
 		include $this->template();
 	}
 
@@ -22,9 +27,11 @@ class Index_EweiShopV2Page extends WebPage
 		global $_GPC;
 		$good_id = $_POST['good_id'];
 		$stock = $_POST['stock'];
+		$shop_id = intval($_POST['shop_id']);
 		if (empty($good_id)) {
 			$this->message('至少选择一件商品！', webUrl('purchase/add'));
 		}
+		if (empty($shop_id)) $this->message('未选择门店！', webUrl('purchase/add'));
 		$good_id = implode(',', $good_id);
 		$good_info = pdo_fetchall("SELECT * FROM " . tablename('ewei_shop_goods') . " WHERE id IN ($good_id)");
 		foreach ($stock as $k => $v) {
@@ -35,11 +42,10 @@ class Index_EweiShopV2Page extends WebPage
 				$this->message('进货数量不得大于总库存！', webUrl('purchase/add'));
 			}
 			$val['stock'] = $stock[$val['id']];
-			$info[] = pdo_get('ewei_shop_purchase', ['name' => $val['title']]);
-			dump($info);
-			
-			die;
-			$res = pdo_insert('ewei_shop_purchase', [
+			$insert_res = pdo_insert('ewei_shop_purchase', [
+				'shop_id'     => $shop_id,
+				'uid'         => $_W['uid'],
+				'good_id'     => $val['id'],
 				'name'        => $val['title'],
 				'price'       => $val['marketprice'],
 				'img'         => $val['thumb'],
@@ -47,20 +53,19 @@ class Index_EweiShopV2Page extends WebPage
 				'stock'       => $val['stock'],
 				'details'     => $val['content'],
 				'c_id'        => $val['cates'],
+				'proportion'  => $val['proportion'],
+				'integral'    => $val['integral'],
+				'status'      => 0,
 				'create_time' => time(),
 				'update_time' => time(),
 			]);
-			if (!$res) $this->message('进货失败！', webUrl('purchase/add'));
-			$this->message('进货成功！', webUrl('purchase/add'));
+			unset($good_info);
+			if (!$insert_res) $this->message('进货失败！', webUrl('purchase/add'));
+			$this->message('进货成功，请等待审核结果！', webUrl('purchase'));
 		}
 	}
 
-	public function edit()
-	{
-		$this->post();
-	}
-
-	public function delete()
+	public function del()
 	{
 		global $_W;
 		global $_GPC;
@@ -181,6 +186,8 @@ class Index_EweiShopV2Page extends WebPage
 		}
 		$goodstotal = intval($_W['shopset']['shop']['goodstotal']);
 		$shopset = $_W['shopset']['shop'];
+		// 门店列表
+		$store_list = pdo_getall('ewei_shop_store', ['uid' => $_W['uid']]);
 		include $this->template('purchase/good_list');
 	}
 }
