@@ -441,7 +441,6 @@
     <script>
         $('.valid').click(function () {
             var data_checked = $('.valid').attr('data-checked');
-            // console.log(data_checked);
             if (data_checked == 'false') {
                 $.post("http://www.hmj.cn/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=order.create.integralcalculation", {
                     "total":<?php  echo $total;?>,
