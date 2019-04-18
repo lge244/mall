@@ -12,8 +12,7 @@ class Cart_EweiShopV2Page extends MobileLoginPage
 		global $_GPC;
 		$merch_plugin = p('merch');
 		$merch_data = m('common')->getPluginset('merch');
-		dump($merch_data);
-		if ($merch_plugin && $merch_data['is_openmerch']) 
+		if ($merch_plugin && $merch_data['is_openmerch'])
 		{
 			include $this->template('merch/member/cart');
 			exit();
