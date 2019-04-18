@@ -1972,8 +1972,8 @@ class System_EweiShopV2Model
                                     "route" => "saler"
                                 ),
                                 array(
-                                    "title" => "关键词设置",
-                                    "route" => "set"
+                                    "title" => "入口",
+                                    "route" => "entrance"
                                 )
                             )
                         ),
