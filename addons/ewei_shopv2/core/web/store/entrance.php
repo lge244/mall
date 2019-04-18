@@ -59,7 +59,7 @@ class Entrance_EweiShopV2Page extends WebPage
         global $_W;
         global $_GPC;
         $item = pdo_fetch('SELECT * FROM ' . tablename('ewei_shop_store') . ' WHERE uid =:uid and uniacid=:uniacid limit 1', array(':uniacid' => $_W['uniacid'], ':uid' => $_W['user']['uid']));
-        $cover = $this->_cover('favorite', '商城首页', mobileUrl('member', array(), false));
+        $cover = $this->_cover('favorite', '商城首页', mobileUrl('', array(), false));
         $cover['url'] .= '&shopid='.$item['id'];
         include $this->template();
     }

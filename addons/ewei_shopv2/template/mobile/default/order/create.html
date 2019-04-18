@@ -30,6 +30,14 @@
         position: relative;
         top:0;
     }
+    .butt{
+        border: none;
+        font-size: 0.7rem;
+        color: #fff;
+        border-radius: 0;
+        width: 0.2%;
+    }
+    }
 
 </style>
 
@@ -433,7 +441,6 @@
     <script>
         $('.valid').click(function () {
             var data_checked = $('.valid').attr('data-checked');
-            // console.log(data_checked);
             if (data_checked == 'false') {
                 $.post("http://www.hmj.cn/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=order.create.integralcalculation", {
                     "total":{$total},
@@ -610,11 +617,11 @@
 {/if}
 
 <div class="fui-navbar order-create-checkout">
-    <a href="javascript:;" class="nav-item btn  buybtn" style="background: #FFBF00">积分购买</a>
+    <a href="javascript:;" class="nav-item btn butt" style="background: #FFBF00;    width: 0.2%;">积分购买</a>
     <a href="javascript:;" class="nav-item total">
         <p style="color: #000">
             积分<span class="text-danger  bigprice"><span class="">
-               123</span></span>
+               {php echo $createInfo['integral']}</span></span>
         </p>
     </a>
     <a href="javascript:;" class="nav-item total">
@@ -625,6 +632,24 @@
     </a>
     <a href="javascript:;" class="nav-item btn btn-danger buybtn">立即支付</a>
 </div>
+<script>
+    $('.butt').click(function () {
+        $.post("http://www.hmj.cn/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=order.create.buy", {
+            "total":{$total},
+            "createInfo":{php echo json_encode($createInfo)}
+        }, function (res) {
+            if (res.code==0){
+                alert(res.msg);
+                window.location.href ="http://www.hmj.cn/app/index.php?i=2&j=2&c=entry&m=ewei_shopv2&do=mobile&r=order&status=1"
+            }else{
+                alert(res.msg)
+            }
+
+
+
+        },'json')
+    })
+</script>
 
 <!--关注二维码--><!-- class="fui-mask visible"-->
 <div id="attention"   style="display: none;">
@@ -759,7 +784,6 @@
         });
 
     require(['biz/order/create'], function (modal) {
-
         modal.init({php echo json_encode($createInfo)},{php echo empty($invoice_arr)?'false':$invoice_arr}||{});
 
         {if !$followed && !empty($share['followqrcode'])&& empty($trade['shop_strengthen'])}
