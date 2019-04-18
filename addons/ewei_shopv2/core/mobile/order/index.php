@@ -77,7 +77,7 @@ class Index_EweiShopV2Page extends MobileLoginPage
 		}
 		$com_verify = com("verify");
 		$s_string = "";
-		$list = pdo_fetchall("select id,addressid,ordersn,price,dispatchprice,status,iscomment,isverify,verifyendtime,\r\nverified,verifycode,verifytype,iscomment,refundid,expresscom,express,expresssn,finishtime,`virtual`,sendtype,\r\npaytype,expresssn,refundstate,dispatchtype,verifyinfo,merchid,isparent,iscycelbuy,cycelbuy_periodic,userdeleted" . $s_string . "\r\n from " . tablename("ewei_shop_order") . " where 1 " . $condition . " order by createtime desc LIMIT " . ($pindex - 1) * $psize . "," . $psize, $params);
+		$list = pdo_fetchall("select id,addressid,integral,ordersn,price,dispatchprice,status,iscomment,isverify,verifyendtime,\r\nverified,verifycode,verifytype,iscomment,refundid,expresscom,express,expresssn,finishtime,`virtual`,sendtype,\r\npaytype,expresssn,refundstate,dispatchtype,verifyinfo,merchid,isparent,iscycelbuy,cycelbuy_periodic,userdeleted" . $s_string . "\r\n from " . tablename("ewei_shop_order") . " where 1 " . $condition . " order by createtime desc LIMIT " . ($pindex - 1) * $psize . "," . $psize, $params);
 		$total = pdo_fetchcolumn("select count(*) from " . tablename("ewei_shop_order") . " where 1 " . $condition, $params);
 		$refunddays = intval($_W["shopset"]["trade"]["refunddays"]);
 		if( $is_openmerch == 1 ) 
