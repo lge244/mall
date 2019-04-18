@@ -3,7 +3,7 @@ if (!defined('IN_IA')) {
 	exit('Access Denied');
 }
 
-class Index_EweiShopV2Page extends MobilePage
+class Index_EweiShopV2Page extends MobileLoginPage
 {
 	public function main()
 	{
@@ -12,10 +12,8 @@ class Index_EweiShopV2Page extends MobilePage
 		$_SESSION['newstoreid'] = 0;
 		$this->diypage('home');
 		$trade = m('common')->getSysset('trade');
-
 		if (empty($trade['shop_strengthen'])) {
 			$order = pdo_fetch('select id,price  from ' . tablename('ewei_shop_order') . ' where uniacid=:uniacid and status = 0 and paytype<>3 and openid=:openid order by createtime desc limit 1', array(':uniacid' => $_W['uniacid'], ':openid' => $_W['openid']));
-
 			if (!empty($order)) {
 				$goods = pdo_fetchall('select g.*,og.total as totals  from ' . tablename('ewei_shop_order_goods') . ' og inner join ' . tablename('ewei_shop_goods') . ' g on og.goodsid = g.id   where og.uniacid=:uniacid    and og.orderid=:orderid  limit 3', array(':uniacid' => $_W['uniacid'], ':orderid' => $order['id']));
 				$goodstotal = pdo_fetchcolumn('select COUNT(*)  from ' . tablename('ewei_shop_order_goods') . ' og inner join ' . tablename('ewei_shop_goods') . ' g on og.goodsid = g.id   where og.uniacid=:uniacid    and og.orderid=:orderid ', array(':uniacid' => $_W['uniacid'], ':orderid' => $order['id']));
@@ -77,6 +75,7 @@ class Index_EweiShopV2Page extends MobilePage
 	{
 		global $_W;
 		global $_GPC;
+		dump($_W['openid']);
 		$uniacid = $_W['uniacid'];
 		$defaults = array(
 			'adv'    => array('text' => '幻灯片', 'visible' => 1),

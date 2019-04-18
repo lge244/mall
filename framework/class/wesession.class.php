@@ -127,7 +127,6 @@ class WeSessionMemcache extends WeSession {
 class WeSessionRedis extends WeSessionMemcache {
 	public function open($save_path, $session_name) {
 		$this->session_name = $session_name;
-
 		if (cache_type() != 'redis') {
 			trigger_error('Redis 扩展不可用或是服务未开启，请将 \$config[\'setting\'][\'redis\'][\'session\'] 设置为0 ');
 			return false;
