@@ -58,7 +58,9 @@ class Op_EweiShopV2Page extends MobileLoginPage
         }
 
         pdo_update("ewei_shop_order", array("status" => -1, "canceltime" => time(), "closereason" => trim($_GPC["remark"])), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
+        $member = pdo_get('ewei_shop_member', array('id' => $_W['mid']),array('credit1'));
         $integral = ($order['goodsprice'] - $order['price']) * 100;
+        $integral = $integral+$member['credit1'];
         if ($integral > 0){
             pdo_update("ewei_shop_member", array("credit1" => $integral), array("id" => $_W['ewei_shopv2_member']['id'], "uniacid" => 2));
         }

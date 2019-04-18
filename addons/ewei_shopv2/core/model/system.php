@@ -1829,26 +1829,6 @@ class System_EweiShopV2Model
                             "route" => "label",
                             "extend" => "goods.label.style"
                         )
-//                    array(
-//                        "title" => "虚拟卡密",
-//                        "route" => "virtual",
-//                        "iscom" => "virtual",
-//                        "items" => array(
-//                            array(
-//                                "title" => "虚拟卡密",
-//                                "route" => "temp",
-//                                "extend" => "goods.virtual.data"
-//                            ) ,
-//                            array(
-//                                "title" => "卡密分类",
-//                                "route" => "job"
-//                            ) ,
-//                            array(
-//                                "title" => "设置",
-//                                "route" => "set"
-//                            )
-//                        )
-//                    )
                     )
                 ),
                 "member" => array(
@@ -1869,20 +1849,6 @@ class System_EweiShopV2Model
                             "title" => "标签组",
                             "route" => "group"
                         )
-//                    array(
-//                        "title" => "排行榜设置",
-//                        "route" => "rank",
-//                        "desc" => "会员积分/消费排行榜设置"
-//                    ) ,
-//                    array(
-//                        "title" => "微信会员卡",
-//                        "route" => "card",
-//                        "iscom" => "wxcard",
-//                        "extends" => array(
-//                            "member.card.post",
-//                            "member.card.activationset"
-//                        )
-//                    )
                     )
                 ),
                 "order" => array(
@@ -1977,8 +1943,8 @@ class System_EweiShopV2Model
                                     "route" => "saler"
                                 ),
                                 array(
-                                    "title" => "关键词设置",
-                                    "route" => "set"
+                                    "title" => "入口",
+                                    "route" => "entrance"
                                 )
                             )
                         ),

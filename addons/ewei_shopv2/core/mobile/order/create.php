@@ -342,7 +342,7 @@ class Create_EweiShopV2Page extends MobileLoginPage
                 $ishotelsql = '';
                 if (p('hotelreservation')) {
                 }
-                $sql = 'SELECT id as goodsid,type,title,weight,issendfree,isnodiscount,ispresell,presellprice,' . ' thumb,marketprice,liveprice,islive,storeids,isverify,isforceverifystore,deduct,hasoption,preselltimeend,presellsendstatrttime,presellsendtime,presellsendtype,' . ' manydeduct,`virtual`,maxbuy,usermaxbuy,discounts,total as stock,deduct2,showlevels,' . ' ednum,edmoney,edareas,edareas_code,unite_total,diyfields,' . ' diyformtype,diyformid,diymode,dispatchtype,dispatchid,dispatchprice,cates,minbuy, ' . ' isdiscount,isdiscount_time,isdiscount_discounts,isfullback, ' . ' virtualsend,invoice,needfollow,followtip,followurl,merchid,checked,merchsale, ' . ' buyagain,buyagain_islong,buyagain_condition, buyagain_sale,bargain' . $threensql . $ishotelsql . ' FROM ' . tablename('ewei_shop_goods') . ' where id=:id and uniacid=:uniacid  limit 1';
+                $sql = 'SELECT id as goodsid,type,title,weight,issendfree,isnodiscount,ispresell,presellprice,integral,' . ' thumb,marketprice,liveprice,islive,storeids,isverify,isforceverifystore,deduct,hasoption,preselltimeend,presellsendstatrttime,presellsendtime,presellsendtype,' . ' manydeduct,`virtual`,maxbuy,usermaxbuy,discounts,total as stock,deduct2,showlevels,' . ' ednum,edmoney,edareas,edareas_code,unite_total,diyfields,' . ' diyformtype,diyformid,diymode,dispatchtype,dispatchid,dispatchprice,cates,minbuy, ' . ' isdiscount,isdiscount_time,isdiscount_discounts,isfullback, ' . ' virtualsend,invoice,needfollow,followtip,followurl,merchid,checked,merchsale, ' . ' buyagain,buyagain_islong,buyagain_condition, buyagain_sale,bargain' . $threensql . $ishotelsql . ' FROM ' . tablename('ewei_shop_goods') . ' where id=:id and uniacid=:uniacid  limit 1';
                 $data = pdo_fetch($sql, array(':uniacid' => $uniacid, ':id' => $id));
                 $threenprice = json_decode($data['threen'], 1);
                 if (0 < $data['bargain']) {
@@ -879,7 +879,7 @@ class Create_EweiShopV2Page extends MobileLoginPage
             if ($is_openmerch == 1) {
                 $merchs = $merch_plugin->getMerchs($merch_array);
             }
-            $createInfo = array('id' => $id, 'gdid' => intval($_GPC['gdid']), 'fromcart' => $fromcart, 'addressid' => (!(empty($address)) && !($isverify) && !($isvirtual) ? $address['id'] : 0), 'storeid' => 0, 'couponcount' => $couponcount, 'coupon_goods' => $goodsdata_temp, 'isvirtual' => $isvirtual, 'isverify' => $isverify, 'isonlyverifygoods' => $isonlyverifygoods, 'isforceverifystore' => $isforceverifystore, 'goods' => $goodsdata, 'merchs' => $merchs, 'orderdiyformid' => $orderdiyformid, 'has_fields' => $has_fields, 'giftid' => $giftid, 'mustbind' => $mustbind, 'fromquick' => intval($quickid), 'liveid' => intval($liveid), 'new_area' => $new_area, 'address_street' => $address_street, 'city_express_state' => (empty($dispatch_array['city_express_state']) ? 0 : $dispatch_array['city_express_state']));
+            $createInfo = array('id' => $id, 'integral' => $data['integral'], 'gdid' => intval($_GPC['gdid']), 'fromcart' => $fromcart, 'addressid' => (!(empty($address)) && !($isverify) && !($isvirtual) ? $address['id'] : 0), 'storeid' => 0, 'couponcount' => $couponcount, 'coupon_goods' => $goodsdata_temp, 'isvirtual' => $isvirtual, 'isverify' => $isverify, 'isonlyverifygoods' => $isonlyverifygoods, 'isforceverifystore' => $isforceverifystore, 'goods' => $goodsdata, 'merchs' => $merchs, 'orderdiyformid' => $orderdiyformid, 'has_fields' => $has_fields, 'giftid' => $giftid, 'mustbind' => $mustbind, 'fromquick' => intval($quickid), 'liveid' => intval($liveid), 'new_area' => $new_area, 'address_street' => $address_street, 'city_express_state' => (empty($dispatch_array['city_express_state']) ? 0 : $dispatch_array['city_express_state']));
             $buyagain = $buyagainprice;
         } else {
             $merchdata = $this->merchData();
@@ -943,7 +943,7 @@ class Create_EweiShopV2Page extends MobileLoginPage
             foreach ($goods as $key => $value) {
                 $goodsprice += $value['marketprice'];
             }
-            $createInfo = array('id' => 0, 'gdid' => intval($_GPC['gdid']), 'fromcart' => 0, 'packageid' => $packageid, 'addressid' => $address['id'], 'storeid' => 0, 'couponcount' => 0, 'isvirtual' => 0, 'isverify' => 0, 'isonlyverifygoods' => 0, 'goods' => $goods, 'merchs' => $merchs, 'orderdiyformid' => 0, 'mustbind' => 0, 'fromquick' => intval($quickid), 'new_area' => $new_area, 'address_street' => $address_street);
+            $createInfo = array('id' => 0, 'integral' => $data['integral'], 'gdid' => intval($_GPC['gdid']), 'fromcart' => 0, 'packageid' => $packageid, 'addressid' => $address['id'], 'storeid' => 0, 'couponcount' => 0, 'isvirtual' => 0, 'isverify' => 0, 'isonlyverifygoods' => 0, 'goods' => $goods, 'merchs' => $merchs, 'orderdiyformid' => 0, 'mustbind' => 0, 'fromquick' => intval($quickid), 'new_area' => $new_area, 'address_street' => $address_street);
         }
         $goods_list = array();
         if ($ismerch) {
@@ -1019,6 +1019,9 @@ class Create_EweiShopV2Page extends MobileLoginPage
 
         // 抵用计算  商品总积分 - 账户积分 = 剩余积分/100 = 抵用后价格
         $result = ($markprice2 - $credit['credit1']) / 100;
+        if ($result < 0) {
+            $result = 0;
+        }
         // 使用的积分   商品价格  -  抵用后的价格  * 100
         $uing = ($marketprice - $result) * 100;
 
@@ -2565,7 +2568,7 @@ class Create_EweiShopV2Page extends MobileLoginPage
             $order['ordersn2'] = 100;
         }
         $result = $_COOKIE["result"];
-        if ($result) {
+        if ($result >= 0) {
             $order['price'] = $result;
         }
         pdo_insert('ewei_shop_order', $order);
@@ -2576,10 +2579,11 @@ class Create_EweiShopV2Page extends MobileLoginPage
         $order = pdo_fetch("select * from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array(":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"]));
         $member = pdo_fetch("select * from " . tablename("ewei_shop_member") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array(":id" => $_W['mid'], ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"]));
         $integral = ($order['goodsprice'] - $order['price']) * 100;
-        $credit1 = $integral - $member['credit1'];
-        if ($integral > 0){
+        $credit1 = $member['credit1'] - $integral;
+        if ($integral > 0) {
             pdo_update("ewei_shop_member", array("credit1" => $credit1), array("id" => $_W['ewei_shopv2_member']['id'], "uniacid" => 2));
         }
+
         if (!(empty($goods[0]['bargain_id'])) && p('bargain')) {
             pdo_update('ewei_shop_bargain_actor', array('order' => $orderid), array('id' => $goods[0]['bargain_id'], 'openid' => $_W['openid']));
         }
@@ -2942,6 +2946,64 @@ class Create_EweiShopV2Page extends MobileLoginPage
             pdo_update('ewei_shop_member_cart', $cart_data, array('id' => $cartid));
         }
         show_json(1, array('goods_data_id' => $gdid));
+    }
+
+    public function buy()
+    {
+        global $_W;
+        global $_GPC;
+        $data = $_POST;
+        $ismerch = 0;
+        $goods = pdo_get('ewei_shop_goods', array('id' => $data['createInfo']['id']));
+        $member = pdo_get('ewei_shop_member', array('id' => $_W['mid']), array('credit1'));
+        if ($goods['integral'] > $member['credit1']) {
+            exit(json_encode(array('code' => 1, 'msg' => '抱歉！积分不足！')));
+        }
+        if (0 < $ismerch) {
+            $ordersn = m('common')->createNO('order', 'ordersn', 'ME');
+        } else {
+            $ordersn = m('common')->createNO('order', 'ordersn', 'SH');
+        }
+        $address = pdo_fetch('select * from ' . tablename('ewei_shop_member_address') . ' where openid=:openid and deleted=0 and isdefault=1  and uniacid=:uniacid limit 1', array(':uniacid' => $_W['uniacid'], ':openid' => $_W['openid']));
+
+        $order['uniacid'] = $_W['uniacid'];
+        $order['openid'] = $_W['openid'];
+        $order['ordersn'] = $ordersn;
+        $order['integral'] = $goods['integral'];
+        $order['price'] = $goods['marketprice'];
+        $order['oldprice'] = $goods['marketprice'];
+        $order['grprice'] = $goods['marketprice'];
+        $order['goodsprice'] = $goods['marketprice'];
+        $order['createtime'] = time();
+        $order['address'] = json_encode($address);
+        $order['addressid'] = $address['id'];
+        $order['status'] = 1;
+
+        $res = pdo_insert('ewei_shop_order', $order);
+        $orderid = pdo_insertid();
+        unset($order['address']);
+
+        $order_goods['total'] = $data['total'];
+        $order_goods['uniacid'] = $_W['uniacid'];
+        $order_goods['orderid'] = $orderid;
+        $order_goods['goodsid'] = $goods['id'];
+        $order_goods['price'] = $goods['marketprice'];
+        $order_goods['createtime'] = time();
+        $order_goods['openid'] = $_W['openid'];
+
+        $res2 = pdo_insert('ewei_shop_order_goods', $order_goods);
+
+        if ($res && $res2) {
+            $integral = ($member['credit1'] - $goods['integral']);
+            $res3 = pdo_update("ewei_shop_member", array("credit1" => $integral), array("id" => $_W['mid'], "uniacid" => $_W['uniacid']));
+            if ($res3) {
+                exit(json_encode(array('code' => 0, 'msg' => '购买成功！')));
+            }
+        } else {
+            exit(json_encode(array('code' => 1, 'msg' => '抱歉！网络出现错误！')));
+
+        }
+
     }
 }
 
