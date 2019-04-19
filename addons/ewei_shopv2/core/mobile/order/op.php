@@ -58,10 +58,10 @@ class Op_EweiShopV2Page extends MobileLoginPage
         }
 
         pdo_update("ewei_shop_order", array("status" => -1, "canceltime" => time(), "closereason" => trim($_GPC["remark"])), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
-        $member = pdo_get('ewei_shop_member', array('id' => $_W['mid']),array('credit1'));
+        $member = pdo_get('ewei_shop_member', array('id' => $_W['mid']), array('credit1'));
         $integral = ($order['goodsprice'] - $order['price']) * 100;
-        $integral = $integral+$member['credit1'];
-        if ($integral > 0){
+        $integral = $integral + $member['credit1'];
+        if ($integral > 0) {
             pdo_update("ewei_shop_member", array("credit1" => $integral), array("id" => $_W['ewei_shopv2_member']['id'], "uniacid" => 2));
         }
         if (!empty($order["isparent"])) {
@@ -97,6 +97,20 @@ class Op_EweiShopV2Page extends MobileLoginPage
             $change_refund["status"] = -2;
             $change_refund["refundtime"] = time();
             pdo_update("ewei_shop_order_refund", $change_refund, array("id" => $order["refundid"], "uniacid" => $_W["uniacid"]));
+        }
+        $member = pdo_get('ewei_shop_member', array('id' => $_W['mid']));
+        $member2 = pdo_get('ewei_shop_member', array('id' => $member['fid']));
+        $order2 = pdo_get('ewei_shop_order_goods', array('orderid' => $orderid));
+        $goods = pdo_get('ewei_shop_goods', array('id' => $order2['goodsid']));
+        $integral = ($goods['proportion'] * $order['price']) + $member['credit1'];
+        if ($member['fid']){
+            $integral2 = (($goods['proportion'] - 10) * $order['price']) + $member2['credit1'];
+        }
+        if ($integral) {
+            $a = pdo_update("ewei_shop_member", array('credit1'=>$integral), array("id" => $_W["mid"], "uniacid" => $_W["uniacid"]));
+        }
+        if ($integral2){
+           $a2= pdo_update("ewei_shop_member", array('credit1'=>$integral2), array("id" => $member['fid'], "uniacid" => $_W["uniacid"]));
         }
 
         pdo_update("ewei_shop_order", array("status" => 3, "finishtime" => time(), "refundstate" => 0), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));

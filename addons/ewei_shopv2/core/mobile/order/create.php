@@ -2568,7 +2568,7 @@ class Create_EweiShopV2Page extends MobileLoginPage
             $order['ordersn2'] = 100;
         }
         $result = $_COOKIE["result"];
-        if ($result >= 0) {
+        if ($result >= 0 && $result!= null) {
             $order['price'] = $result;
         }
         pdo_insert('ewei_shop_order', $order);
@@ -2954,7 +2954,7 @@ class Create_EweiShopV2Page extends MobileLoginPage
         global $_GPC;
         $data = $_POST;
         $ismerch = 0;
-        $goods = pdo_get('ewei_shop_goods', array('id' => $data['createInfo']['id']));
+        $goods = pdo_get('ewei_shop_goods', array('id' => $data['createInfo']['coupon_goods'][0]['goodsid']));
         $member = pdo_get('ewei_shop_member', array('id' => $_W['mid']), array('credit1'));
         if ($goods['integral'] > $member['credit1']) {
             exit(json_encode(array('code' => 1, 'msg' => '抱歉！积分不足！')));
