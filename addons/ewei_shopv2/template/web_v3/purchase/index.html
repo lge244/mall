@@ -127,15 +127,15 @@
 				<tr>
 					<td>{$row['id']}</td>
 					<td>{$store_list[$row['shop_id']]}</td>
-					<td>{$row['name']}</td>
+					<td>{$row['title']}</td>
 					<td>
 						<a href="javascript:;">
-							<img src="{php echo tomedia($row['img'])}" style="width:72px;height:72px;padding:1px;border:1px solid #efefef;margin: 7px 0" />
+							<img src="{php echo tomedia($row['thumb'])}" style="width:72px;height:72px;padding:1px;border:1px solid #efefef;margin: 7px 0" />
 						</a>
 					</td>
-					<td>{$row['price']}</td>
-					<td>{$row['stock']}</td>
-					<td>{ifp $row['status'] ==1}已完成{else}进行中{/if}</td>
+					<td>{$row['marketprice']}</td>
+					<td>{$row['total']}</td>
+					<td>{ifp $row['order_status'] ==1}已完成{else}进行中{/if}</td>
 					<td>
 						<a class='btn  btn-op btn-operation' data-toggle='ajaxRemove'
 						   href="{php echo webUrl('purchase/del', array('id' => $row['id']))}"

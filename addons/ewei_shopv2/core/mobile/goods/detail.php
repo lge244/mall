@@ -1018,7 +1018,7 @@ class Detail_EweiShopV2Page extends MobilePage
 		global $_W;
 		global $_GPC;
 		$id = intval($_GPC['id']);
-		$goods = pdo_fetch('select * from ' . tablename('ewei_shop_goods') . ' where id=:id and uniacid=:uniacid limit 1', array(':id' => $id, ':uniacid' => $_W['uniacid']));
+		$goods = pdo_fetch('select * from ' . tablename('ewei_shop_purchase') . ' where id=:id and uniacid=:uniacid limit 1', array(':id' => $id, ':uniacid' => $_W['uniacid']));
 		exit(m('ui')->lazy($goods['content']));
 	}
 	public function get_comments() 

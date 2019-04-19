@@ -127,15 +127,15 @@
 				<tr>
 					<td><?php  echo $row['id'];?></td>
 					<td><?php  echo $store_list[$row['shop_id']];?></td>
-					<td><?php  echo $row['name'];?></td>
+					<td><?php  echo $row['title'];?></td>
 					<td>
 						<a href="javascript:;">
-							<img src="<?php  echo tomedia($row['img'])?>" style="width:72px;height:72px;padding:1px;border:1px solid #efefef;margin: 7px 0" />
+							<img src="<?php  echo tomedia($row['thumb'])?>" style="width:72px;height:72px;padding:1px;border:1px solid #efefef;margin: 7px 0" />
 						</a>
 					</td>
-					<td><?php  echo $row['price'];?></td>
-					<td><?php  echo $row['stock'];?></td>
-					<td><?php if(cv($row['status'] ==1)) { ?>已完成<?php  } else { ?>进行中<?php  } ?></td>
+					<td><?php  echo $row['marketprice'];?></td>
+					<td><?php  echo $row['total'];?></td>
+					<td><?php if(cv($row['order_status'] ==1)) { ?>已完成<?php  } else { ?>进行中<?php  } ?></td>
 					<td>
 						<a class='btn  btn-op btn-operation' data-toggle='ajaxRemove'
 						   href="<?php  echo webUrl('purchase/del', array('id' => $row['id']))?>"

@@ -8,9 +8,14 @@ class Index_EweiShopV2Page extends WebPage
 	public function main()
 	{
 		global $_W;
-		$list = pdo_getall('ewei_shop_purchase', ['uid' => $_W['uid']]);
+		$store = pdo_getall('ewei_shop_store', ['uid' => $_W['uid']]);
+		$shop_id = [];
+		foreach ($store as $v) {
+			$shop_id[] = $v['id'];
+		}
+		$list = pdo_getall('ewei_shop_purchase', ['shop_id in' => $shop_id]);
 		$store_list = [];
-		foreach (pdo_getall('ewei_shop_store', ['uid' => $_W['uid']]) as $v) {
+		foreach ($store as $v) {
 			$store_list[$v['id']] = $v['storename'];
 		}
 		include $this->template();
@@ -28,41 +33,29 @@ class Index_EweiShopV2Page extends WebPage
 		$good_id = $_POST['good_id'];
 		$stock = $_POST['stock'];
 		$shop_id = intval($_POST['shop_id']);
-		if (empty($good_id)) {
-			$this->message('至少选择一件商品！', webUrl('purchase/add'));
-		}
+		if (empty($good_id)) $this->message('至少选择一件商品！', webUrl('purchase/add'));
+		if (empty($stock)) $this->message('请选择进货数量！', webUrl('purchase/add'));
 		if (empty($shop_id)) $this->message('未选择门店！', webUrl('purchase/add'));
 		$good_id = implode(',', $good_id);
 		$good_info = pdo_fetchall("SELECT * FROM " . tablename('ewei_shop_goods') . " WHERE id IN ($good_id)");
-		foreach ($stock as $k => $v) {
-			if (!is_numeric($v)) $this->message('库存必须为数字！', webUrl('purchase/add'));
-		}
 		foreach ($good_info as &$val) {
-			if ($stock[$val['id']] == $val['id'] && $stock[$val['id']] >= $val['total']) {
-				$this->message('进货数量不得大于总库存！', webUrl('purchase/add'));
+			foreach ($stock as $k => $v) {
+				if (!is_numeric($v)) $this->message('进货数量必须为数字！', webUrl('purchase/add'));
+				if ($k == $val['id'] && $stock[$val['id']] >= $val['total']) {
+					$this->message('进货数量不得大于总库存！', webUrl('purchase/add'));
+				}
 			}
-			$val['stock'] = $stock[$val['id']];
-			$insert_res = pdo_insert('ewei_shop_purchase', [
-				'shop_id'     => $shop_id,
-				'uid'         => $_W['uid'],
-				'good_id'     => $val['id'],
-				'name'        => $val['title'],
-				'price'       => $val['marketprice'],
-				'img'         => $val['thumb'],
-				'video'       => $val['video'],
-				'stock'       => $val['stock'],
-				'details'     => $val['content'],
-				'c_id'        => $val['cates'],
-				'proportion'  => $val['proportion'],
-				'integral'    => $val['integral'],
-				'status'      => 0,
-				'create_time' => time(),
-				'update_time' => time(),
-			]);
-			unset($good_info);
-			if (!$insert_res) $this->message('进货失败！', webUrl('purchase/add'));
-			$this->message('进货成功，请等待审核结果！', webUrl('purchase'));
+			$val['total'] = 0;
+			$val['good_id'] = $val['id'];
+			$val['shop_id'] = $shop_id;
+			$val['order_status'] = 0;
+			$val['number'] = (int) $stock;
+			unset($val['id']);
+			$res = pdo_insert('ewei_shop_purchase', $val);
 		}
+		unset($good_info);
+		if (!$res) $this->message('进货失败', webUrl('purchase/add'));
+		$this->message('进货成功', webUrl('purchase'));
 	}
 
 	public function del()
